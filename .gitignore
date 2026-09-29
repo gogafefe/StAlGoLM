@@ -1,0 +1,18 @@
+# Результаты сборки
+build/
+build-tests/
+*.o
+release/
+debug/
+
+# Локальные артефакты
+server.db
+results.txt
+.qmake.stash
+.qtcreator/
+
+# Файлы Qt Creator для конкретной машины
+*.pro.user
+
+# Личная шпаргалка — не для репозитория
+ШАПАРГАЛКА.md
