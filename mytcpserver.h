@@ -21,6 +21,7 @@ private:
 
     QTcpServer *mTcpServer;
     QMap<long, UserSession> mSessions;
+    QMap<long, QByteArray> mBuffers; // накопленные, но ещё не завершённые байты на клиента
 
 public slots:
     void slotNewConnection();
