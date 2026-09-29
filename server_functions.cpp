@@ -42,10 +42,10 @@ QString processCommand(const QString& command, UserSession& session)
         return cmd_task(1, num, session);
     }
     if (action == "task2") {
-        if (parts.size() < 2) return "error: usage: task2 <1-40>\r\n";
+        if (parts.size() < 2) return "error: usage: task2 <1-10>\r\n";
         bool ok;
         int num = parts[1].toInt(&ok);
-        if (!ok || num < 1 || num > 40) return "error: task number must be 1-40\r\n";
+        if (!ok || num < 1 || num > 10) return "error: task number must be 1-10\r\n";
         return cmd_task(2, num, session);
     }
     if (action == "task3") {
@@ -272,19 +272,20 @@ QString cmd_help()
            "  stats - show server statistics (admin/mod only)\r\n"
            "--- Tasks (require login) ---\r\n"
            "  task1 <1-40> - integral comparison (trapezoid vs Simpson)\r\n"
-           "  task2 <1-40> - sum of two numbers (small)\r\n"
+           "  task2 <1-10> - Newton's method: pick the correct x1 of 4 options\r\n"
            "  task3 <1-40> - sum of two numbers (medium)\r\n"
            "  task4 <1-40> - sum of two numbers (large)\r\n"
            "  mystats [1-4] - view your task statistics\r\n"
            "--- Answering ---\r\n"
            "  After taskX N, enter the answer as a number.\r\n"
            "  For task1: 1 (trapezoid) or 2 (Simpson).\r\n"
-           "  For task2-4: the computed sum.\r\n"
+           "  For task2: the number (1-4) of the correct x1 value (Newton's method).\r\n"
+           "  For task3-4: the computed sum.\r\n"
            "  +1 for correct, -1 for wrong.\r\n"
            "Roles: user, moderator, admin\r\n";
 }
 
-// Обработка запроса задания. Формат: taskType (1-4), taskNum (1-40).
+// Обработка запроса задания. Формат: taskType (1-4), taskNum (1-40 для task1/3/4, 1-10 для task2).
 // Генерирует задание, сохраняет правильный ответ в сессии
 QString cmd_task(int taskType, int taskNum, UserSession& session)
 {
@@ -341,7 +342,7 @@ QString cmd_answer(int userAnswer, UserSession& session)
 {
     // Проверяем, есть ли активное задание
     if (session.currentTaskType == 0) {
-        return "error: no active task. Use task1/2/3/4 <1-40> first.\r\n";
+        return "error: no active task. Use task1/3/4 <1-40> or task2 <1-10> first.\r\n";
     }
 
     int taskType = session.currentTaskType;
@@ -408,8 +409,11 @@ QString cmd_mystats(const QStringList& parts, const UserSession& session)
 
         QVector<int> row = DatabaseManager::getInstance()->getStatisticRow(session.login, taskType);
 
+        // У task2 шаблонов 10, у остальных — 40; выводим по 10 в строке
+        int cells = (taskType == 2) ? 10 : 40;
+
         // Выводим значения по 10 в строке для компактности
-        for (int line = 0; line < 4; line++) {
+        for (int line = 0; line < cells / 10; line++) {
             QStringList vals;
             for (int col = 0; col < 10; col++) {
                 int idx = line * 10 + col;
