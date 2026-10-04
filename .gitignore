@@ -1,6 +1,6 @@
 # Результаты сборки
-build/
-build-tests/
+build*/
+
 *.o
 release/
 debug/
