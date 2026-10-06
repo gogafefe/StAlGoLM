@@ -1,0 +1,21 @@
+<map id="cmd_users" name="cmd_users">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,91,115"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="15,88,9,79,13,70,27,63,48,61,71,64,85,72,79,74,69,69,48,67,28,69,17,73,15,79,20,87"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb" title="Возвращает список всех пользователей." alt="" coords="139,33,342,60"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="90,87,177,63,174,67,92,92"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f" title=" " alt="" coords="139,88,342,115"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="90,99,125,100,121,103,92,104"/>
+<area shape="rect" id="Node000008" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="941,147,1031,173"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="91,113,139,124,251,139,365,150,589,161,785,163,922,162,928,162,785,168,589,166,365,155,250,144,138,129,91,118"/>
+<area shape="rect" id="Node000003" href="$databasemanager_8cpp.html#a272e7e4a9d59f5cce7c678533de77e73" title="Преобразует строковое имя роли в UserRole." alt="" coords="438,29,533,56"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="342,42,426,43,421,44,343,48"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="444,28,437,21,442,11,459,5,486,3,515,5,532,15,527,14,514,10,486,8,460,10,446,15,442,20,449,30"/>
+<area shape="rect" id="Node000005" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="390,80,581,123"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="342,99,377,101,372,102,343,104"/>
+<area shape="rect" id="Node000006" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="629,88,838,115"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="582,99,616,101,611,102,582,104"/>
+<area shape="rect" id="Node000007" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="886,56,1086,99"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="838,89,873,88,868,89,838,94"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="794,113,928,146,923,146,794,118"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="943,145,936,138,941,128,958,122,986,120,1016,123,1034,132,1028,131,1015,128,986,125,959,127,945,132,941,137,948,147"/>
+</map>

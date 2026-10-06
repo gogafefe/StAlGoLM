@@ -1,0 +1,17 @@
+<map id="cmd_stats" name="cmd_stats">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,88,107"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="14,80,8,71,12,62,25,55,47,53,69,56,83,64,78,65,68,61,46,59,27,61,16,65,13,71,19,79"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f" title=" " alt="" coords="136,55,339,81"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="88,85,122,83,118,85,89,90"/>
+<area shape="rect" id="Node000007" href="$class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f" title="Возвращает общую, месячную и активную статистику пользователей." alt="" coords="145,105,330,132"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="88,96,132,104,127,105,88,101"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="387,47,578,89"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="339,65,374,68,369,68,340,71"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="626,55,835,81"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="579,65,613,68,608,68,579,71"/>
+<area shape="rect" id="Node000005" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="883,5,1083,48"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="816,51,865,46,870,45,817,57"/>
+<area shape="rect" id="Node000006" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="938,96,1028,123"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="817,79,925,100,920,99,816,85"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="940,94,933,87,938,77,955,71,983,69,1013,72,1031,82,1025,81,1012,77,983,75,956,77,942,82,938,87,945,97"/>
+</map>

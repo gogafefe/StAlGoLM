@@ -1,0 +1,20 @@
+<map id="cmd_reg" name="cmd_reg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,56,81,83"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="9,56,3,47,7,38,22,31,45,29,70,32,85,40,80,42,69,37,45,35,23,37,11,41,8,47,14,55"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a" title="Создаёт нулевые строки пользователя во всех таблицах заданий." alt="" coords="129,5,382,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="80,55,128,41,166,34,162,37,129,47,82,60"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f" title=" " alt="" coords="154,56,357,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="81,67,140,68,136,71,82,72"/>
+<area shape="rect" id="Node000008" href="$databasemanager_8cpp.html#a272e7e4a9d59f5cce7c678533de77e73" title="Преобразует строковое имя роли в UserRole." alt="" coords="208,131,303,157"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="82,79,203,123,199,127,81,84"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="430,48,621,91"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="357,67,417,69,412,70,358,72"/>
+<area shape="rect" id="Node000005" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="669,56,878,83"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="622,67,656,69,651,70,622,72"/>
+<area shape="rect" id="Node000006" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="926,7,1126,49"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="859,53,908,47,913,47,860,58"/>
+<area shape="rect" id="Node000007" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="981,97,1071,124"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="860,81,968,101,963,101,859,86"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="983,96,976,89,981,79,998,73,1026,71,1056,73,1074,83,1068,82,1055,78,1026,76,999,78,985,83,981,88,988,98"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="220,129,213,122,218,112,232,106,255,104,280,107,295,116,290,115,279,112,255,109,233,111,221,116,219,121,224,131"/>
+</map>

@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Файл databasemanager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('databasemanager_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл databasemanager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;QString&gt;</code><br />
+<code>#include &lt;QSqlDatabase&gt;</code><br />
+<code>#include &lt;QSqlQuery&gt;</code><br />
+<code>#include &lt;QSqlError&gt;</code><br />
+<code>#include &lt;QDebug&gt;</code><br />
+<code>#include &lt;QCryptographicHash&gt;</code><br />
+<code>#include &lt;QVector&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для databasemanager.h:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="databasemanager_8h__incl.svg" width="100%" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="databasemanager_8h__dep__incl.svg" width="467" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="databasemanager_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:UserInfo" id="r_UserInfo"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_user_info.html">UserInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Краткая информация о пользователе для административного списка.  <a href="struct_user_info.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:UserStats" id="r_UserStats"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_user_stats.html">UserStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Агрегированная статистика пользователей сервера.  <a href="struct_user_stats.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:DatabaseManager" id="r_DatabaseManager"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_database_manager.html">DatabaseManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Синглтон для работы с базой данных SQLite.  <a href="class_database_manager.html#details">Подробнее...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a00dd1c1a522bd6fb15ecc021ffefb775" id="r_a00dd1c1a522bd6fb15ecc021ffefb775"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> { <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a>
+, <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">ROLE_MODERATOR</a>
+, <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a>
+, <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">ROLE_ERR</a>
+ }</td></tr>
+<tr class="memdesc:a00dd1c1a522bd6fb15ecc021ffefb775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Роль пользователя и уровень доступа к серверным командам.  <a href="#a00dd1c1a522bd6fb15ecc021ffefb775">Подробнее...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a272e7e4a9d59f5cce7c678533de77e73" id="r_a272e7e4a9d59f5cce7c678533de77e73"><td class="memItemLeft"><a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a>&#160;</td><td class="memItemRight"><a class="el" href="#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a> (const QString &amp;roleStr)</td></tr>
+<tr class="memdesc:a272e7e4a9d59f5cce7c678533de77e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразует строковое имя роли в <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775" title="Роль пользователя и уровень доступа к серверным командам.">UserRole</a>.  <br /></td></tr>
+<tr class="memitem:a8ff4b8e34d22c2ca10aa6fe31da7cefa" id="r_a8ff4b8e34d22c2ca10aa6fe31da7cefa"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a> (<a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> role)</td></tr>
+<tr class="memdesc:a8ff4b8e34d22c2ca10aa6fe31da7cefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает строковое имя роли.  <br /></td></tr>
+</table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Перечисления</h2>
+<a id="a00dd1c1a522bd6fb15ecc021ffefb775" name="a00dd1c1a522bd6fb15ecc021ffefb775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dd1c1a522bd6fb15ecc021ffefb775">&#9670;&#160;</a></span>UserRole</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Роль пользователя и уровень доступа к серверным командам. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31" name="a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31"></a>ROLE_USER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51" name="a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51"></a>ROLE_MODERATOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41" name="a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41"></a>ROLE_ADMIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2" name="a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2"></a>ROLE_ERR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="databasemanager_8h_source.html">databasemanager.h</a> строка <a class="el" href="databasemanager_8h_source.html#l00013">13</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="a8ff4b8e34d22c2ca10aa6fe31da7cefa" name="a8ff4b8e34d22c2ca10aa6fe31da7cefa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff4b8e34d22c2ca10aa6fe31da7cefa">&#9670;&#160;</a></span>roleToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString roleToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a></td>          <td class="paramname"><span class="paramname"><em>role</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает строковое имя роли. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="databasemanager_8cpp_source.html">databasemanager.cpp</a> строка <a class="el" href="databasemanager_8cpp_source.html#l00013">13</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="databasemanager_8h_source.html#l00016">ROLE_ADMIN</a>, <a class="el" href="databasemanager_8h_source.html#l00015">ROLE_MODERATOR</a>, <a class="el" href="databasemanager_8h_source.html#l00014">ROLE_USER</a> и <a class="el" href="databasemanager_8cpp_source.html#l00013">roleToString()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00216">cmd_users()</a>, <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00034">DatabaseManager::initDatabase()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00100">DatabaseManager::regUser()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00013">roleToString()</a> и <a class="el" href="databasemanager_8cpp_source.html#l00186">DatabaseManager::updateUserRole()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="databasemanager_8h_a8ff4b8e34d22c2ca10aa6fe31da7cefa_cgraph.svg" width="102" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="databasemanager_8h_a8ff4b8e34d22c2ca10aa6fe31da7cefa_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a272e7e4a9d59f5cce7c678533de77e73" name="a272e7e4a9d59f5cce7c678533de77e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272e7e4a9d59f5cce7c678533de77e73">&#9670;&#160;</a></span>stringToRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> stringToRole </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>roleStr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразует строковое имя роли в <a class="el" href="#a00dd1c1a522bd6fb15ecc021ffefb775" title="Роль пользователя и уровень доступа к серверным командам.">UserRole</a>. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="databasemanager_8cpp_source.html">databasemanager.cpp</a> строка <a class="el" href="databasemanager_8cpp_source.html#l00004">4</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="databasemanager_8h_source.html#l00016">ROLE_ADMIN</a>, <a class="el" href="databasemanager_8h_source.html#l00015">ROLE_MODERATOR</a>, <a class="el" href="databasemanager_8h_source.html#l00014">ROLE_USER</a> и <a class="el" href="databasemanager_8cpp_source.html#l00004">stringToRole()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="databasemanager_8cpp_source.html#l00130">DatabaseManager::authUserWithRole()</a>, <a class="el" href="server__functions_8cpp_source.html#l00073">cmd_reg()</a>, <a class="el" href="server__functions_8cpp_source.html#l00188">cmd_role()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00203">DatabaseManager::getAllUsers()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00154">DatabaseManager::getUserRole()</a> и <a class="el" href="databasemanager_8cpp_source.html#l00004">stringToRole()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="databasemanager_8h_a272e7e4a9d59f5cce7c678533de77e73_cgraph.svg" width="106" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="databasemanager_8h_a272e7e4a9d59f5cce7c678533de77e73_icgraph.svg" width="100%" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="databasemanager_8h.html">databasemanager.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

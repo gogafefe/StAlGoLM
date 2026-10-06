@@ -1,0 +1,8 @@
+<map id="MainWindow::onRegClicked" name="MainWindow::onRegClicked">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a0e5d89893a8ae7f1358603a438aae264" title="Добавляет сообщение в журнал обмена." alt="" coords="480,5,601,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,16,465,16,464,21,192,21"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a0059744c7bd6262a54e52c8df4a22877" title="Отправляет текстовую команду с разделителем 0x01." alt="" coords="240,31,432,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,26,227,32,221,32,192,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="432,29,462,28,467,28,433,35"/>
+</map>

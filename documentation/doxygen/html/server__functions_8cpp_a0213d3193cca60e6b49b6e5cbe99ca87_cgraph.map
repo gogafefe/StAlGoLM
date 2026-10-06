@@ -1,0 +1,18 @@
+<map id="cmd_role" name="cmd_role">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,92,80,119"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="10,92,5,83,9,74,22,67,43,65,65,68,78,76,73,78,63,73,42,71,23,73,13,77,10,83,15,91"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f" title=" " alt="" coords="128,55,331,81"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="79,95,146,83,143,87,81,101"/>
+<area shape="rect" id="Node000007" href="$databasemanager_8cpp.html#a272e7e4a9d59f5cce7c678533de77e73" title="Преобразует строковое имя роли в UserRole." alt="" coords="182,129,276,156"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="80,110,168,128,165,132,80,115"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="379,47,570,89"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="331,65,366,68,361,68,332,71"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="618,55,827,81"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="571,65,605,68,600,68,571,71"/>
+<area shape="rect" id="Node000005" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="875,5,1075,48"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="808,51,857,46,862,45,809,57"/>
+<area shape="rect" id="Node000006" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="930,96,1020,123"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="809,79,917,100,912,99,808,85"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="932,95,925,87,930,77,947,71,975,69,1005,72,1023,82,1017,81,1004,77,975,75,948,77,934,82,930,87,937,97"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="197,128,192,121,196,111,209,105,229,103,252,105,265,114,260,114,250,110,229,108,210,110,199,115,197,120,202,130"/>
+</map>

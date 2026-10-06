@@ -1,0 +1,8 @@
+<map id="MainWindow::onAuthClicked" name="MainWindow::onAuthClicked">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,195,32"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a0e5d89893a8ae7f1358603a438aae264" title="Добавляет сообщение в журнал обмена." alt="" coords="483,5,604,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,16,468,16,467,21,195,21"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a0059744c7bd6262a54e52c8df4a22877" title="Отправляет текстовую команду с разделителем 0x01." alt="" coords="243,31,435,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,26,230,32,224,32,195,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="435,29,465,28,470,28,436,35"/>
+</map>

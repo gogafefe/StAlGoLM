@@ -1,0 +1,5 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="Node000001" title="Главное окно TCP&#45;клиента StAlGoLM." alt="" coords="5,123,173,1024"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="42,5,137,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,87,92,123,87,123,89,93"/>
+</map>

@@ -1,0 +1,57 @@
+<map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
+<area shape="rect" id="Node000001" title="Создаёт интерфейс клиента и начинает подключение к серверу." alt="" coords="5,540,185,567"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#afe1bceaad866b6fed583ba83245ae195" title="Создаёт элементы и компоновки пользовательского интерфейса." alt="" coords="260,283,404,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,538,307,318,308,324,111,541"/>
+<area shape="rect" id="Node000014" href="$class_main_window.html#a95c5779447a66e87120526d332aaef1f" title=" " alt="" coords="241,540,422,567"/>
+<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="184,551,228,552,223,555,186,556"/>
+<area shape="rect" id="Node000016" href="$class_main_window.html#aa34b96b03c221e201ff14b278c59517a" title=" " alt="" coords="233,624,431,651"/>
+<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="135,565,280,617,276,620,135,570"/>
+<area shape="rect" id="Node000018" href="$class_main_window.html#a209079830a37745e47076a762bab17d6" title=" " alt="" coords="238,704,426,731"/>
+<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="112,564,166,609,234,660,292,696,287,697,231,665,162,613,111,570"/>
+<area shape="rect" id="Node000019" href="$class_main_window.html#a47c8a6afbc28b8a8ad1f814fc328335f" title=" " alt="" coords="750,5,938,48"/>
+<area shape="poly" id="edge35_Node000001_Node000019" title=" " alt="" coords="98,538,135,444,167,375,209,299,261,222,323,149,358,116,395,87,435,61,478,40,542,20,609,10,675,7,737,11,732,14,675,13,610,15,543,26,480,45,438,66,399,91,362,120,327,153,266,225,214,302,172,377,140,446,103,540"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a55eea31c454c0af22a67f7499ebc90dd" title=" " alt="" coords="482,105,688,132"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,281,393,214,432,175,478,142,493,136,489,140,480,146,436,179,397,217,344,284"/>
+<area shape="rect" id="Node000006" href="$class_main_window.html#a19850c0f66e42aad7aa8e1346ecad576" title=" " alt="" coords="490,359,679,385"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="370,307,480,344,510,354,504,355,478,349,370,313"/>
+<area shape="rect" id="Node000007" href="$class_main_window.html#ab191d4445d7faca3b2d48e2374d1d35a" title=" " alt="" coords="738,409,950,436"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="347,307,404,353,440,377,480,395,540,412,603,422,665,426,725,429,720,431,665,432,603,427,539,417,478,400,438,381,400,357,347,313"/>
+<area shape="rect" id="Node000008" href="$class_main_window.html#a111a8fd3caaf6dc116d99af74b284376" title=" " alt="" coords="479,207,690,233"/>
+<area shape="poly" id="edge11_Node000002_Node000008" title=" " alt="" coords="369,280,478,243,509,236,505,239,480,248,371,284"/>
+<area shape="rect" id="Node000009" href="$class_main_window.html#a75c121f531a98f64d9f7916a7e89cfed" title=" " alt="" coords="484,257,685,284"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="403,286,471,281,466,284,406,291"/>
+<area shape="rect" id="Node000010" href="$class_main_window.html#a7b555da8759160fae04c28df19a5ad6a" title=" " alt="" coords="480,308,689,335"/>
+<area shape="poly" id="edge15_Node000002_Node000010" title=" " alt="" coords="404,301,467,308,462,310,405,306"/>
+<area shape="rect" id="Node000011" href="$class_main_window.html#a12990dbecbbcb1b830ca6cce19d12b1e" title=" " alt="" coords="492,55,678,81"/>
+<area shape="poly" id="edge17_Node000002_Node000011" title=" " alt="" coords="337,281,355,243,385,191,426,137,451,112,477,91,489,86,485,90,481,96,454,116,430,141,389,194,360,245,341,283"/>
+<area shape="rect" id="Node000012" href="$class_main_window.html#a55b44d80e1875654fc77be80bd86afc0" title=" " alt="" coords="480,156,690,183"/>
+<area shape="poly" id="edge20_Node000002_Node000012" title=" " alt="" coords="347,280,402,237,439,213,478,192,499,186,494,189,480,197,442,217,405,241,350,284"/>
+<area shape="rect" id="Node000013" href="$class_main_window.html#a086a0d78e393cc8717578f8bf499aa14" title="Включает или отключает варианты ответа Task2 и Task3." alt="" coords="739,679,949,705"/>
+<area shape="poly" id="edge22_Node000002_Node000013" title=" " alt="" coords="346,307,403,365,440,400,481,432,538,468,586,490,634,512,692,547,765,608,822,668,817,666,761,612,689,551,632,516,583,495,535,473,477,437,437,404,399,369,345,313"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#a0e5d89893a8ae7f1358603a438aae264" title="Добавляет сообщение в журнал обмена." alt="" coords="998,359,1119,385"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="688,126,752,137,820,155,888,182,951,218,983,246,1010,280,1047,345,1042,344,1006,283,979,250,948,222,886,186,818,160,750,142,689,131"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#a0059744c7bd6262a54e52c8df4a22877" title="Отправляет текстовую команду с разделителем 0x01." alt="" coords="748,232,940,259"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="659,130,692,142,717,158,740,178,809,223,803,224,737,182,714,163,689,146,660,135"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="869,256,1024,350,1018,351,868,262"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="679,369,984,371,979,373,680,375"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="657,356,689,344,757,306,812,270,816,267,760,311,691,349,659,360"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="903,406,987,389,982,390,905,411"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="690,228,735,234,730,235,691,233"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="685,258,734,255,730,257,687,263"/>
+<area shape="poly" id="edge16_Node000010_Node000005" title=" " alt="" coords="646,305,690,293,792,263,787,265,691,299,648,310"/>
+<area shape="poly" id="edge18_Node000011_Node000004" title=" " alt="" coords="678,68,744,76,816,92,887,118,920,136,951,158,973,178,991,201,1020,251,1041,301,1053,344,1048,342,1036,303,1016,254,987,204,969,182,948,162,918,141,885,123,814,97,743,81,679,73"/>
+<area shape="poly" id="edge19_Node000011_Node000005" title=" " alt="" coords="664,79,692,91,733,120,771,154,827,219,821,219,767,157,730,124,689,96,665,85"/>
+<area shape="poly" id="edge21_Node000012_Node000005" title=" " alt="" coords="646,181,691,192,792,226,787,227,690,197,647,186"/>
+<area shape="poly" id="edge24_Node000014_Node000004" title=" " alt="" coords="422,548,532,539,666,522,809,491,880,471,949,446,992,421,1028,397,1033,394,995,426,951,450,882,476,811,497,666,527,532,545,423,553"/>
+<area shape="rect" id="Node000015" href="$class_main_window.html#a22c7b70ffea9a6689abe1299af98436a" title="Обновляет элементы интерфейса при подключении или отключении." alt="" coords="490,561,679,604"/>
+<area shape="poly" id="edge25_Node000014_Node000015" title=" " alt="" coords="423,561,478,569,472,571,423,567"/>
+<area shape="poly" id="edge27_Node000016_Node000004" title=" " alt="" coords="431,641,546,638,612,632,682,622,752,605,822,583,888,553,948,514,978,487,1003,456,1041,401,1045,398,1007,459,981,491,951,518,890,557,824,588,754,611,683,627,613,637,546,643,432,646"/>
+<area shape="poly" id="edge30_Node000016_Node000015" title=" " alt="" coords="396,621,478,605,473,607,398,626"/>
+<area shape="rect" id="Node000017" href="$class_main_window.html#a34a66f725706a36886f63f0a15552b1a" title="Сбрасывает локальное состояние текущего задания." alt="" coords="488,679,681,705"/>
+<area shape="poly" id="edge28_Node000016_Node000017" title=" " alt="" coords="397,649,507,674,502,675,397,654"/>
+<area shape="poly" id="edge29_Node000017_Node000013" title=" " alt="" coords="681,689,726,692,721,692,681,695"/>
+<area shape="poly" id="edge32_Node000018_Node000004" title=" " alt="" coords="371,729,480,761,553,776,633,786,716,788,799,779,839,770,877,756,914,738,948,715,981,683,1007,644,1026,600,1039,555,1053,468,1056,403,1060,399,1058,469,1045,556,1031,602,1012,646,985,686,951,719,916,743,879,761,840,775,799,785,716,794,632,792,552,781,479,766,370,734"/>
+<area shape="poly" id="edge34_Node000018_Node000013" title=" " alt="" coords="426,719,552,720,690,715,756,709,761,708,691,720,552,726,426,724"/>
+<area shape="poly" id="edge33_Node000018_Node000017" title=" " alt="" coords="426,705,476,703,471,704,426,711"/>
+<area shape="poly" id="edge36_Node000019_Node000004" title=" " alt="" coords="913,46,934,58,952,73,977,105,998,141,1029,216,1047,287,1056,344,1052,342,1042,288,1024,218,993,143,972,108,948,77,931,62,914,51"/>
+</map>

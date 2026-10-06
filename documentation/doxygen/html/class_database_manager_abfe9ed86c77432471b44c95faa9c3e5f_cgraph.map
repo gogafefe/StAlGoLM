@@ -1,0 +1,6 @@
+<map id="DatabaseManager::updateUserRole" name="DatabaseManager::updateUserRole">
+<area shape="rect" id="Node000001" title="Изменяет роль существующего пользователя." alt="" coords="5,29,235,56"/>
+<area shape="rect" id="Node000002" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="283,29,373,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,40,270,43,264,43,235,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="292,28,286,21,291,11,305,5,328,3,353,5,367,14,362,14,351,10,328,8,306,10,294,15,292,20,297,30"/>
+</map>

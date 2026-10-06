@@ -1,0 +1,138 @@
+classDiagram
+    direction LR
+
+    namespace Qt {
+        class QObject
+        class QTcpServer
+        class QTcpSocket
+        class QSqlDatabase
+    }
+
+    class MyTcpServer {
+        -QTcpServer mTcpServer
+        -Map sessions
+        -Map buffers
+        -MyTcpServer(parent)
+        -MyTcpServer(copy) deleted
+        +getInstance() MyTcpServer*
+        +~MyTcpServer()
+        +slotNewConnection()
+        +slotClientDisconnected()
+        +slotServerRead()
+    }
+
+    class UserSession {
+        +QString login
+        +QString email
+        +UserRole role
+        +QTcpSocket msock
+        +int currentTaskType
+        +int currentTaskNum
+        +int currentCorrectAnswer
+    }
+
+    class DatabaseManager {
+        -QSqlDatabase db
+        -DatabaseManager()
+        -DatabaseManager(copy) deleted
+        -initDatabase()
+        -initStatisticTables()
+        -updateLastAuth(login)
+        +getInstance() DatabaseManager*
+        +regUser(login, password, email, role) bool
+        +authUserWithRole(login, password) UserRole
+        +getUserRole(login) UserRole
+        +getUserEmail(login) QString
+        +deleteUser(login) bool
+        +updateUserRole(login, role) bool
+        +userExists(login) bool
+        +getAllUsers() UserInfo[]
+        +getStats() UserStats
+        +createStatisticRows(login) bool
+        +updateStatistic(login, task, problem, delta) bool
+        +getStatisticRow(login, task) int[]
+        +deleteStatisticRows(login) bool
+    }
+
+    class UserRole {
+        <<enumeration>>
+        ROLE_USER
+        ROLE_MODERATOR
+        ROLE_ADMIN
+        ROLE_ERR
+    }
+
+    class UserInfo {
+        +QString login
+        +QString email
+        +UserRole role
+        +QString registeredAt
+        +QString lastAuth
+    }
+
+    class UserStats {
+        +int totalUsers
+        +int newUsersMonth
+        +int activeUsersMonth
+    }
+
+    class CommandFunctions {
+        <<module>>
+        +processCommand(command, session) QString
+        +cmd_reg(parts) QString
+        +cmd_auth(parts, session) QString
+        +cmd_logout(session) QString
+        +cmd_whoami(session) QString
+        +cmd_del(parts, session) QString
+        +cmd_role(parts, session) QString
+        +cmd_users(session) QString
+        +cmd_stats(session) QString
+        +cmd_help() QString
+        +cmd_task(type, number, session) QString
+        +cmd_answer(answer, session) QString
+        +cmd_mystats(parts, session) QString
+    }
+
+    class TaskGenerators {
+        <<module>>
+        +task1_generate(number) Task1Problem
+        +task2_generate(number) Task2Problem
+        +task3_generate(number) Task3Problem
+        +task4_generate(number) Task4Problem
+    }
+
+    class Task1Problem {
+        +QString text
+        +int correctAnswer
+    }
+    class Task2Problem {
+        +QString text
+        +int correctAnswer
+    }
+    class Task3Problem {
+        +QString text
+        +int correctAnswer
+    }
+    class Task4Problem {
+        +QString text
+        +int correctAnswer
+    }
+
+    QObject <|-- MyTcpServer : наследование
+    MyTcpServer *-- QTcpServer : владеет
+    QTcpServer ..> QTcpSocket : принимает соединения
+    MyTcpServer *-- UserSession : хранит сессии
+    UserSession --> QTcpSocket : сокет клиента
+    UserSession --> UserRole : роль
+    MyTcpServer ..> CommandFunctions : передаёт команды
+    CommandFunctions ..> UserSession : изменяет
+    CommandFunctions ..> DatabaseManager : использует
+    CommandFunctions ..> TaskGenerators : запрашивает задания
+    DatabaseManager *-- QSqlDatabase : соединение SQLite
+    DatabaseManager ..> UserRole : использует
+    DatabaseManager ..> UserInfo : возвращает
+    DatabaseManager ..> UserStats : возвращает
+    TaskGenerators ..> Task1Problem : создаёт
+    TaskGenerators ..> Task2Problem : создаёт
+    TaskGenerators ..> Task3Problem : создаёт
+    TaskGenerators ..> Task4Problem : создаёт

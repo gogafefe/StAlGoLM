@@ -1,0 +1,8 @@
+<map id="DatabaseManager::authUserWithRole" name="DatabaseManager::authUserWithRole">
+<area shape="rect" id="Node000001" title="Проверяет учётные данные и возвращает роль пользователя." alt="" coords="5,47,194,89"/>
+<area shape="rect" id="Node000002" href="$databasemanager_8cpp.html#a272e7e4a9d59f5cce7c678533de77e73" title="Преобразует строковое имя роли в UserRole." alt="" coords="308,29,402,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,56,295,48,289,49,195,61"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#a40e408d6b0e58b853a7699128215927e" title=" " alt="" coords="242,80,468,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="194,75,229,80,223,81,194,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="312,28,304,21,310,11,327,5,355,3,386,5,403,15,398,14,384,10,355,8,328,10,313,15,310,20,317,30"/>
+</map>

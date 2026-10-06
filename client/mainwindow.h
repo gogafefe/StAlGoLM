@@ -13,15 +13,19 @@ class QRadioButton;
 class QButtonGroup;
 class QLabel;
 
-// Оконный клиент StAlGoLM.
-// Подключается к серверу по TCP (порт 33333), отправляет те же текстовые
-// команды, что и PuTTY, и показывает ответы. Каждая команда завершается
-// байтом-разделителем 0x01 — как требует протокол сервера.
+/**
+ * @brief Главное окно TCP-клиента StAlGoLM.
+ *
+ * Окно подключается к серверу на порту 33333, формирует текстовые команды,
+ * завершает их байтом 0x01 и отображает ответы. Интерфейс поддерживает
+ * регистрацию, авторизацию, четыре типа заданий и личную статистику.
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
+    /** @brief Создаёт интерфейс клиента и начинает подключение к серверу. */
     explicit MainWindow(QWidget *parent = nullptr);
 
 private slots:
@@ -44,11 +48,17 @@ private slots:
     void onMystatsClicked();
 
 private:
+    /** @brief Создаёт элементы и компоновки пользовательского интерфейса. */
     void buildUi();
+    /** @brief Отправляет текстовую команду с разделителем 0x01. */
     void sendCommand(const QString& command);
+    /** @brief Добавляет сообщение в журнал обмена. */
     void log(const QString& who, const QString& text);
+    /** @brief Обновляет элементы интерфейса при подключении или отключении. */
     void setConnectionState(bool connected);
+    /** @brief Включает или отключает варианты ответа Task2 и Task3. */
     void setRadiosEnabled(bool on);
+    /** @brief Сбрасывает локальное состояние текущего задания. */
     void resetTaskState();
 
     QTcpSocket *socket = nullptr;
@@ -74,7 +84,7 @@ private:
     QPushButton *btnGetTask;
     QPushButton *btnMystats;
 
-    // Ответ (для task2 — выбор варианта, для остальных — число)
+    // Ответ (для task2/task3 — выбор варианта, для task1/task4 — число)
     QButtonGroup *optGroup;
     QLineEdit *editAnswer;
     QPushButton *btnAnswer;

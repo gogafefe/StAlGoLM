@@ -1,0 +1,9 @@
+<map id="task2_generate" name="task2_generate">
+<area shape="rect" id="Node000001" title="Создаёт задачу на вычисление первой итерации метода Ньютона." alt="" coords="5,55,116,81"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="34,54,29,46,33,36,43,30,61,28,79,31,90,39,85,40,77,36,60,33,45,35,37,40,35,45,39,54"/>
+<area shape="rect" id="Node000002" href="$task2_8cpp.html#aa52e367ebb0da21b5ea1227cfd1b3c69" title=" " alt="" coords="164,29,262,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,56,151,52,146,54,117,61"/>
+<area shape="rect" id="Node000003" href="$task2_8cpp.html#adda1eda52f6f5e85f26c6a325e8268da" title=" " alt="" coords="189,80,236,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="116,75,176,86,171,88,116,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="186,28,182,21,185,11,196,5,213,3,231,5,242,14,237,14,229,10,213,8,197,10,189,14,187,20,191,30"/>
+</map>

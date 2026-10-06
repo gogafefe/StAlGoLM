@@ -6,7 +6,12 @@
 #include <QTcpSocket>
 #include "databasemanager.h"
 
-// Структура сессии пользователя
+/**
+ * @brief Состояние одного подключённого пользователя.
+ *
+ * Помимо данных авторизации структура хранит текущее задание и правильный
+ * ответ, поэтому разные TCP-клиенты могут решать задания независимо.
+ */
 struct UserSession {
     QString login;
     QString email;
@@ -18,10 +23,16 @@ struct UserSession {
     int currentCorrectAnswer;
 };
 
-// Обработка команды
+/**
+ * @brief Разбирает текстовую команду и вызывает соответствующий обработчик.
+ * @param command Команда без завершающего байта 0x01.
+ * @param session Сессия клиента, которую обработчик может изменить.
+ * @return Текст ответа для отправки клиенту.
+ */
 QString processCommand(const QString& command, UserSession& session);
 
-// Отдельные функции команд
+/** @name Обработчики команд аккаунта и администрирования */
+///@{
 QString cmd_reg(const QStringList& parts);
 QString cmd_auth(const QStringList& parts, UserSession& session);
 QString cmd_logout(UserSession& session);
@@ -31,12 +42,20 @@ QString cmd_role(const QStringList& parts, const UserSession& session);
 QString cmd_users(const UserSession& session);
 QString cmd_stats(const UserSession& session);
 QString cmd_help();
+///@}
 
-// Обработка запроса задания: "task1 5", "task2 3" и т.д.
+/**
+ * @brief Генерирует задание выбранного типа и сохраняет ответ в сессии.
+ * @param taskType Тип задания от 1 до 4.
+ * @param taskNum Номер шаблона задания.
+ * @param session Сессия авторизованного пользователя.
+ */
 QString cmd_task(int taskType, int taskNum, UserSession& session);
-// Обработка ответа пользователя на активное задание
+
+/** @brief Проверяет ответ и обновляет статистику активного задания. */
 QString cmd_answer(int userAnswer, UserSession& session);
-// Просмотр личной статистики: "mystats" (все) или "mystats 1" (конкретный Task)
+
+/** @brief Возвращает личную статистику по одному или всем типам заданий. */
 QString cmd_mystats(const QStringList& parts, const UserSession& session);
 
 #endif // SERVER_FUNCTIONS_H

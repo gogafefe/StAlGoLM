@@ -1,0 +1,31 @@
+<map id="fmt4" name="fmt4">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1694,80,1741,107"/>
+<area shape="rect" id="Node000002" href="$task3_8cpp.html#a3f006eac7946a1845fd343c26f007a57" title=" " alt="" coords="1544,55,1646,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1676,85,1646,81,1646,76,1682,86"/>
+<area shape="rect" id="Node000003" href="$task3_8cpp.html#a0c4e55df73910d5a9c0b28f607404c09" title="Создаёт задачу на метод половинного деления." alt="" coords="1386,80,1496,107"/>
+<area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="1675,93,1497,96,1497,91,1681,93"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="1614,39,1608,36,1595,33,1583,35,1577,40,1575,46,1578,56,1573,53,1570,46,1572,37,1581,30,1595,28,1610,31,1619,40"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="1532,79,1497,87,1496,82,1526,79"/>
+<area shape="poly" id="edge16_Node000003_Node000003" title=" " alt="" coords="1464,64,1457,61,1441,59,1427,61,1419,65,1417,71,1421,81,1416,78,1412,71,1415,62,1425,56,1441,53,1459,56,1469,65"/>
+<area shape="rect" id="Node000004" href="$server__functions_8cpp.html#abd97d6faa21356ab317495fe4142f480" title="Генерирует задание выбранного типа и сохраняет ответ в сессии." alt="" coords="1260,80,1338,107"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="1368,93,1339,96,1339,91,1373,93"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="1322,64,1314,61,1299,59,1285,61,1277,65,1275,71,1279,81,1274,78,1270,71,1273,62,1283,56,1299,53,1316,56,1327,65"/>
+<area shape="rect" id="Node000005" href="$server__functions_8cpp.html#a81af03de1406da373849210c4946e89e" title="Разбирает текстовую команду и вызывает соответствующий обработчик." alt="" coords="1084,80,1212,107"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="1242,93,1212,96,1212,91,1247,93"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="1172,64,1165,61,1148,59,1133,61,1125,65,1123,71,1127,81,1122,78,1117,71,1120,62,1131,56,1148,53,1167,56,1177,65"/>
+<area shape="rect" id="Node000006" href="$class_my_tcp_server.html#ab4a64d2eab985d723090963f5c8a2882" title="Читает команды клиента, вызывает обработчик и отправляет ответ." alt="" coords="840,80,1036,107"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="1066,93,1037,96,1037,91,1072,93"/>
+<area shape="rect" id="Node000007" href="$class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc" title="Принимает новое TCP&#45;подключение и создаёт для него сессию." alt="" coords="572,80,792,107"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="822,93,793,96,793,91,827,93"/>
+<area shape="rect" id="Node000008" href="$class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4" title=" " alt="" coords="340,80,524,107"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="553,94,525,96,524,91,559,93"/>
+<area shape="rect" id="Node000009" href="$class_my_tcp_server.html#a2874527b074f6c121a2ceecb5f93047c" title=" " alt="" coords="114,29,288,56"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="350,77,265,59,265,54,356,76"/>
+<area shape="rect" id="Node000011" href="$class_my_tcp_server.html#a6e9b750bf5899802e26c9f62b6dc6104" title=" " alt="" coords="109,80,292,107"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="323,94,293,96,293,91,328,93"/>
+<area shape="rect" id="Node000012" href="$class_my_tcp_server.html#af78a6dd06ea3553f56fb0b9a5d3ef228" title=" " alt="" coords="120,131,281,157"/>
+<area shape="poly" id="edge15_Node000008_Node000012" title=" " alt="" coords="356,110,266,133,265,127,350,111"/>
+<area shape="rect" id="Node000010" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Точка входа серверного приложения." alt="" coords="12,29,61,56"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="96,44,63,45,61,40,101,41"/>
+<area shape="poly" id="edge13_Node000010_Node000010" title=" " alt="" coords="64,16,56,11,36,8,19,10,10,15,8,21,14,29,9,30,3,21,6,11,18,5,37,3,58,6,69,14"/>
+</map>

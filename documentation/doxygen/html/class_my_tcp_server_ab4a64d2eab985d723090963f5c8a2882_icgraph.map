@@ -1,0 +1,16 @@
+<map id="MyTcpServer::slotServerRead" name="MyTcpServer::slotServerRead">
+<area shape="rect" id="Node000001" title="Читает команды клиента, вызывает обработчик и отправляет ответ." alt="" coords="840,80,1036,107"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc" title="Принимает новое TCP&#45;подключение и создаёт для него сессию." alt="" coords="572,80,792,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="822,93,793,96,793,91,827,93"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4" title=" " alt="" coords="340,80,524,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,94,525,96,524,91,559,93"/>
+<area shape="rect" id="Node000004" href="$class_my_tcp_server.html#a2874527b074f6c121a2ceecb5f93047c" title=" " alt="" coords="114,29,288,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="350,77,265,59,265,54,356,76"/>
+<area shape="rect" id="Node000006" href="$class_my_tcp_server.html#a6e9b750bf5899802e26c9f62b6dc6104" title=" " alt="" coords="109,80,292,107"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="323,94,293,96,293,91,328,93"/>
+<area shape="rect" id="Node000007" href="$class_my_tcp_server.html#af78a6dd06ea3553f56fb0b9a5d3ef228" title=" " alt="" coords="120,131,281,157"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="356,110,266,133,265,127,350,111"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Точка входа серверного приложения." alt="" coords="12,29,61,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="96,44,63,45,61,40,101,41"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="64,16,56,11,36,8,19,10,10,15,8,21,14,29,9,30,3,21,6,11,18,5,37,3,58,6,69,14"/>
+</map>

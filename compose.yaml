@@ -1,0 +1,15 @@
+services:
+  server:
+    image: stalgolm-main-server:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: stalgolm-server
+    ports:
+      - "33333:33333"
+    volumes:
+      - stalgolm-data:/data
+    restart: unless-stopped
+
+volumes:
+  stalgolm-data:

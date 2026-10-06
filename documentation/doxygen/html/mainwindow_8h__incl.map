@@ -1,0 +1,7 @@
+<map id="mainwindow.h" name="mainwindow.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="68,5,172,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,112,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,31,81,70,77,66,107,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,80,229,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,30,164,68,159,68,130,35"/>
+</map>

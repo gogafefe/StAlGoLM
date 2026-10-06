@@ -1,0 +1,5 @@
+<map id="MyTcpServer" name="MyTcpServer">
+<area shape="rect" id="Node000001" title="TCP&#45;сервер приложения StAlGoLM." alt="" coords="5,123,172,384"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="60,5,118,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,87,91,123,86,123,88,92"/>
+</map>

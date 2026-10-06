@@ -1,0 +1,15 @@
+<map id="cmd_del" name="cmd_del">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,76,81"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="9,55,3,46,7,36,20,30,41,28,63,31,76,39,71,40,61,36,40,33,21,35,11,40,9,45,14,53"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f" title=" " alt="" coords="124,55,327,81"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="76,65,110,67,105,69,77,71"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="375,47,566,89"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="327,65,362,68,357,68,328,71"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="614,55,823,81"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="567,65,601,68,596,68,567,71"/>
+<area shape="rect" id="Node000005" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="871,5,1071,48"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="804,51,853,46,858,45,805,57"/>
+<area shape="rect" id="Node000006" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="926,96,1016,123"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="805,79,913,100,908,99,804,85"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="928,94,921,87,926,77,943,71,971,69,1001,72,1019,82,1013,81,1000,77,971,75,944,77,930,82,926,87,933,97"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MainWindow::resetTaskState" name="MainWindow::resetTaskState">
+<area shape="rect" id="Node000001" title="Сбрасывает локальное состояние текущего задания." alt="" coords="5,5,198,32"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a086a0d78e393cc8717578f8bf499aa14" title="Включает или отключает варианты ответа Task2 и Task3." alt="" coords="246,5,456,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,16,233,19,228,19,198,21"/>
+</map>

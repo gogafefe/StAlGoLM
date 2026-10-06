@@ -20,7 +20,6 @@ SOURCES += \
 
 HEADERS += \
     mytcpserver.h \
-    mytcpserver.h \
     server_functions.h \
     databasemanager.h \
     task1.h \

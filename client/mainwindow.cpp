@@ -111,9 +111,9 @@ void MainWindow::buildUi()
     taskRow->addWidget(btnMystats);
     taskRow->addStretch();
 
-    // диапазон номера шаблона зависит от задания: у task2 их 10, у остальных 40
+    // У task2 и task3 по 10 шаблонов, у task1 и task4 — по 40.
     connect(comboTask, &QComboBox::currentTextChanged, this, [this](const QString &t) {
-        spinTaskNum->setRange(1, t == "task2" ? 10 : 40);
+        spinTaskNum->setRange(1, (t == "task2" || t == "task3") ? 10 : 40);
     });
     connect(btnGetTask, &QPushButton::clicked, this, &MainWindow::onGetTaskClicked);
     connect(btnMystats, &QPushButton::clicked, this, &MainWindow::onMystatsClicked);
@@ -123,7 +123,7 @@ void MainWindow::buildUi()
     QGroupBox *gbAns = new QGroupBox("Ответ");
     QVBoxLayout *ansCol = new QVBoxLayout(gbAns);
     QHBoxLayout *optRow = new QHBoxLayout;
-    optRow->addWidget(new QLabel("task2 — какой x1 верный?"));
+    optRow->addWidget(new QLabel("task2 / task3 — выберите верный вариант:"));
     optGroup = new QButtonGroup(this);
     for (int i = 1; i <= 4; i++) {
         QRadioButton *r = new QRadioButton(QString("Вариант %1").arg(i));
@@ -133,7 +133,7 @@ void MainWindow::buildUi()
     optRow->addStretch();
     ansCol->addLayout(optRow);
     editAnswer = new QLineEdit;
-    editAnswer->setPlaceholderText("task1: 1 или 2;   task3 / task4: посчитанная сумма");
+    editAnswer->setPlaceholderText("task1: 1 или 2;   task4: посчитанная сумма");
     ansCol->addWidget(editAnswer);
     btnAnswer = new QPushButton("Отправить ответ");
     ansCol->addWidget(btnAnswer);
@@ -237,26 +237,24 @@ void MainWindow::onReadyRead()
     }
 
     // --- Пришло задание ---
-    if (text.contains("Задание Task2")) {
-        activeTaskType = 2;
-        // для task2 — выбор варианта: включаем радиокнопки, поле ввода выключаем
+    if (text.contains("Задание Task2") || text.contains("Задание Task3")) {
+        activeTaskType = text.contains("Задание Task2") ? 2 : 3;
+        // Для task2/task3 включаем выбор одного из четырёх вариантов.
         setRadiosEnabled(true);
         editAnswer->setEnabled(false);
-        // Подставляем реальные значения вариантов из текста задания:
-        // строки вида "1) x1 = -0.6667"
-        QRegularExpression re("(?m)^([1-4])\\) x1 = (\\S+)");
+        // Подставляем реальные значения вариантов из строк
+        // "1) x1 = ..." (Task2) или "1) x = ..." (Task3).
+        QRegularExpression re("(?m)^([1-4])\\)\\s+(?:x1|x)\\s*=\\s*(\\S+)");
         auto it = re.globalMatch(text);
         while (it.hasNext()) {
             auto m = it.next();
             QAbstractButton *b = optGroup->button(m.captured(1).toInt());
             if (b)
-                b->setText(QString("%1) x1 = %2").arg(m.captured(1), m.captured(2)));
+                b->setText(m.captured(0).trimmed());
         }
-    } else if (text.contains("Задание Task1") || text.contains("Задание Task3")
-               || text.contains("Задание Task4")) {
-        activeTaskType = text.contains("Задание Task1") ? 1
-                       : text.contains("Задание Task3") ? 3 : 4;
-        // для остальных заданий ответ — число в поле ввода
+    } else if (text.contains("Задание Task1") || text.contains("Задание Task4")) {
+        activeTaskType = text.contains("Задание Task1") ? 1 : 4;
+        // Для task1/task4 ответ вводится числом.
         setRadiosEnabled(false);
         editAnswer->setEnabled(true);
         editAnswer->clear();
@@ -332,7 +330,7 @@ void MainWindow::onAnswerClicked()
         log("клиент", "Сначала получите задание.");
         return;
     }
-    if (activeTaskType == 2) {
+    if (activeTaskType == 2 || activeTaskType == 3) {
         int id = optGroup->checkedId();
         if (id < 1) {
             log("клиент", "Выберите вариант ответа (1-4).");

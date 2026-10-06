@@ -1,0 +1,12 @@
+<map id="DatabaseManager::operator=" name="DatabaseManager::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,196,81"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="244,47,435,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,65,230,68,225,68,196,71"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="483,55,691,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,65,470,68,465,68,436,71"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="739,5,940,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="673,51,721,46,727,45,673,57"/>
+<area shape="rect" id="Node000005" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="794,96,885,123"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="673,79,782,100,776,99,673,85"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="797,94,790,87,795,77,812,71,840,69,870,72,887,82,882,81,869,77,839,75,813,77,798,82,795,87,802,97"/>
+</map>

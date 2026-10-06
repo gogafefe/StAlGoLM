@@ -1,0 +1,8 @@
+<map id="DatabaseManager::initDatabase" name="DatabaseManager::initDatabase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,214,81"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="262,5,462,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,51,249,45,244,46,196,57"/>
+<area shape="rect" id="Node000003" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="317,96,407,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,79,304,99,299,100,195,85"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="319,95,312,87,317,77,334,71,362,69,392,72,410,82,404,81,391,77,362,75,335,77,321,82,317,87,324,96"/>
+</map>

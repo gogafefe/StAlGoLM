@@ -1,0 +1,10 @@
+<map id="MainWindow::onReadyRead" name="MainWindow::onReadyRead">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,193,83"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a0e5d89893a8ae7f1358603a438aae264" title="Добавляет сообщение в журнал обмена." alt="" coords="276,5,398,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,53,263,34,258,36,166,58"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a34a66f725706a36886f63f0a15552b1a" title="Сбрасывает локальное состояние текущего задания." alt="" coords="241,56,433,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,67,228,69,223,70,193,72"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#a086a0d78e393cc8717578f8bf499aa14" title="Включает или отключает варианты ответа Task2 и Task3." alt="" coords="481,81,691,108"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="164,81,241,92,356,98,468,100,463,100,356,103,240,97,164,86"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="434,76,468,82,463,82,433,82"/>
+</map>

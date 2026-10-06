@@ -1,0 +1,7 @@
+<map id="cmd_whoami" name="cmd_whoami">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,104,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="29,29,25,21,28,11,38,5,55,3,72,5,82,14,77,14,70,10,54,8,40,10,32,14,31,20,35,29"/>
+<area shape="rect" id="Node000002" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="152,29,242,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="104,40,139,42,133,43,104,45"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="172,28,168,21,171,11,181,5,197,3,214,5,225,15,219,14,212,10,197,8,182,10,175,14,173,20,177,30"/>
+</map>

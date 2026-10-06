@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Класс MyTcpServer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_my_tcp_server.html','','class_my_tcp_server-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс MyTcpServer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP-сервер приложения StAlGoLM.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:MyTcpServer:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server__inherit__graph.svg" width="178" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф связей класса MyTcpServer:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server__coll__graph.svg" width="178" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-slots" class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:a0ba7316ffe1a26c57fabde9e74b6c8dc" id="r_a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">slotNewConnection</a> ()</td></tr>
+<tr class="memdesc:a0ba7316ffe1a26c57fabde9e74b6c8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принимает новое TCP-подключение и создаёт для него сессию.  <br /></td></tr>
+<tr class="memitem:a3e040c49dbefd65b9a58ab662fc9f7a2" id="r_a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3e040c49dbefd65b9a58ab662fc9f7a2">slotClientDisconnected</a> ()</td></tr>
+<tr class="memdesc:a3e040c49dbefd65b9a58ab662fc9f7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет данные сессии отключившегося клиента.  <br /></td></tr>
+<tr class="memitem:ab4a64d2eab985d723090963f5c8a2882" id="r_ab4a64d2eab985d723090963f5c8a2882"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab4a64d2eab985d723090963f5c8a2882">slotServerRead</a> ()</td></tr>
+<tr class="memdesc:ab4a64d2eab985d723090963f5c8a2882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Читает команды клиента, вызывает обработчик и отправляет ответ.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab39e651ff7c37c152215c02c225e79ef" id="r_ab39e651ff7c37c152215c02c225e79ef"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab39e651ff7c37c152215c02c225e79ef">~MyTcpServer</a> ()</td></tr>
+<tr class="memdesc:ab39e651ff7c37c152215c02c225e79ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останавливает прослушивание порта и уничтожает сервер.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a2874527b074f6c121a2ceecb5f93047c" id="r_a2874527b074f6c121a2ceecb5f93047c"><td class="memItemLeft">static <a class="el" href="class_my_tcp_server.html">MyTcpServer</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a2874527b074f6c121a2ceecb5f93047c">getInstance</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:acf367c4695b4d160c7a2d25c2afaaec4" id="r_acf367c4695b4d160c7a2d25c2afaaec4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf367c4695b4d160c7a2d25c2afaaec4">MyTcpServer</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a6e9b750bf5899802e26c9f62b6dc6104" id="r_a6e9b750bf5899802e26c9f62b6dc6104"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6e9b750bf5899802e26c9f62b6dc6104">MyTcpServer</a> (const <a class="el" href="class_my_tcp_server.html">MyTcpServer</a> &amp;)=delete</td></tr>
+<tr class="memitem:af78a6dd06ea3553f56fb0b9a5d3ef228" id="r_af78a6dd06ea3553f56fb0b9a5d3ef228"><td class="memItemLeft"><a class="el" href="class_my_tcp_server.html">MyTcpServer</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af78a6dd06ea3553f56fb0b9a5d3ef228">operator=</a> (const <a class="el" href="class_my_tcp_server.html">MyTcpServer</a> &amp;)=delete</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a7d854875e1e02887023ec9aac1a1542c" id="r_a7d854875e1e02887023ec9aac1a1542c"><td class="memItemLeft">QTcpServer *&#160;</td><td class="memItemRight"><a class="el" href="#a7d854875e1e02887023ec9aac1a1542c">mTcpServer</a></td></tr>
+<tr class="memitem:a3b8a8faf9235808d4ab031fa70c472df" id="r_a3b8a8faf9235808d4ab031fa70c472df"><td class="memItemLeft">QMap&lt; long, <a class="el" href="struct_user_session.html">UserSession</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3b8a8faf9235808d4ab031fa70c472df">mSessions</a></td></tr>
+<tr class="memitem:a346214ad545407947d6178dc9ddca475" id="r_a346214ad545407947d6178dc9ddca475"><td class="memItemLeft">QMap&lt; long, QByteArray &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a346214ad545407947d6178dc9ddca475">mBuffers</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>TCP-сервер приложения StAlGoLM. </p>
+<p>Класс принимает подключения на порту 33333, накапливает входящие байты до разделителя 0x01 и передаёт готовые текстовые команды в <a class="el" href="server__functions_8h.html#a81af03de1406da373849210c4946e89e" title="Разбирает текстовую команду и вызывает соответствующий обработчик.">processCommand()</a>. Для каждого сокета хранится отдельная <a class="el" href="struct_user_session.html" title="Состояние одного подключённого пользователя.">UserSession</a>.</p>
+<p><a class="el" href="class_my_tcp_server.html" title="TCP-сервер приложения StAlGoLM.">MyTcpServer</a> реализован как синглтон: экземпляр создаётся и возвращается методом <a class="el" href="#a2874527b074f6c121a2ceecb5f93047c">getInstance()</a>, а копирование запрещено. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="mytcpserver_8h_source.html#l00020">20</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ab39e651ff7c37c152215c02c225e79ef" name="ab39e651ff7c37c152215c02c225e79ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39e651ff7c37c152215c02c225e79ef">&#9670;&#160;</a></span>~MyTcpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MyTcpServer::~MyTcpServer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Останавливает прослушивание порта и уничтожает сервер. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="mytcpserver_8cpp_source.html#l00024">24</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8h_source.html#l00035">mTcpServer</a>.</p>
+
+</div>
+</div>
+<a id="acf367c4695b4d160c7a2d25c2afaaec4" name="acf367c4695b4d160c7a2d25c2afaaec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf367c4695b4d160c7a2d25c2afaaec4">&#9670;&#160;</a></span>MyTcpServer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MyTcpServer::MyTcpServer </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="mytcpserver_8cpp_source.html#l00011">11</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8h_source.html#l00035">mTcpServer</a> и <a class="el" href="mytcpserver_8cpp_source.html#l00029">slotNewConnection()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00005">getInstance()</a>, <a class="el" href="#a6e9b750bf5899802e26c9f62b6dc6104">MyTcpServer()</a> и <a class="el" href="#af78a6dd06ea3553f56fb0b9a5d3ef228">operator=()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4_icgraph.svg" width="530" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6e9b750bf5899802e26c9f62b6dc6104" name="a6e9b750bf5899802e26c9f62b6dc6104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9b750bf5899802e26c9f62b6dc6104">&#9670;&#160;</a></span>MyTcpServer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MyTcpServer::MyTcpServer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_my_tcp_server.html">MyTcpServer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8cpp_source.html#l00011">MyTcpServer()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_a6e9b750bf5899802e26c9f62b6dc6104_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a2874527b074f6c121a2ceecb5f93047c" name="a2874527b074f6c121a2ceecb5f93047c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2874527b074f6c121a2ceecb5f93047c">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_my_tcp_server.html">MyTcpServer</a> * MyTcpServer::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Возвращает</dt><dd>Единственный экземпляр TCP-сервера. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="mytcpserver_8cpp_source.html#l00005">5</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8cpp_source.html#l00011">MyTcpServer()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="main_8cpp_source.html#l00009">main()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_a2874527b074f6c121a2ceecb5f93047c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_a2874527b074f6c121a2ceecb5f93047c_icgraph.svg" width="288" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af78a6dd06ea3553f56fb0b9a5d3ef228" name="af78a6dd06ea3553f56fb0b9a5d3ef228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78a6dd06ea3553f56fb0b9a5d3ef228">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_my_tcp_server.html">MyTcpServer</a> &amp; MyTcpServer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_my_tcp_server.html">MyTcpServer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8cpp_source.html#l00011">MyTcpServer()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_af78a6dd06ea3553f56fb0b9a5d3ef228_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3e040c49dbefd65b9a58ab662fc9f7a2" name="a3e040c49dbefd65b9a58ab662fc9f7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e040c49dbefd65b9a58ab662fc9f7a2">&#9670;&#160;</a></span>slotClientDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MyTcpServer::slotClientDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляет данные сессии отключившегося клиента. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="mytcpserver_8cpp_source.html#l00095">95</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8h_source.html#l00037">mBuffers</a> и <a class="el" href="mytcpserver_8h_source.html#l00036">mSessions</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00029">slotNewConnection()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_a3e040c49dbefd65b9a58ab662fc9f7a2_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0ba7316ffe1a26c57fabde9e74b6c8dc" name="a0ba7316ffe1a26c57fabde9e74b6c8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba7316ffe1a26c57fabde9e74b6c8dc">&#9670;&#160;</a></span>slotNewConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MyTcpServer::slotNewConnection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Принимает новое TCP-подключение и создаёт для него сессию. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="mytcpserver_8cpp_source.html#l00029">29</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8h_source.html#l00036">mSessions</a>, <a class="el" href="mytcpserver_8h_source.html#l00035">mTcpServer</a>, <a class="el" href="databasemanager_8h_source.html#l00014">ROLE_USER</a>, <a class="el" href="mytcpserver_8cpp_source.html#l00095">slotClientDisconnected()</a> и <a class="el" href="mytcpserver_8cpp_source.html#l00049">slotServerRead()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00011">MyTcpServer()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_a0ba7316ffe1a26c57fabde9e74b6c8dc_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_a0ba7316ffe1a26c57fabde9e74b6c8dc_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab4a64d2eab985d723090963f5c8a2882" name="ab4a64d2eab985d723090963f5c8a2882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a64d2eab985d723090963f5c8a2882">&#9670;&#160;</a></span>slotServerRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MyTcpServer::slotServerRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Читает команды клиента, вызывает обработчик и отправляет ответ. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a> строка <a class="el" href="mytcpserver_8cpp_source.html#l00049">49</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mytcpserver_8h_source.html#l00037">mBuffers</a>, <a class="el" href="mytcpserver_8h_source.html#l00036">mSessions</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00029">slotNewConnection()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_ab4a64d2eab985d723090963f5c8a2882_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_my_tcp_server_ab4a64d2eab985d723090963f5c8a2882_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a346214ad545407947d6178dc9ddca475" name="a346214ad545407947d6178dc9ddca475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346214ad545407947d6178dc9ddca475">&#9670;&#160;</a></span>mBuffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMap&lt;long, QByteArray&gt; MyTcpServer::mBuffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="mytcpserver_8h_source.html#l00037">37</a></p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00095">slotClientDisconnected()</a> и <a class="el" href="mytcpserver_8cpp_source.html#l00049">slotServerRead()</a>.</p>
+
+</div>
+</div>
+<a id="a3b8a8faf9235808d4ab031fa70c472df" name="a3b8a8faf9235808d4ab031fa70c472df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8a8faf9235808d4ab031fa70c472df">&#9670;&#160;</a></span>mSessions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMap&lt;long, <a class="el" href="struct_user_session.html">UserSession</a>&gt; MyTcpServer::mSessions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="mytcpserver_8h_source.html#l00036">36</a></p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00095">slotClientDisconnected()</a>, <a class="el" href="mytcpserver_8cpp_source.html#l00029">slotNewConnection()</a> и <a class="el" href="mytcpserver_8cpp_source.html#l00049">slotServerRead()</a>.</p>
+
+</div>
+</div>
+<a id="a7d854875e1e02887023ec9aac1a1542c" name="a7d854875e1e02887023ec9aac1a1542c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d854875e1e02887023ec9aac1a1542c">&#9670;&#160;</a></span>mTcpServer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpServer* MyTcpServer::mTcpServer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a> строка <a class="el" href="mytcpserver_8h_source.html#l00035">35</a></p>
+
+<p class="reference">Используется в <a class="el" href="mytcpserver_8cpp_source.html#l00011">MyTcpServer()</a>, <a class="el" href="mytcpserver_8cpp_source.html#l00029">slotNewConnection()</a> и <a class="el" href="mytcpserver_8cpp_source.html#l00024">~MyTcpServer()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="mytcpserver_8h_source.html">mytcpserver.h</a></li>
+<li><a class="el" href="mytcpserver_8cpp_source.html">mytcpserver.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_my_tcp_server.html">MyTcpServer</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
