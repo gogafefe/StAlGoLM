@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Структура UserSession</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_user_session.html','','struct_user_session-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Структура UserSession</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Состояние одного подключённого пользователя.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="server__functions_8h_source.html">server_functions.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса UserSession:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="struct_user_session__coll__graph.svg" width="162" height="208"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a93e8aaadd627d06903dd847f13a77f60" id="r_a93e8aaadd627d06903dd847f13a77f60"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a93e8aaadd627d06903dd847f13a77f60">login</a></td></tr>
+<tr class="memitem:a8b7a2957a0553ed26aa19f85e6416ef5" id="r_a8b7a2957a0553ed26aa19f85e6416ef5"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a8b7a2957a0553ed26aa19f85e6416ef5">email</a></td></tr>
+<tr class="memitem:aa733df7e106271d80f78280e3c8bc70c" id="r_aa733df7e106271d80f78280e3c8bc70c"><td class="memItemLeft"><a class="el" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa733df7e106271d80f78280e3c8bc70c">role</a></td></tr>
+<tr class="memitem:aefdc1fb61d18473345f17a60573c76da" id="r_aefdc1fb61d18473345f17a60573c76da"><td class="memItemLeft">QTcpSocket *&#160;</td><td class="memItemRight"><a class="el" href="#aefdc1fb61d18473345f17a60573c76da">msock</a></td></tr>
+<tr class="memitem:a4860280027a17646016a68615793485e" id="r_a4860280027a17646016a68615793485e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4860280027a17646016a68615793485e">currentTaskType</a></td></tr>
+<tr class="memitem:a5b45751925e583b579ad395393a24828" id="r_a5b45751925e583b579ad395393a24828"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a5b45751925e583b579ad395393a24828">currentTaskNum</a></td></tr>
+<tr class="memitem:a9fac56ec5389f5a2ee8e6634bdd2a846" id="r_a9fac56ec5389f5a2ee8e6634bdd2a846"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9fac56ec5389f5a2ee8e6634bdd2a846">currentCorrectAnswer</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Состояние одного подключённого пользователя. </p>
+<p>Помимо данных авторизации структура хранит текущее задание и правильный ответ, поэтому разные TCP-клиенты могут решать задания независимо. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00015">15</a></p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a9fac56ec5389f5a2ee8e6634bdd2a846" name="a9fac56ec5389f5a2ee8e6634bdd2a846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fac56ec5389f5a2ee8e6634bdd2a846">&#9670;&#160;</a></span>currentCorrectAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UserSession::currentCorrectAnswer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00023">23</a></p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a>, <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a> и <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a>.</p>
+
+</div>
+</div>
+<a id="a5b45751925e583b579ad395393a24828" name="a5b45751925e583b579ad395393a24828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b45751925e583b579ad395393a24828">&#9670;&#160;</a></span>currentTaskNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UserSession::currentTaskNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00022">22</a></p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a>, <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a> и <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a>.</p>
+
+</div>
+</div>
+<a id="a4860280027a17646016a68615793485e" name="a4860280027a17646016a68615793485e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4860280027a17646016a68615793485e">&#9670;&#160;</a></span>currentTaskType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UserSession::currentTaskType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00021">21</a></p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a>, <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a>, <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+
+</div>
+</div>
+<a id="a8b7a2957a0553ed26aa19f85e6416ef5" name="a8b7a2957a0553ed26aa19f85e6416ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7a2957a0553ed26aa19f85e6416ef5">&#9670;&#160;</a></span>email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString UserSession::email</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00017">17</a></p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a> и <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a>.</p>
+
+</div>
+</div>
+<a id="a93e8aaadd627d06903dd847f13a77f60" name="a93e8aaadd627d06903dd847f13a77f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e8aaadd627d06903dd847f13a77f60">&#9670;&#160;</a></span>login</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString UserSession::login</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00016">16</a></p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a>, <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a>, <a class="el" href="server__functions_8cpp_source.html#l00384">cmd_mystats()</a>, <a class="el" href="server__functions_8cpp_source.html#l00188">cmd_role()</a>, <a class="el" href="server__functions_8cpp_source.html#l00242">cmd_stats()</a>, <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a>, <a class="el" href="server__functions_8cpp_source.html#l00216">cmd_users()</a> и <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a>.</p>
+
+</div>
+</div>
+<a id="aefdc1fb61d18473345f17a60573c76da" name="aefdc1fb61d18473345f17a60573c76da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefdc1fb61d18473345f17a60573c76da">&#9670;&#160;</a></span>msock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* UserSession::msock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="aa733df7e106271d80f78280e3c8bc70c" name="aa733df7e106271d80f78280e3c8bc70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa733df7e106271d80f78280e3c8bc70c">&#9670;&#160;</a></span>role</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> UserSession::role</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8h_source.html">server_functions.h</a> строка <a class="el" href="server__functions_8h_source.html#l00018">18</a></p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a>, <a class="el" href="server__functions_8cpp_source.html#l00188">cmd_role()</a>, <a class="el" href="server__functions_8cpp_source.html#l00242">cmd_stats()</a>, <a class="el" href="server__functions_8cpp_source.html#l00216">cmd_users()</a> и <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="server__functions_8h_source.html">server_functions.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_user_session.html">UserSession</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

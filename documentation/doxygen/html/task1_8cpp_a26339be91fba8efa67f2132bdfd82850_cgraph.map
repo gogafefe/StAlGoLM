@@ -1,0 +1,14 @@
+<map id="task1_generate" name="task1_generate">
+<area shape="rect" id="Node000001" title="Создаёт задачу сравнения методов трапеций и Симпсона." alt="" coords="5,80,116,107"/>
+<area shape="poly" id="edge8_Node000001_Node000001" title=" " alt="" coords="31,80,27,71,30,62,42,56,61,53,81,56,93,64,88,65,79,61,60,59,43,61,34,65,32,71,37,79"/>
+<area shape="rect" id="Node000002" href="$task1_8cpp.html#ae80db37bca078832862fccd042c7eabc" title=" " alt="" coords="164,29,292,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,77,169,59,165,63,108,82"/>
+<area shape="rect" id="Node000003" href="$task1_8cpp.html#a64e6e337e3162af495e7caf51d2aafc5" title=" " alt="" coords="340,117,474,144"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="116,97,326,119,323,124,116,102"/>
+<area shape="rect" id="Node000004" href="$task1_8cpp.html#adf186a1f0f796693713409fdca3a5f65" title=" " alt="" coords="169,155,287,181"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="93,105,185,147,180,149,92,110"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="199,28,194,21,197,11,209,5,228,3,248,5,260,14,255,14,246,10,228,8,211,10,201,15,199,20,204,29"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="376,116,371,109,375,99,387,93,407,91,429,93,441,102,436,102,427,98,407,96,389,98,379,103,376,108,381,118"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="287,153,322,148,328,147,288,158"/>
+<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="199,153,194,146,197,136,209,130,228,128,248,131,260,140,255,139,246,136,228,133,211,135,201,140,199,145,204,155"/>
+</map>

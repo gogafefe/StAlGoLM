@@ -1,0 +1,10 @@
+<map id="MainWindow::setConnectionState" name="MainWindow::setConnectionState">
+<area shape="rect" id="Node000001" title="Обновляет элементы интерфейса при подключении или отключении." alt="" coords="479,23,667,65"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a95c5779447a66e87120526d332aaef1f" title=" " alt="" coords="241,5,422,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="461,33,423,31,423,26,466,32"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#aa34b96b03c221e201ff14b278c59517a" title=" " alt="" coords="233,56,431,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="466,55,432,62,431,56,461,56"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Создаёт интерфейс клиента и начинает подключение к серверу." alt="" coords="5,31,185,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,31,186,37,185,32,228,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="214,57,185,56,185,51,220,57"/>
+</map>

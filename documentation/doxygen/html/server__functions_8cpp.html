@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Файл server_functions.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('server__functions_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл server_functions.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="server__functions_8h_source.html">server_functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="task1_8h_source.html">task1.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="task2_8h_source.html">task2.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="task3_8h_source.html">task3.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="task4_8h_source.html">task4.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для server_functions.cpp:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp__incl.svg" width="100%" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="server__functions_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a81af03de1406da373849210c4946e89e" id="r_a81af03de1406da373849210c4946e89e"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a81af03de1406da373849210c4946e89e">processCommand</a> (const QString &amp;command, <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memdesc:a81af03de1406da373849210c4946e89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбирает текстовую команду и вызывает соответствующий обработчик.  <br /></td></tr>
+<tr class="memitem:a33acd3f8a2873fdbbe3f525c3b2e4c26" id="r_a33acd3f8a2873fdbbe3f525c3b2e4c26"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a33acd3f8a2873fdbbe3f525c3b2e4c26">cmd_reg</a> (const QStringList &amp;parts)</td></tr>
+<tr class="memitem:a769c508f2e715dd2e712066863088176" id="r_a769c508f2e715dd2e712066863088176"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a769c508f2e715dd2e712066863088176">cmd_auth</a> (const QStringList &amp;parts, <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:aab81bb6b3ac5c149146a69742b5fe4ad" id="r_aab81bb6b3ac5c149146a69742b5fe4ad"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#aab81bb6b3ac5c149146a69742b5fe4ad">cmd_logout</a> (<a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:a4b194caf37601e4c86dce56517a6b520" id="r_a4b194caf37601e4c86dce56517a6b520"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a4b194caf37601e4c86dce56517a6b520">cmd_whoami</a> (const <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:a6387a2703c8a2a88b2122c3b5896fc41" id="r_a6387a2703c8a2a88b2122c3b5896fc41"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a6387a2703c8a2a88b2122c3b5896fc41">cmd_del</a> (const QStringList &amp;parts, <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:a0213d3193cca60e6b49b6e5cbe99ca87" id="r_a0213d3193cca60e6b49b6e5cbe99ca87"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a0213d3193cca60e6b49b6e5cbe99ca87">cmd_role</a> (const QStringList &amp;parts, const <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:a9e17555fa3a625f3d4cf8594bc7ad6b9" id="r_a9e17555fa3a625f3d4cf8594bc7ad6b9"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a9e17555fa3a625f3d4cf8594bc7ad6b9">cmd_users</a> (const <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:afff7fee86461ffb5eba5ef712b323668" id="r_afff7fee86461ffb5eba5ef712b323668"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#afff7fee86461ffb5eba5ef712b323668">cmd_stats</a> (const <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memitem:a8feb9f9cd54f0e200faa71d97d170055" id="r_a8feb9f9cd54f0e200faa71d97d170055"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a8feb9f9cd54f0e200faa71d97d170055">cmd_help</a> ()</td></tr>
+<tr class="memitem:abd97d6faa21356ab317495fe4142f480" id="r_abd97d6faa21356ab317495fe4142f480"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#abd97d6faa21356ab317495fe4142f480">cmd_task</a> (int taskType, int taskNum, <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memdesc:abd97d6faa21356ab317495fe4142f480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Генерирует задание выбранного типа и сохраняет ответ в сессии.  <br /></td></tr>
+<tr class="memitem:ac0fd90bd5f47d004cf60b567c43cf077" id="r_ac0fd90bd5f47d004cf60b567c43cf077"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#ac0fd90bd5f47d004cf60b567c43cf077">cmd_answer</a> (int userAnswer, <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memdesc:ac0fd90bd5f47d004cf60b567c43cf077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет ответ и обновляет статистику активного задания.  <br /></td></tr>
+<tr class="memitem:a90489a136779444aae8d20b3a78412d5" id="r_a90489a136779444aae8d20b3a78412d5"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a90489a136779444aae8d20b3a78412d5">cmd_mystats</a> (const QStringList &amp;parts, const <a class="el" href="struct_user_session.html">UserSession</a> &amp;session)</td></tr>
+<tr class="memdesc:a90489a136779444aae8d20b3a78412d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает личную статистику по одному или всем типам заданий.  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="ac0fd90bd5f47d004cf60b567c43cf077" name="ac0fd90bd5f47d004cf60b567c43cf077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fd90bd5f47d004cf60b567c43cf077">&#9670;&#160;</a></span>cmd_answer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_answer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>userAnswer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет ответ и обновляет статистику активного задания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00342">342</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a>, <a class="el" href="server__functions_8h_source.html#l00023">UserSession::currentCorrectAnswer</a>, <a class="el" href="server__functions_8h_source.html#l00022">UserSession::currentTaskNum</a>, <a class="el" href="server__functions_8h_source.html#l00021">UserSession::currentTaskType</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00295">DatabaseManager::getStatisticRow()</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a> и <a class="el" href="databasemanager_8cpp_source.html#l00280">DatabaseManager::updateStatistic()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_ac0fd90bd5f47d004cf60b567c43cf077_cgraph.svg" width="100%" height="441"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_ac0fd90bd5f47d004cf60b567c43cf077_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a769c508f2e715dd2e712066863088176" name="a769c508f2e715dd2e712066863088176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769c508f2e715dd2e712066863088176">&#9670;&#160;</a></span>cmd_auth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_auth </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>parts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00106">106</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="databasemanager_8cpp_source.html#l00130">DatabaseManager::authUserWithRole()</a>, <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8h_source.html#l00023">UserSession::currentCorrectAnswer</a>, <a class="el" href="server__functions_8h_source.html#l00022">UserSession::currentTaskNum</a>, <a class="el" href="server__functions_8h_source.html#l00021">UserSession::currentTaskType</a>, <a class="el" href="server__functions_8h_source.html#l00017">UserSession::email</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00165">DatabaseManager::getUserEmail()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00154">DatabaseManager::getUserRole()</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a>, <a class="el" href="databasemanager_8h_source.html#l00017">ROLE_ERR</a> и <a class="el" href="databasemanager_8cpp_source.html#l00013">roleToString()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a769c508f2e715dd2e712066863088176_cgraph.svg" width="100%" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a769c508f2e715dd2e712066863088176_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a6387a2703c8a2a88b2122c3b5896fc41" name="a6387a2703c8a2a88b2122c3b5896fc41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6387a2703c8a2a88b2122c3b5896fc41">&#9670;&#160;</a></span>cmd_del()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_del </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>parts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00156">156</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8h_source.html#l00023">UserSession::currentCorrectAnswer</a>, <a class="el" href="server__functions_8h_source.html#l00022">UserSession::currentTaskNum</a>, <a class="el" href="server__functions_8h_source.html#l00021">UserSession::currentTaskType</a>, <a class="el" href="server__functions_8h_source.html#l00017">UserSession::email</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a>, <a class="el" href="databasemanager_8h_source.html#l00016">ROLE_ADMIN</a> и <a class="el" href="databasemanager_8h_source.html#l00014">ROLE_USER</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a6387a2703c8a2a88b2122c3b5896fc41_cgraph.svg" width="100%" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a6387a2703c8a2a88b2122c3b5896fc41_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8feb9f9cd54f0e200faa71d97d170055" name="a8feb9f9cd54f0e200faa71d97d170055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8feb9f9cd54f0e200faa71d97d170055">&#9670;&#160;</a></span>cmd_help()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_help </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00262">262</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00262">cmd_help()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00262">cmd_help()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a8feb9f9cd54f0e200faa71d97d170055_cgraph.svg" width="88" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a8feb9f9cd54f0e200faa71d97d170055_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aab81bb6b3ac5c149146a69742b5fe4ad" name="aab81bb6b3ac5c149146a69742b5fe4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab81bb6b3ac5c149146a69742b5fe4ad">&#9670;&#160;</a></span>cmd_logout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_logout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00133">133</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a>, <a class="el" href="server__functions_8h_source.html#l00023">UserSession::currentCorrectAnswer</a>, <a class="el" href="server__functions_8h_source.html#l00022">UserSession::currentTaskNum</a>, <a class="el" href="server__functions_8h_source.html#l00021">UserSession::currentTaskType</a>, <a class="el" href="server__functions_8h_source.html#l00017">UserSession::email</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a> и <a class="el" href="databasemanager_8h_source.html#l00014">ROLE_USER</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_aab81bb6b3ac5c149146a69742b5fe4ad_cgraph.svg" width="99" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_aab81bb6b3ac5c149146a69742b5fe4ad_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a90489a136779444aae8d20b3a78412d5" name="a90489a136779444aae8d20b3a78412d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90489a136779444aae8d20b3a78412d5">&#9670;&#160;</a></span>cmd_mystats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_mystats </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>parts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает личную статистику по одному или всем типам заданий. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00384">384</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00384">cmd_mystats()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00295">DatabaseManager::getStatisticRow()</a> и <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00384">cmd_mystats()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a90489a136779444aae8d20b3a78412d5_cgraph.svg" width="100%" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a90489a136779444aae8d20b3a78412d5_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a33acd3f8a2873fdbbe3f525c3b2e4c26" name="a33acd3f8a2873fdbbe3f525c3b2e4c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33acd3f8a2873fdbbe3f525c3b2e4c26">&#9670;&#160;</a></span>cmd_reg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_reg </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>parts</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00073">73</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00073">cmd_reg()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00251">DatabaseManager::createStatisticRows()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="databasemanager_8h_source.html#l00014">ROLE_USER</a> и <a class="el" href="databasemanager_8cpp_source.html#l00004">stringToRole()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00073">cmd_reg()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a33acd3f8a2873fdbbe3f525c3b2e4c26_cgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a33acd3f8a2873fdbbe3f525c3b2e4c26_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0213d3193cca60e6b49b6e5cbe99ca87" name="a0213d3193cca60e6b49b6e5cbe99ca87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0213d3193cca60e6b49b6e5cbe99ca87">&#9670;&#160;</a></span>cmd_role()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_role </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;</td>          <td class="paramname"><span class="paramname"><em>parts</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00188">188</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00188">cmd_role()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a>, <a class="el" href="databasemanager_8h_source.html#l00016">ROLE_ADMIN</a> и <a class="el" href="databasemanager_8cpp_source.html#l00004">stringToRole()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00188">cmd_role()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a0213d3193cca60e6b49b6e5cbe99ca87_cgraph.svg" width="100%" height="421"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a0213d3193cca60e6b49b6e5cbe99ca87_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="afff7fee86461ffb5eba5ef712b323668" name="afff7fee86461ffb5eba5ef712b323668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff7fee86461ffb5eba5ef712b323668">&#9670;&#160;</a></span>cmd_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_stats </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00242">242</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="databasemanager_8h_source.html#l00039">UserStats::activeUsersMonth</a>, <a class="el" href="server__functions_8cpp_source.html#l00242">cmd_stats()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00223">DatabaseManager::getStats()</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="databasemanager_8h_source.html#l00038">UserStats::newUsersMonth</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a>, <a class="el" href="databasemanager_8h_source.html#l00016">ROLE_ADMIN</a>, <a class="el" href="databasemanager_8h_source.html#l00015">ROLE_MODERATOR</a> и <a class="el" href="databasemanager_8h_source.html#l00037">UserStats::totalUsers</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00242">cmd_stats()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_afff7fee86461ffb5eba5ef712b323668_cgraph.svg" width="100%" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_afff7fee86461ffb5eba5ef712b323668_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abd97d6faa21356ab317495fe4142f480" name="abd97d6faa21356ab317495fe4142f480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd97d6faa21356ab317495fe4142f480">&#9670;&#160;</a></span>cmd_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_task </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>taskType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>taskNum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Генерирует задание выбранного типа и сохраняет ответ в сессии. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">taskType</td><td>Тип задания от 1 до 4. </td></tr>
+    <tr><td class="paramname">taskNum</td><td>Номер шаблона задания. </td></tr>
+    <tr><td class="paramname">session</td><td>Сессия авторизованного пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00291">291</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a>, <a class="el" href="task1_8h_source.html#l00009">Task1Problem::correctAnswer</a>, <a class="el" href="task2_8h_source.html#l00009">Task2Problem::correctAnswer</a>, <a class="el" href="task3_8h_source.html#l00014">Task3Problem::correctAnswer</a>, <a class="el" href="task4_8h_source.html#l00016">Task4Problem::correctAnswer</a>, <a class="el" href="server__functions_8h_source.html#l00023">UserSession::currentCorrectAnswer</a>, <a class="el" href="server__functions_8h_source.html#l00022">UserSession::currentTaskNum</a>, <a class="el" href="server__functions_8h_source.html#l00021">UserSession::currentTaskType</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="task1_8cpp_source.html#l00051">task1_generate()</a>, <a class="el" href="task2_8cpp_source.html#l00130">task2_generate()</a>, <a class="el" href="task3_8cpp_source.html#l00150">task3_generate()</a>, <a class="el" href="task4_8cpp_source.html#l00009">task4_generate()</a>, <a class="el" href="task1_8h_source.html#l00008">Task1Problem::text</a>, <a class="el" href="task2_8h_source.html#l00008">Task2Problem::text</a>, <a class="el" href="task3_8h_source.html#l00013">Task3Problem::text</a> и <a class="el" href="task4_8h_source.html#l00015">Task4Problem::text</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_abd97d6faa21356ab317495fe4142f480_cgraph.svg" width="607" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_abd97d6faa21356ab317495fe4142f480_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9e17555fa3a625f3d4cf8594bc7ad6b9" name="a9e17555fa3a625f3d4cf8594bc7ad6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e17555fa3a625f3d4cf8594bc7ad6b9">&#9670;&#160;</a></span>cmd_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_users </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00216">216</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00216">cmd_users()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00203">DatabaseManager::getAllUsers()</a>, <a class="el" href="databasemanager_8cpp_source.html#l00023">DatabaseManager::getInstance()</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a>, <a class="el" href="databasemanager_8h_source.html#l00016">ROLE_ADMIN</a>, <a class="el" href="databasemanager_8h_source.html#l00015">ROLE_MODERATOR</a> и <a class="el" href="databasemanager_8cpp_source.html#l00013">roleToString()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00216">cmd_users()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a9e17555fa3a625f3d4cf8594bc7ad6b9_cgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a9e17555fa3a625f3d4cf8594bc7ad6b9_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4b194caf37601e4c86dce56517a6b520" name="a4b194caf37601e4c86dce56517a6b520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b194caf37601e4c86dce56517a6b520">&#9670;&#160;</a></span>cmd_whoami()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString cmd_whoami </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00147">147</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a>, <a class="el" href="server__functions_8h_source.html#l00017">UserSession::email</a>, <a class="el" href="server__functions_8h_source.html#l00016">UserSession::login</a>, <a class="el" href="server__functions_8h_source.html#l00018">UserSession::role</a> и <a class="el" href="databasemanager_8cpp_source.html#l00013">roleToString()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a4b194caf37601e4c86dce56517a6b520_cgraph.svg" width="248" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a4b194caf37601e4c86dce56517a6b520_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a81af03de1406da373849210c4946e89e" name="a81af03de1406da373849210c4946e89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81af03de1406da373849210c4946e89e">&#9670;&#160;</a></span>processCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString processCommand </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>command</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_user_session.html">UserSession</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>session</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбирает текстовую команду и вызывает соответствующий обработчик. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Команда без завершающего байта 0x01. </td></tr>
+    <tr><td class="paramname">session</td><td>Сессия клиента, которую обработчик может изменить. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Текст ответа для отправки клиенту. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="server__functions_8cpp_source.html">server_functions.cpp</a> строка <a class="el" href="server__functions_8cpp_source.html#l00007">7</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="server__functions_8cpp_source.html#l00342">cmd_answer()</a>, <a class="el" href="server__functions_8cpp_source.html#l00106">cmd_auth()</a>, <a class="el" href="server__functions_8cpp_source.html#l00156">cmd_del()</a>, <a class="el" href="server__functions_8cpp_source.html#l00262">cmd_help()</a>, <a class="el" href="server__functions_8cpp_source.html#l00133">cmd_logout()</a>, <a class="el" href="server__functions_8cpp_source.html#l00384">cmd_mystats()</a>, <a class="el" href="server__functions_8cpp_source.html#l00073">cmd_reg()</a>, <a class="el" href="server__functions_8cpp_source.html#l00188">cmd_role()</a>, <a class="el" href="server__functions_8cpp_source.html#l00242">cmd_stats()</a>, <a class="el" href="server__functions_8cpp_source.html#l00291">cmd_task()</a>, <a class="el" href="server__functions_8cpp_source.html#l00216">cmd_users()</a>, <a class="el" href="server__functions_8cpp_source.html#l00147">cmd_whoami()</a>, <a class="el" href="server__functions_8h_source.html#l00021">UserSession::currentTaskType</a> и <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="server__functions_8cpp_source.html#l00007">processCommand()</a> и <a class="el" href="mytcpserver_8cpp_source.html#l00049">MyTcpServer::slotServerRead()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a81af03de1406da373849210c4946e89e_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="server__functions_8cpp_a81af03de1406da373849210c4946e89e_icgraph.svg" width="100%" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="server__functions_8cpp.html">server_functions.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

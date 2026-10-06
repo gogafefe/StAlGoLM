@@ -1,0 +1,25 @@
+var class_database_manager =
+[
+    [ "DatabaseManager", "class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6", null ],
+    [ "DatabaseManager", "class_database_manager.html#aefa3d6eae7782904f5d758462b573b1e", null ],
+    [ "authUser", "class_database_manager.html#ac479a8b94759eda7684b22f04674bcda", null ],
+    [ "authUserWithRole", "class_database_manager.html#ac620ee7e0f3e7e4dfb36d88934d33500", null ],
+    [ "createStatisticRows", "class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a", null ],
+    [ "deleteStatisticRows", "class_database_manager.html#a6a862177978ae94b61d0afa5a0512957", null ],
+    [ "deleteUser", "class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277", null ],
+    [ "getAllUsers", "class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb", null ],
+    [ "getInstance", "class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f", null ],
+    [ "getStatisticRow", "class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100", null ],
+    [ "getStats", "class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f", null ],
+    [ "getUserEmail", "class_database_manager.html#a5527f21f871e0a848b3f4082fbf1dac1", null ],
+    [ "getUserRole", "class_database_manager.html#ab38c297366f0b99ddef168168cceb118", null ],
+    [ "initDatabase", "class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159", null ],
+    [ "initStatisticTables", "class_database_manager.html#a9156430e28c743f5578213041431f7ae", null ],
+    [ "operator=", "class_database_manager.html#ab5a4c00314aae0887ac7a1495f6b803c", null ],
+    [ "regUser", "class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14", null ],
+    [ "updateLastAuth", "class_database_manager.html#a40e408d6b0e58b853a7699128215927e", null ],
+    [ "updateStatistic", "class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751", null ],
+    [ "updateUserRole", "class_database_manager.html#abfe9ed86c77432471b44c95faa9c3e5f", null ],
+    [ "userExists", "class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5", null ],
+    [ "db", "class_database_manager.html#a48728975c70722593bb73736d7e76efb", null ]
+];

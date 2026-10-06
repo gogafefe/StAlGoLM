@@ -1,0 +1,1569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Класс MainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('class_main_window.html','','class_main_window-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс MainWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главное окно TCP-клиента StAlGoLM.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф связей класса MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт интерфейс клиента и начинает подключение к серверу.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-slots" class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:ab191d4445d7faca3b2d48e2374d1d35a" id="r_ab191d4445d7faca3b2d48e2374d1d35a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab191d4445d7faca3b2d48e2374d1d35a">onConnectClicked</a> ()</td></tr>
+<tr class="memitem:a95c5779447a66e87120526d332aaef1f" id="r_a95c5779447a66e87120526d332aaef1f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a95c5779447a66e87120526d332aaef1f">onConnected</a> ()</td></tr>
+<tr class="memitem:aa34b96b03c221e201ff14b278c59517a" id="r_aa34b96b03c221e201ff14b278c59517a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa34b96b03c221e201ff14b278c59517a">onDisconnected</a> ()</td></tr>
+<tr class="memitem:a209079830a37745e47076a762bab17d6" id="r_a209079830a37745e47076a762bab17d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a209079830a37745e47076a762bab17d6">onReadyRead</a> ()</td></tr>
+<tr class="memitem:a47c8a6afbc28b8a8ad1f814fc328335f" id="r_a47c8a6afbc28b8a8ad1f814fc328335f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a47c8a6afbc28b8a8ad1f814fc328335f">onSocketErrorOccurred</a> (QAbstractSocket::SocketError error)</td></tr>
+<tr class="memitem:a12990dbecbbcb1b830ca6cce19d12b1e" id="r_a12990dbecbbcb1b830ca6cce19d12b1e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a12990dbecbbcb1b830ca6cce19d12b1e">onRegClicked</a> ()</td></tr>
+<tr class="memitem:a19850c0f66e42aad7aa8e1346ecad576" id="r_a19850c0f66e42aad7aa8e1346ecad576"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19850c0f66e42aad7aa8e1346ecad576">onAuthClicked</a> ()</td></tr>
+<tr class="memitem:a75c121f531a98f64d9f7916a7e89cfed" id="r_a75c121f531a98f64d9f7916a7e89cfed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75c121f531a98f64d9f7916a7e89cfed">onLogoutClicked</a> ()</td></tr>
+<tr class="memitem:a55b44d80e1875654fc77be80bd86afc0" id="r_a55b44d80e1875654fc77be80bd86afc0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a55b44d80e1875654fc77be80bd86afc0">onWhoamiClicked</a> ()</td></tr>
+<tr class="memitem:a111a8fd3caaf6dc116d99af74b284376" id="r_a111a8fd3caaf6dc116d99af74b284376"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a111a8fd3caaf6dc116d99af74b284376">onGetTaskClicked</a> ()</td></tr>
+<tr class="memitem:a55eea31c454c0af22a67f7499ebc90dd" id="r_a55eea31c454c0af22a67f7499ebc90dd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a55eea31c454c0af22a67f7499ebc90dd">onAnswerClicked</a> ()</td></tr>
+<tr class="memitem:a7b555da8759160fae04c28df19a5ad6a" id="r_a7b555da8759160fae04c28df19a5ad6a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b555da8759160fae04c28df19a5ad6a">onMystatsClicked</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:afe1bceaad866b6fed583ba83245ae195" id="r_afe1bceaad866b6fed583ba83245ae195"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afe1bceaad866b6fed583ba83245ae195">buildUi</a> ()</td></tr>
+<tr class="memdesc:afe1bceaad866b6fed583ba83245ae195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт элементы и компоновки пользовательского интерфейса.  <br /></td></tr>
+<tr class="memitem:a0059744c7bd6262a54e52c8df4a22877" id="r_a0059744c7bd6262a54e52c8df4a22877"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0059744c7bd6262a54e52c8df4a22877">sendCommand</a> (const QString &amp;command)</td></tr>
+<tr class="memdesc:a0059744c7bd6262a54e52c8df4a22877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет текстовую команду с разделителем 0x01.  <br /></td></tr>
+<tr class="memitem:a0e5d89893a8ae7f1358603a438aae264" id="r_a0e5d89893a8ae7f1358603a438aae264"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0e5d89893a8ae7f1358603a438aae264">log</a> (const QString &amp;who, const QString &amp;text)</td></tr>
+<tr class="memdesc:a0e5d89893a8ae7f1358603a438aae264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет сообщение в журнал обмена.  <br /></td></tr>
+<tr class="memitem:a22c7b70ffea9a6689abe1299af98436a" id="r_a22c7b70ffea9a6689abe1299af98436a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a22c7b70ffea9a6689abe1299af98436a">setConnectionState</a> (bool connected)</td></tr>
+<tr class="memdesc:a22c7b70ffea9a6689abe1299af98436a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляет элементы интерфейса при подключении или отключении.  <br /></td></tr>
+<tr class="memitem:a086a0d78e393cc8717578f8bf499aa14" id="r_a086a0d78e393cc8717578f8bf499aa14"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a086a0d78e393cc8717578f8bf499aa14">setRadiosEnabled</a> (bool on)</td></tr>
+<tr class="memdesc:a086a0d78e393cc8717578f8bf499aa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включает или отключает варианты ответа Task2 и Task3.  <br /></td></tr>
+<tr class="memitem:a34a66f725706a36886f63f0a15552b1a" id="r_a34a66f725706a36886f63f0a15552b1a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34a66f725706a36886f63f0a15552b1a">resetTaskState</a> ()</td></tr>
+<tr class="memdesc:a34a66f725706a36886f63f0a15552b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбрасывает локальное состояние текущего задания.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:af85cfe62c116f8d2f2021e5411b0356e" id="r_af85cfe62c116f8d2f2021e5411b0356e"><td class="memItemLeft">QTcpSocket *&#160;</td><td class="memItemRight"><a class="el" href="#af85cfe62c116f8d2f2021e5411b0356e">socket</a> = nullptr</td></tr>
+<tr class="memitem:ac8d70a85d2c8b9d00908abcfb0e11237" id="r_ac8d70a85d2c8b9d00908abcfb0e11237"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#ac8d70a85d2c8b9d00908abcfb0e11237">editHost</a></td></tr>
+<tr class="memitem:a16df03667888381f155d4828d0991051" id="r_a16df03667888381f155d4828d0991051"><td class="memItemLeft">QSpinBox *&#160;</td><td class="memItemRight"><a class="el" href="#a16df03667888381f155d4828d0991051">spinPort</a></td></tr>
+<tr class="memitem:a42bb885bfb4923ad7291a046db0507b4" id="r_a42bb885bfb4923ad7291a046db0507b4"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a42bb885bfb4923ad7291a046db0507b4">btnConnect</a></td></tr>
+<tr class="memitem:ab34c5947e22e280ffda70959c7b9b9b7" id="r_ab34c5947e22e280ffda70959c7b9b9b7"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#ab34c5947e22e280ffda70959c7b9b9b7">editLogin</a></td></tr>
+<tr class="memitem:a6bb25c3c7844d381685fee3cce36ed22" id="r_a6bb25c3c7844d381685fee3cce36ed22"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a6bb25c3c7844d381685fee3cce36ed22">editPassword</a></td></tr>
+<tr class="memitem:a78e6e338913ff7005367cef8ef866c5a" id="r_a78e6e338913ff7005367cef8ef866c5a"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a78e6e338913ff7005367cef8ef866c5a">editEmail</a></td></tr>
+<tr class="memitem:ab24ed3afc9c816fce08265e7e4ebda75" id="r_ab24ed3afc9c816fce08265e7e4ebda75"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#ab24ed3afc9c816fce08265e7e4ebda75">btnReg</a></td></tr>
+<tr class="memitem:a6eb9822b05f8c8dcc25f72aa1ba03ac1" id="r_a6eb9822b05f8c8dcc25f72aa1ba03ac1"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a6eb9822b05f8c8dcc25f72aa1ba03ac1">btnAuth</a></td></tr>
+<tr class="memitem:a1eac3088ee62ade2dac6667b092fb319" id="r_a1eac3088ee62ade2dac6667b092fb319"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a1eac3088ee62ade2dac6667b092fb319">btnLogout</a></td></tr>
+<tr class="memitem:a5d3f3cf876479fee0b29d330010e38b1" id="r_a5d3f3cf876479fee0b29d330010e38b1"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a5d3f3cf876479fee0b29d330010e38b1">btnWhoami</a></td></tr>
+<tr class="memitem:a1232169cba465eee14009104d28d3799" id="r_a1232169cba465eee14009104d28d3799"><td class="memItemLeft">QLabel *&#160;</td><td class="memItemRight"><a class="el" href="#a1232169cba465eee14009104d28d3799">lblUser</a></td></tr>
+<tr class="memitem:ae743006dd8239d1b5cfb3dd2d40328c4" id="r_ae743006dd8239d1b5cfb3dd2d40328c4"><td class="memItemLeft">QComboBox *&#160;</td><td class="memItemRight"><a class="el" href="#ae743006dd8239d1b5cfb3dd2d40328c4">comboTask</a></td></tr>
+<tr class="memitem:ae2aafc29e0dea2722f75b5ad687d8888" id="r_ae2aafc29e0dea2722f75b5ad687d8888"><td class="memItemLeft">QSpinBox *&#160;</td><td class="memItemRight"><a class="el" href="#ae2aafc29e0dea2722f75b5ad687d8888">spinTaskNum</a></td></tr>
+<tr class="memitem:a8b68e7a254277e8edcdb15a786019a70" id="r_a8b68e7a254277e8edcdb15a786019a70"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a8b68e7a254277e8edcdb15a786019a70">btnGetTask</a></td></tr>
+<tr class="memitem:a18f6372696c3869b3db8d03484db3e7d" id="r_a18f6372696c3869b3db8d03484db3e7d"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#a18f6372696c3869b3db8d03484db3e7d">btnMystats</a></td></tr>
+<tr class="memitem:a4830189094bb5d79fdcfcb6fb5cc155c" id="r_a4830189094bb5d79fdcfcb6fb5cc155c"><td class="memItemLeft">QButtonGroup *&#160;</td><td class="memItemRight"><a class="el" href="#a4830189094bb5d79fdcfcb6fb5cc155c">optGroup</a></td></tr>
+<tr class="memitem:a4efd9ce8645196f22e48284f15122f55" id="r_a4efd9ce8645196f22e48284f15122f55"><td class="memItemLeft">QLineEdit *&#160;</td><td class="memItemRight"><a class="el" href="#a4efd9ce8645196f22e48284f15122f55">editAnswer</a></td></tr>
+<tr class="memitem:ac75f72767704a9a54a152f92c597e041" id="r_ac75f72767704a9a54a152f92c597e041"><td class="memItemLeft">QPushButton *&#160;</td><td class="memItemRight"><a class="el" href="#ac75f72767704a9a54a152f92c597e041">btnAnswer</a></td></tr>
+<tr class="memitem:ac9d5c20bac8391419feafff2a9eaaca8" id="r_ac9d5c20bac8391419feafff2a9eaaca8"><td class="memItemLeft">QPlainTextEdit *&#160;</td><td class="memItemRight"><a class="el" href="#ac9d5c20bac8391419feafff2a9eaaca8">logView</a></td></tr>
+<tr class="memitem:aef9e2aad2836eca19ad99169ba067332" id="r_aef9e2aad2836eca19ad99169ba067332"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aef9e2aad2836eca19ad99169ba067332">loggedIn</a> = false</td></tr>
+<tr class="memitem:a59eb4e335cc9911110f4e8ac746967e2" id="r_a59eb4e335cc9911110f4e8ac746967e2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a59eb4e335cc9911110f4e8ac746967e2">activeTaskType</a> = 0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главное окно TCP-клиента StAlGoLM. </p>
+<p>Окно подключается к серверу на порту 33333, формирует текстовые команды, завершает их байтом 0x01 и отображает ответы. Интерфейс поддерживает регистрацию, авторизацию, четыре типа заданий и личную статистику. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00023">23</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&#160;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт интерфейс клиента и начинает подключение к серверу. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00019">19</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8h_source.html#l00067">editHost</a>, <a class="el" href="mainwindow_8cpp_source.html#l00172">onConnected()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00178">onDisconnected()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00187">onSocketErrorOccurred()</a>, <a class="el" href="mainwindow_8h_source.html#l00064">socket</a> и <a class="el" href="mainwindow_8h_source.html#l00068">spinPort</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="afe1bceaad866b6fed583ba83245ae195" name="afe1bceaad866b6fed583ba83245ae195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1bceaad866b6fed583ba83245ae195">&#9670;&#160;</a></span>buildUi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::buildUi </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт элементы и компоновки пользовательского интерфейса. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00038">38</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00090">btnAnswer</a>, <a class="el" href="mainwindow_8h_source.html#l00076">btnAuth</a>, <a class="el" href="mainwindow_8h_source.html#l00069">btnConnect</a>, <a class="el" href="mainwindow_8h_source.html#l00084">btnGetTask</a>, <a class="el" href="mainwindow_8h_source.html#l00077">btnLogout</a>, <a class="el" href="mainwindow_8h_source.html#l00085">btnMystats</a>, <a class="el" href="mainwindow_8h_source.html#l00075">btnReg</a>, <a class="el" href="mainwindow_8h_source.html#l00078">btnWhoami</a>, <a class="el" href="mainwindow_8h_source.html#l00082">comboTask</a>, <a class="el" href="mainwindow_8h_source.html#l00089">editAnswer</a>, <a class="el" href="mainwindow_8h_source.html#l00074">editEmail</a>, <a class="el" href="mainwindow_8h_source.html#l00067">editHost</a>, <a class="el" href="mainwindow_8h_source.html#l00072">editLogin</a>, <a class="el" href="mainwindow_8h_source.html#l00073">editPassword</a>, <a class="el" href="mainwindow_8h_source.html#l00079">lblUser</a>, <a class="el" href="mainwindow_8h_source.html#l00093">logView</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onAnswerClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">onAuthClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00161">onConnectClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00322">onGetTaskClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00310">onLogoutClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00351">onMystatsClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00290">onRegClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00315">onWhoamiClicked()</a>, <a class="el" href="mainwindow_8h_source.html#l00088">optGroup</a>, <a class="el" href="mainwindow_8cpp_source.html#l00278">setRadiosEnabled()</a>, <a class="el" href="mainwindow_8h_source.html#l00068">spinPort</a> и <a class="el" href="mainwindow_8h_source.html#l00083">spinTaskNum</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_afe1bceaad866b6fed583ba83245ae195_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_afe1bceaad866b6fed583ba83245ae195_icgraph.svg" width="383" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0e5d89893a8ae7f1358603a438aae264" name="a0e5d89893a8ae7f1358603a438aae264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5d89893a8ae7f1358603a438aae264">&#9670;&#160;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::log </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>who</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляет сообщение в журнал обмена. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00214">214</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00093">logView</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00327">onAnswerClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">onAuthClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00161">onConnectClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00172">onConnected()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00178">onDisconnected()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00290">onRegClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00187">onSocketErrorOccurred()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a0e5d89893a8ae7f1358603a438aae264_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a55eea31c454c0af22a67f7499ebc90dd" name="a55eea31c454c0af22a67f7499ebc90dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55eea31c454c0af22a67f7499ebc90dd">&#9670;&#160;</a></span>onAnswerClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onAnswerClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00327">327</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00096">activeTaskType</a>, <a class="el" href="mainwindow_8h_source.html#l00089">editAnswer</a>, <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a>, <a class="el" href="mainwindow_8h_source.html#l00088">optGroup</a> и <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a55eea31c454c0af22a67f7499ebc90dd_cgraph.svg" width="627" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a55eea31c454c0af22a67f7499ebc90dd_icgraph.svg" width="638" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a19850c0f66e42aad7aa8e1346ecad576" name="a19850c0f66e42aad7aa8e1346ecad576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19850c0f66e42aad7aa8e1346ecad576">&#9670;&#160;</a></span>onAuthClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onAuthClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00301">301</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00072">editLogin</a>, <a class="el" href="mainwindow_8h_source.html#l00073">editPassword</a>, <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a19850c0f66e42aad7aa8e1346ecad576_cgraph.svg" width="610" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a19850c0f66e42aad7aa8e1346ecad576_icgraph.svg" width="620" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab191d4445d7faca3b2d48e2374d1d35a" name="ab191d4445d7faca3b2d48e2374d1d35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab191d4445d7faca3b2d48e2374d1d35a">&#9670;&#160;</a></span>onConnectClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onConnectClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00161">161</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00067">editHost</a>, <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a>, <a class="el" href="mainwindow_8h_source.html#l00064">socket</a> и <a class="el" href="mainwindow_8h_source.html#l00068">spinPort</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_ab191d4445d7faca3b2d48e2374d1d35a_cgraph.svg" width="392" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_ab191d4445d7faca3b2d48e2374d1d35a_icgraph.svg" width="642" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a95c5779447a66e87120526d332aaef1f" name="a95c5779447a66e87120526d332aaef1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c5779447a66e87120526d332aaef1f">&#9670;&#160;</a></span>onConnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onConnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00172">172</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00196">setConnectionState()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a95c5779447a66e87120526d332aaef1f_cgraph.svg" width="428" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a95c5779447a66e87120526d332aaef1f_icgraph.svg" width="420" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa34b96b03c221e201ff14b278c59517a" name="aa34b96b03c221e201ff14b278c59517a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34b96b03c221e201ff14b278c59517a">&#9670;&#160;</a></span>onDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00178">178</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00079">lblUser</a>, <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a>, <a class="el" href="mainwindow_8h_source.html#l00095">loggedIn</a>, <a class="el" href="mainwindow_8cpp_source.html#l00270">resetTaskState()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00196">setConnectionState()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_aa34b96b03c221e201ff14b278c59517a_cgraph.svg" width="100%" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_aa34b96b03c221e201ff14b278c59517a_icgraph.svg" width="436" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a111a8fd3caaf6dc116d99af74b284376" name="a111a8fd3caaf6dc116d99af74b284376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111a8fd3caaf6dc116d99af74b284376">&#9670;&#160;</a></span>onGetTaskClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onGetTaskClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00322">322</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00082">comboTask</a>, <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a> и <a class="el" href="mainwindow_8h_source.html#l00083">spinTaskNum</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a111a8fd3caaf6dc116d99af74b284376_cgraph.svg" width="632" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a111a8fd3caaf6dc116d99af74b284376_icgraph.svg" width="642" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a75c121f531a98f64d9f7916a7e89cfed" name="a75c121f531a98f64d9f7916a7e89cfed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c121f531a98f64d9f7916a7e89cfed">&#9670;&#160;</a></span>onLogoutClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onLogoutClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00310">310</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a75c121f531a98f64d9f7916a7e89cfed_cgraph.svg" width="622" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a75c121f531a98f64d9f7916a7e89cfed_icgraph.svg" width="632" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7b555da8759160fae04c28df19a5ad6a" name="a7b555da8759160fae04c28df19a5ad6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b555da8759160fae04c28df19a5ad6a">&#9670;&#160;</a></span>onMystatsClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onMystatsClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00351">351</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a7b555da8759160fae04c28df19a5ad6a_cgraph.svg" width="630" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a7b555da8759160fae04c28df19a5ad6a_icgraph.svg" width="640" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a209079830a37745e47076a762bab17d6" name="a209079830a37745e47076a762bab17d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209079830a37745e47076a762bab17d6">&#9670;&#160;</a></span>onReadyRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onReadyRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00221">221</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00096">activeTaskType</a>, <a class="el" href="mainwindow_8h_source.html#l00089">editAnswer</a>, <a class="el" href="mainwindow_8h_source.html#l00072">editLogin</a>, <a class="el" href="mainwindow_8h_source.html#l00079">lblUser</a>, <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a>, <a class="el" href="mainwindow_8h_source.html#l00095">loggedIn</a>, <a class="el" href="mainwindow_8h_source.html#l00088">optGroup</a>, <a class="el" href="mainwindow_8cpp_source.html#l00270">resetTaskState()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00278">setRadiosEnabled()</a> и <a class="el" href="mainwindow_8h_source.html#l00064">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a209079830a37745e47076a762bab17d6_cgraph.svg" width="100%" height="385"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a209079830a37745e47076a762bab17d6_icgraph.svg" width="426" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a12990dbecbbcb1b830ca6cce19d12b1e" name="a12990dbecbbcb1b830ca6cce19d12b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12990dbecbbcb1b830ca6cce19d12b1e">&#9670;&#160;</a></span>onRegClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onRegClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00290">290</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00074">editEmail</a>, <a class="el" href="mainwindow_8h_source.html#l00072">editLogin</a>, <a class="el" href="mainwindow_8h_source.html#l00073">editPassword</a>, <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a12990dbecbbcb1b830ca6cce19d12b1e_cgraph.svg" width="607" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a12990dbecbbcb1b830ca6cce19d12b1e_icgraph.svg" width="618" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a47c8a6afbc28b8a8ad1f814fc328335f" name="a47c8a6afbc28b8a8ad1f814fc328335f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c8a6afbc28b8a8ad1f814fc328335f">&#9670;&#160;</a></span>onSocketErrorOccurred</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onSocketErrorOccurred </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractSocket::SocketError</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00187">187</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a> и <a class="el" href="mainwindow_8h_source.html#l00064">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a47c8a6afbc28b8a8ad1f814fc328335f_cgraph.svg" width="368" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a47c8a6afbc28b8a8ad1f814fc328335f_icgraph.svg" width="426" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a55b44d80e1875654fc77be80bd86afc0" name="a55b44d80e1875654fc77be80bd86afc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b44d80e1875654fc77be80bd86afc0">&#9670;&#160;</a></span>onWhoamiClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onWhoamiClicked </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00315">315</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a55b44d80e1875654fc77be80bd86afc0_cgraph.svg" width="631" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a55b44d80e1875654fc77be80bd86afc0_icgraph.svg" width="642" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a34a66f725706a36886f63f0a15552b1a" name="a34a66f725706a36886f63f0a15552b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a66f725706a36886f63f0a15552b1a">&#9670;&#160;</a></span>resetTaskState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::resetTaskState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сбрасывает локальное состояние текущего задания. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00270">270</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00096">activeTaskType</a>, <a class="el" href="mainwindow_8h_source.html#l00089">editAnswer</a> и <a class="el" href="mainwindow_8cpp_source.html#l00278">setRadiosEnabled()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00178">onDisconnected()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a34a66f725706a36886f63f0a15552b1a_cgraph.svg" width="462" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a34a66f725706a36886f63f0a15552b1a_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0059744c7bd6262a54e52c8df4a22877" name="a0059744c7bd6262a54e52c8df4a22877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0059744c7bd6262a54e52c8df4a22877">&#9670;&#160;</a></span>sendCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::sendCommand </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>command</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отправляет текстовую команду с разделителем 0x01. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00203">203</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a> и <a class="el" href="mainwindow_8h_source.html#l00064">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00327">onAnswerClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">onAuthClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00322">onGetTaskClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00310">onLogoutClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00351">onMystatsClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00290">onRegClicked()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00315">onWhoamiClicked()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a0059744c7bd6262a54e52c8df4a22877_cgraph.svg" width="372" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a0059744c7bd6262a54e52c8df4a22877_icgraph.svg" width="100%" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a22c7b70ffea9a6689abe1299af98436a" name="a22c7b70ffea9a6689abe1299af98436a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c7b70ffea9a6689abe1299af98436a">&#9670;&#160;</a></span>setConnectionState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::setConnectionState </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>connected</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновляет элементы интерфейса при подключении или отключении. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00196">196</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00069">btnConnect</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00172">onConnected()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00178">onDisconnected()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a22c7b70ffea9a6689abe1299af98436a_icgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a086a0d78e393cc8717578f8bf499aa14" name="a086a0d78e393cc8717578f8bf499aa14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086a0d78e393cc8717578f8bf499aa14">&#9670;&#160;</a></span>setRadiosEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::setRadiosEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>on</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Включает или отключает варианты ответа Task2 и Task3. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00278">278</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00088">optGroup</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00270">resetTaskState()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="class_main_window_a086a0d78e393cc8717578f8bf499aa14_icgraph.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a59eb4e335cc9911110f4e8ac746967e2" name="a59eb4e335cc9911110f4e8ac746967e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59eb4e335cc9911110f4e8ac746967e2">&#9670;&#160;</a></span>activeTaskType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainWindow::activeTaskType = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00096">96</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00327">onAnswerClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00270">resetTaskState()</a>.</p>
+
+</div>
+</div>
+<a id="ac75f72767704a9a54a152f92c597e041" name="ac75f72767704a9a54a152f92c597e041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75f72767704a9a54a152f92c597e041">&#9670;&#160;</a></span>btnAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnAnswer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00090">90</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="a6eb9822b05f8c8dcc25f72aa1ba03ac1" name="a6eb9822b05f8c8dcc25f72aa1ba03ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb9822b05f8c8dcc25f72aa1ba03ac1">&#9670;&#160;</a></span>btnAuth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnAuth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00076">76</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="a42bb885bfb4923ad7291a046db0507b4" name="a42bb885bfb4923ad7291a046db0507b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42bb885bfb4923ad7291a046db0507b4">&#9670;&#160;</a></span>btnConnect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnConnect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00069">69</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00196">setConnectionState()</a>.</p>
+
+</div>
+</div>
+<a id="a8b68e7a254277e8edcdb15a786019a70" name="a8b68e7a254277e8edcdb15a786019a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b68e7a254277e8edcdb15a786019a70">&#9670;&#160;</a></span>btnGetTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnGetTask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00084">84</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="a1eac3088ee62ade2dac6667b092fb319" name="a1eac3088ee62ade2dac6667b092fb319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eac3088ee62ade2dac6667b092fb319">&#9670;&#160;</a></span>btnLogout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnLogout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00077">77</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="a18f6372696c3869b3db8d03484db3e7d" name="a18f6372696c3869b3db8d03484db3e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f6372696c3869b3db8d03484db3e7d">&#9670;&#160;</a></span>btnMystats</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnMystats</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00085">85</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="ab24ed3afc9c816fce08265e7e4ebda75" name="ab24ed3afc9c816fce08265e7e4ebda75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24ed3afc9c816fce08265e7e4ebda75">&#9670;&#160;</a></span>btnReg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnReg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00075">75</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="a5d3f3cf876479fee0b29d330010e38b1" name="a5d3f3cf876479fee0b29d330010e38b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3f3cf876479fee0b29d330010e38b1">&#9670;&#160;</a></span>btnWhoami</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* MainWindow::btnWhoami</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00078">78</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>.</p>
+
+</div>
+</div>
+<a id="ae743006dd8239d1b5cfb3dd2d40328c4" name="ae743006dd8239d1b5cfb3dd2d40328c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae743006dd8239d1b5cfb3dd2d40328c4">&#9670;&#160;</a></span>comboTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* MainWindow::comboTask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00082">82</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00322">onGetTaskClicked()</a>.</p>
+
+</div>
+</div>
+<a id="a4efd9ce8645196f22e48284f15122f55" name="a4efd9ce8645196f22e48284f15122f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4efd9ce8645196f22e48284f15122f55">&#9670;&#160;</a></span>editAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* MainWindow::editAnswer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00089">89</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onAnswerClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00270">resetTaskState()</a>.</p>
+
+</div>
+</div>
+<a id="a78e6e338913ff7005367cef8ef866c5a" name="a78e6e338913ff7005367cef8ef866c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e6e338913ff7005367cef8ef866c5a">&#9670;&#160;</a></span>editEmail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* MainWindow::editEmail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00074">74</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00290">onRegClicked()</a>.</p>
+
+</div>
+</div>
+<a id="ac8d70a85d2c8b9d00908abcfb0e11237" name="ac8d70a85d2c8b9d00908abcfb0e11237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d70a85d2c8b9d00908abcfb0e11237">&#9670;&#160;</a></span>editHost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* MainWindow::editHost</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00067">67</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00161">onConnectClicked()</a>.</p>
+
+</div>
+</div>
+<a id="ab34c5947e22e280ffda70959c7b9b9b7" name="ab34c5947e22e280ffda70959c7b9b9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34c5947e22e280ffda70959c7b9b9b7">&#9670;&#160;</a></span>editLogin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* MainWindow::editLogin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00072">72</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">onAuthClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00290">onRegClicked()</a>.</p>
+
+</div>
+</div>
+<a id="a6bb25c3c7844d381685fee3cce36ed22" name="a6bb25c3c7844d381685fee3cce36ed22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb25c3c7844d381685fee3cce36ed22">&#9670;&#160;</a></span>editPassword</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLineEdit* MainWindow::editPassword</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00073">73</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00301">onAuthClicked()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00290">onRegClicked()</a>.</p>
+
+</div>
+</div>
+<a id="a1232169cba465eee14009104d28d3799" name="a1232169cba465eee14009104d28d3799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1232169cba465eee14009104d28d3799">&#9670;&#160;</a></span>lblUser</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* MainWindow::lblUser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00079">79</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00178">onDisconnected()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a>.</p>
+
+</div>
+</div>
+<a id="aef9e2aad2836eca19ad99169ba067332" name="aef9e2aad2836eca19ad99169ba067332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9e2aad2836eca19ad99169ba067332">&#9670;&#160;</a></span>loggedIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindow::loggedIn = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00095">95</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00178">onDisconnected()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a>.</p>
+
+</div>
+</div>
+<a id="ac9d5c20bac8391419feafff2a9eaaca8" name="ac9d5c20bac8391419feafff2a9eaaca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d5c20bac8391419feafff2a9eaaca8">&#9670;&#160;</a></span>logView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPlainTextEdit* MainWindow::logView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00093">93</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00214">log()</a>.</p>
+
+</div>
+</div>
+<a id="a4830189094bb5d79fdcfcb6fb5cc155c" name="a4830189094bb5d79fdcfcb6fb5cc155c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4830189094bb5d79fdcfcb6fb5cc155c">&#9670;&#160;</a></span>optGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QButtonGroup* MainWindow::optGroup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00088">88</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00327">onAnswerClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00278">setRadiosEnabled()</a>.</p>
+
+</div>
+</div>
+<a id="af85cfe62c116f8d2f2021e5411b0356e" name="af85cfe62c116f8d2f2021e5411b0356e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85cfe62c116f8d2f2021e5411b0356e">&#9670;&#160;</a></span>socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* MainWindow::socket = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00064">64</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00161">onConnectClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00221">onReadyRead()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00187">onSocketErrorOccurred()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00203">sendCommand()</a>.</p>
+
+</div>
+</div>
+<a id="a16df03667888381f155d4828d0991051" name="a16df03667888381f155d4828d0991051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16df03667888381f155d4828d0991051">&#9670;&#160;</a></span>spinPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSpinBox* MainWindow::spinPort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00068">68</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00019">MainWindow()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00161">onConnectClicked()</a>.</p>
+
+</div>
+</div>
+<a id="ae2aafc29e0dea2722f75b5ad687d8888" name="ae2aafc29e0dea2722f75b5ad687d8888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2aafc29e0dea2722f75b5ad687d8888">&#9670;&#160;</a></span>spinTaskNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSpinBox* MainWindow::spinTaskNum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00083">83</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00038">buildUi()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00322">onGetTaskClicked()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li><a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_main_window.html">MainWindow</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

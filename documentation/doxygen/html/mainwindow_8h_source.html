@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Исходный файл mainwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('mainwindow_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mainwindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MAINWINDOW_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MAINWINDOW_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span>QLineEdit;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span>QPlainTextEdit;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QSpinBox;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QComboBox;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QRadioButton;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QButtonGroup;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_main_window.html">   23</a></span><span class="keyword">class </span><a class="code hl_function" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">// Соединение</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#ab191d4445d7faca3b2d48e2374d1d35a">onConnectClicked</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a95c5779447a66e87120526d332aaef1f">onConnected</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#aa34b96b03c221e201ff14b278c59517a">onDisconnected</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a209079830a37745e47076a762bab17d6">onReadyRead</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a47c8a6afbc28b8a8ad1f814fc328335f">onSocketErrorOccurred</a>(QAbstractSocket::SocketError error);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// Аккаунт</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a12990dbecbbcb1b830ca6cce19d12b1e">onRegClicked</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a19850c0f66e42aad7aa8e1346ecad576">onAuthClicked</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a75c121f531a98f64d9f7916a7e89cfed">onLogoutClicked</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a55b44d80e1875654fc77be80bd86afc0">onWhoamiClicked</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Задания</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a111a8fd3caaf6dc116d99af74b284376">onGetTaskClicked</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a55eea31c454c0af22a67f7499ebc90dd">onAnswerClicked</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a7b555da8759160fae04c28df19a5ad6a">onMystatsClicked</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#afe1bceaad866b6fed583ba83245ae195">buildUi</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a0059744c7bd6262a54e52c8df4a22877">sendCommand</a>(<span class="keyword">const</span> QString&amp; command);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a0e5d89893a8ae7f1358603a438aae264">log</a>(<span class="keyword">const</span> QString&amp; who, <span class="keyword">const</span> QString&amp; text);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a22c7b70ffea9a6689abe1299af98436a">setConnectionState</a>(<span class="keywordtype">bool</span> connected);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a086a0d78e393cc8717578f8bf499aa14">setRadiosEnabled</a>(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a34a66f725706a36886f63f0a15552b1a">resetTaskState</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_main_window.html#af85cfe62c116f8d2f2021e5411b0356e">   64</a></span>    QTcpSocket *<a class="code hl_variable" href="class_main_window.html#af85cfe62c116f8d2f2021e5411b0356e">socket</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Подключение</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_main_window.html#ac8d70a85d2c8b9d00908abcfb0e11237">   67</a></span>    QLineEdit *<a class="code hl_variable" href="class_main_window.html#ac8d70a85d2c8b9d00908abcfb0e11237">editHost</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_main_window.html#a16df03667888381f155d4828d0991051">   68</a></span>    QSpinBox  *<a class="code hl_variable" href="class_main_window.html#a16df03667888381f155d4828d0991051">spinPort</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_main_window.html#a42bb885bfb4923ad7291a046db0507b4">   69</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#a42bb885bfb4923ad7291a046db0507b4">btnConnect</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// Аккаунт</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_main_window.html#ab34c5947e22e280ffda70959c7b9b9b7">   72</a></span>    QLineEdit *<a class="code hl_variable" href="class_main_window.html#ab34c5947e22e280ffda70959c7b9b9b7">editLogin</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_main_window.html#a6bb25c3c7844d381685fee3cce36ed22">   73</a></span>    QLineEdit *<a class="code hl_variable" href="class_main_window.html#a6bb25c3c7844d381685fee3cce36ed22">editPassword</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_main_window.html#a78e6e338913ff7005367cef8ef866c5a">   74</a></span>    QLineEdit *<a class="code hl_variable" href="class_main_window.html#a78e6e338913ff7005367cef8ef866c5a">editEmail</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_main_window.html#ab24ed3afc9c816fce08265e7e4ebda75">   75</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#ab24ed3afc9c816fce08265e7e4ebda75">btnReg</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_main_window.html#a6eb9822b05f8c8dcc25f72aa1ba03ac1">   76</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#a6eb9822b05f8c8dcc25f72aa1ba03ac1">btnAuth</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_main_window.html#a1eac3088ee62ade2dac6667b092fb319">   77</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#a1eac3088ee62ade2dac6667b092fb319">btnLogout</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_main_window.html#a5d3f3cf876479fee0b29d330010e38b1">   78</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#a5d3f3cf876479fee0b29d330010e38b1">btnWhoami</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_main_window.html#a1232169cba465eee14009104d28d3799">   79</a></span>    QLabel *<a class="code hl_variable" href="class_main_window.html#a1232169cba465eee14009104d28d3799">lblUser</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Задания</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_main_window.html#ae743006dd8239d1b5cfb3dd2d40328c4">   82</a></span>    QComboBox *<a class="code hl_variable" href="class_main_window.html#ae743006dd8239d1b5cfb3dd2d40328c4">comboTask</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_main_window.html#ae2aafc29e0dea2722f75b5ad687d8888">   83</a></span>    QSpinBox  *<a class="code hl_variable" href="class_main_window.html#ae2aafc29e0dea2722f75b5ad687d8888">spinTaskNum</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_main_window.html#a8b68e7a254277e8edcdb15a786019a70">   84</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#a8b68e7a254277e8edcdb15a786019a70">btnGetTask</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_main_window.html#a18f6372696c3869b3db8d03484db3e7d">   85</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#a18f6372696c3869b3db8d03484db3e7d">btnMystats</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// Ответ (для task2/task3 — выбор варианта, для task1/task4 — число)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_main_window.html#a4830189094bb5d79fdcfcb6fb5cc155c">   88</a></span>    QButtonGroup *<a class="code hl_variable" href="class_main_window.html#a4830189094bb5d79fdcfcb6fb5cc155c">optGroup</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_main_window.html#a4efd9ce8645196f22e48284f15122f55">   89</a></span>    QLineEdit *<a class="code hl_variable" href="class_main_window.html#a4efd9ce8645196f22e48284f15122f55">editAnswer</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_main_window.html#ac75f72767704a9a54a152f92c597e041">   90</a></span>    QPushButton *<a class="code hl_variable" href="class_main_window.html#ac75f72767704a9a54a152f92c597e041">btnAnswer</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// Журнал обмена</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_main_window.html#ac9d5c20bac8391419feafff2a9eaaca8">   93</a></span>    QPlainTextEdit *<a class="code hl_variable" href="class_main_window.html#ac9d5c20bac8391419feafff2a9eaaca8">logView</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_main_window.html#aef9e2aad2836eca19ad99169ba067332">   95</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_main_window.html#aef9e2aad2836eca19ad99169ba067332">loggedIn</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_main_window.html#a59eb4e335cc9911110f4e8ac746967e2">   96</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_main_window.html#a59eb4e335cc9911110f4e8ac746967e2">activeTaskType</a> = 0;   <span class="comment">// 0 — активного задания нет, 1..4 — номер задания</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif </span><span class="comment">// MAINWINDOW_H</span></div>
+<div class="ttc" id="aclass_main_window_html_a0059744c7bd6262a54e52c8df4a22877"><div class="ttname"><a href="class_main_window.html#a0059744c7bd6262a54e52c8df4a22877">MainWindow::sendCommand</a></div><div class="ttdeci">void sendCommand(const QString &amp;command)</div><div class="ttdoc">Отправляет текстовую команду с разделителем 0x01.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00203">mainwindow.cpp:203</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a086a0d78e393cc8717578f8bf499aa14"><div class="ttname"><a href="class_main_window.html#a086a0d78e393cc8717578f8bf499aa14">MainWindow::setRadiosEnabled</a></div><div class="ttdeci">void setRadiosEnabled(bool on)</div><div class="ttdoc">Включает или отключает варианты ответа Task2 и Task3.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00278">mainwindow.cpp:278</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a0e5d89893a8ae7f1358603a438aae264"><div class="ttname"><a href="class_main_window.html#a0e5d89893a8ae7f1358603a438aae264">MainWindow::log</a></div><div class="ttdeci">void log(const QString &amp;who, const QString &amp;text)</div><div class="ttdoc">Добавляет сообщение в журнал обмена.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00214">mainwindow.cpp:214</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a111a8fd3caaf6dc116d99af74b284376"><div class="ttname"><a href="class_main_window.html#a111a8fd3caaf6dc116d99af74b284376">MainWindow::onGetTaskClicked</a></div><div class="ttdeci">void onGetTaskClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00322">mainwindow.cpp:322</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a1232169cba465eee14009104d28d3799"><div class="ttname"><a href="class_main_window.html#a1232169cba465eee14009104d28d3799">MainWindow::lblUser</a></div><div class="ttdeci">QLabel * lblUser</div><div class="ttdef"><b>Определения</b> <a href="#l00079">mainwindow.h:79</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a12990dbecbbcb1b830ca6cce19d12b1e"><div class="ttname"><a href="class_main_window.html#a12990dbecbbcb1b830ca6cce19d12b1e">MainWindow::onRegClicked</a></div><div class="ttdeci">void onRegClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00290">mainwindow.cpp:290</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a16df03667888381f155d4828d0991051"><div class="ttname"><a href="class_main_window.html#a16df03667888381f155d4828d0991051">MainWindow::spinPort</a></div><div class="ttdeci">QSpinBox * spinPort</div><div class="ttdef"><b>Определения</b> <a href="#l00068">mainwindow.h:68</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a18f6372696c3869b3db8d03484db3e7d"><div class="ttname"><a href="class_main_window.html#a18f6372696c3869b3db8d03484db3e7d">MainWindow::btnMystats</a></div><div class="ttdeci">QPushButton * btnMystats</div><div class="ttdef"><b>Определения</b> <a href="#l00085">mainwindow.h:85</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a19850c0f66e42aad7aa8e1346ecad576"><div class="ttname"><a href="class_main_window.html#a19850c0f66e42aad7aa8e1346ecad576">MainWindow::onAuthClicked</a></div><div class="ttdeci">void onAuthClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00301">mainwindow.cpp:301</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a1eac3088ee62ade2dac6667b092fb319"><div class="ttname"><a href="class_main_window.html#a1eac3088ee62ade2dac6667b092fb319">MainWindow::btnLogout</a></div><div class="ttdeci">QPushButton * btnLogout</div><div class="ttdef"><b>Определения</b> <a href="#l00077">mainwindow.h:77</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a209079830a37745e47076a762bab17d6"><div class="ttname"><a href="class_main_window.html#a209079830a37745e47076a762bab17d6">MainWindow::onReadyRead</a></div><div class="ttdeci">void onReadyRead()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00221">mainwindow.cpp:221</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a22c7b70ffea9a6689abe1299af98436a"><div class="ttname"><a href="class_main_window.html#a22c7b70ffea9a6689abe1299af98436a">MainWindow::setConnectionState</a></div><div class="ttdeci">void setConnectionState(bool connected)</div><div class="ttdoc">Обновляет элементы интерфейса при подключении или отключении.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00196">mainwindow.cpp:196</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a34a66f725706a36886f63f0a15552b1a"><div class="ttname"><a href="class_main_window.html#a34a66f725706a36886f63f0a15552b1a">MainWindow::resetTaskState</a></div><div class="ttdeci">void resetTaskState()</div><div class="ttdoc">Сбрасывает локальное состояние текущего задания.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00270">mainwindow.cpp:270</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a42bb885bfb4923ad7291a046db0507b4"><div class="ttname"><a href="class_main_window.html#a42bb885bfb4923ad7291a046db0507b4">MainWindow::btnConnect</a></div><div class="ttdeci">QPushButton * btnConnect</div><div class="ttdef"><b>Определения</b> <a href="#l00069">mainwindow.h:69</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a47c8a6afbc28b8a8ad1f814fc328335f"><div class="ttname"><a href="class_main_window.html#a47c8a6afbc28b8a8ad1f814fc328335f">MainWindow::onSocketErrorOccurred</a></div><div class="ttdeci">void onSocketErrorOccurred(QAbstractSocket::SocketError error)</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00187">mainwindow.cpp:187</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a4830189094bb5d79fdcfcb6fb5cc155c"><div class="ttname"><a href="class_main_window.html#a4830189094bb5d79fdcfcb6fb5cc155c">MainWindow::optGroup</a></div><div class="ttdeci">QButtonGroup * optGroup</div><div class="ttdef"><b>Определения</b> <a href="#l00088">mainwindow.h:88</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a4efd9ce8645196f22e48284f15122f55"><div class="ttname"><a href="class_main_window.html#a4efd9ce8645196f22e48284f15122f55">MainWindow::editAnswer</a></div><div class="ttdeci">QLineEdit * editAnswer</div><div class="ttdef"><b>Определения</b> <a href="#l00089">mainwindow.h:89</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a55b44d80e1875654fc77be80bd86afc0"><div class="ttname"><a href="class_main_window.html#a55b44d80e1875654fc77be80bd86afc0">MainWindow::onWhoamiClicked</a></div><div class="ttdeci">void onWhoamiClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00315">mainwindow.cpp:315</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a55eea31c454c0af22a67f7499ebc90dd"><div class="ttname"><a href="class_main_window.html#a55eea31c454c0af22a67f7499ebc90dd">MainWindow::onAnswerClicked</a></div><div class="ttdeci">void onAnswerClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00327">mainwindow.cpp:327</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a59eb4e335cc9911110f4e8ac746967e2"><div class="ttname"><a href="class_main_window.html#a59eb4e335cc9911110f4e8ac746967e2">MainWindow::activeTaskType</a></div><div class="ttdeci">int activeTaskType</div><div class="ttdef"><b>Определения</b> <a href="#l00096">mainwindow.h:96</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a5d3f3cf876479fee0b29d330010e38b1"><div class="ttname"><a href="class_main_window.html#a5d3f3cf876479fee0b29d330010e38b1">MainWindow::btnWhoami</a></div><div class="ttdeci">QPushButton * btnWhoami</div><div class="ttdef"><b>Определения</b> <a href="#l00078">mainwindow.h:78</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a6bb25c3c7844d381685fee3cce36ed22"><div class="ttname"><a href="class_main_window.html#a6bb25c3c7844d381685fee3cce36ed22">MainWindow::editPassword</a></div><div class="ttdeci">QLineEdit * editPassword</div><div class="ttdef"><b>Определения</b> <a href="#l00073">mainwindow.h:73</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a6eb9822b05f8c8dcc25f72aa1ba03ac1"><div class="ttname"><a href="class_main_window.html#a6eb9822b05f8c8dcc25f72aa1ba03ac1">MainWindow::btnAuth</a></div><div class="ttdeci">QPushButton * btnAuth</div><div class="ttdef"><b>Определения</b> <a href="#l00076">mainwindow.h:76</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a75c121f531a98f64d9f7916a7e89cfed"><div class="ttname"><a href="class_main_window.html#a75c121f531a98f64d9f7916a7e89cfed">MainWindow::onLogoutClicked</a></div><div class="ttdeci">void onLogoutClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00310">mainwindow.cpp:310</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a78e6e338913ff7005367cef8ef866c5a"><div class="ttname"><a href="class_main_window.html#a78e6e338913ff7005367cef8ef866c5a">MainWindow::editEmail</a></div><div class="ttdeci">QLineEdit * editEmail</div><div class="ttdef"><b>Определения</b> <a href="#l00074">mainwindow.h:74</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a7b555da8759160fae04c28df19a5ad6a"><div class="ttname"><a href="class_main_window.html#a7b555da8759160fae04c28df19a5ad6a">MainWindow::onMystatsClicked</a></div><div class="ttdeci">void onMystatsClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00351">mainwindow.cpp:351</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a8b68e7a254277e8edcdb15a786019a70"><div class="ttname"><a href="class_main_window.html#a8b68e7a254277e8edcdb15a786019a70">MainWindow::btnGetTask</a></div><div class="ttdeci">QPushButton * btnGetTask</div><div class="ttdef"><b>Определения</b> <a href="#l00084">mainwindow.h:84</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a95c5779447a66e87120526d332aaef1f"><div class="ttname"><a href="class_main_window.html#a95c5779447a66e87120526d332aaef1f">MainWindow::onConnected</a></div><div class="ttdeci">void onConnected()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00172">mainwindow.cpp:172</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdoc">Создаёт интерфейс клиента и начинает подключение к серверу.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00019">mainwindow.cpp:19</a></div></div>
+<div class="ttc" id="aclass_main_window_html_aa34b96b03c221e201ff14b278c59517a"><div class="ttname"><a href="class_main_window.html#aa34b96b03c221e201ff14b278c59517a">MainWindow::onDisconnected</a></div><div class="ttdeci">void onDisconnected()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00178">mainwindow.cpp:178</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ab191d4445d7faca3b2d48e2374d1d35a"><div class="ttname"><a href="class_main_window.html#ab191d4445d7faca3b2d48e2374d1d35a">MainWindow::onConnectClicked</a></div><div class="ttdeci">void onConnectClicked()</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00161">mainwindow.cpp:161</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ab24ed3afc9c816fce08265e7e4ebda75"><div class="ttname"><a href="class_main_window.html#ab24ed3afc9c816fce08265e7e4ebda75">MainWindow::btnReg</a></div><div class="ttdeci">QPushButton * btnReg</div><div class="ttdef"><b>Определения</b> <a href="#l00075">mainwindow.h:75</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ab34c5947e22e280ffda70959c7b9b9b7"><div class="ttname"><a href="class_main_window.html#ab34c5947e22e280ffda70959c7b9b9b7">MainWindow::editLogin</a></div><div class="ttdeci">QLineEdit * editLogin</div><div class="ttdef"><b>Определения</b> <a href="#l00072">mainwindow.h:72</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ac75f72767704a9a54a152f92c597e041"><div class="ttname"><a href="class_main_window.html#ac75f72767704a9a54a152f92c597e041">MainWindow::btnAnswer</a></div><div class="ttdeci">QPushButton * btnAnswer</div><div class="ttdef"><b>Определения</b> <a href="#l00090">mainwindow.h:90</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ac8d70a85d2c8b9d00908abcfb0e11237"><div class="ttname"><a href="class_main_window.html#ac8d70a85d2c8b9d00908abcfb0e11237">MainWindow::editHost</a></div><div class="ttdeci">QLineEdit * editHost</div><div class="ttdef"><b>Определения</b> <a href="#l00067">mainwindow.h:67</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ac9d5c20bac8391419feafff2a9eaaca8"><div class="ttname"><a href="class_main_window.html#ac9d5c20bac8391419feafff2a9eaaca8">MainWindow::logView</a></div><div class="ttdeci">QPlainTextEdit * logView</div><div class="ttdef"><b>Определения</b> <a href="#l00093">mainwindow.h:93</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae2aafc29e0dea2722f75b5ad687d8888"><div class="ttname"><a href="class_main_window.html#ae2aafc29e0dea2722f75b5ad687d8888">MainWindow::spinTaskNum</a></div><div class="ttdeci">QSpinBox * spinTaskNum</div><div class="ttdef"><b>Определения</b> <a href="#l00083">mainwindow.h:83</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ae743006dd8239d1b5cfb3dd2d40328c4"><div class="ttname"><a href="class_main_window.html#ae743006dd8239d1b5cfb3dd2d40328c4">MainWindow::comboTask</a></div><div class="ttdeci">QComboBox * comboTask</div><div class="ttdef"><b>Определения</b> <a href="#l00082">mainwindow.h:82</a></div></div>
+<div class="ttc" id="aclass_main_window_html_aef9e2aad2836eca19ad99169ba067332"><div class="ttname"><a href="class_main_window.html#aef9e2aad2836eca19ad99169ba067332">MainWindow::loggedIn</a></div><div class="ttdeci">bool loggedIn</div><div class="ttdef"><b>Определения</b> <a href="#l00095">mainwindow.h:95</a></div></div>
+<div class="ttc" id="aclass_main_window_html_af85cfe62c116f8d2f2021e5411b0356e"><div class="ttname"><a href="class_main_window.html#af85cfe62c116f8d2f2021e5411b0356e">MainWindow::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdef"><b>Определения</b> <a href="#l00064">mainwindow.h:64</a></div></div>
+<div class="ttc" id="aclass_main_window_html_afe1bceaad866b6fed583ba83245ae195"><div class="ttname"><a href="class_main_window.html#afe1bceaad866b6fed583ba83245ae195">MainWindow::buildUi</a></div><div class="ttdeci">void buildUi()</div><div class="ttdoc">Создаёт элементы и компоновки пользовательского интерфейса.</div><div class="ttdef"><b>Определения</b> <a href="mainwindow_8cpp_source.html#l00038">mainwindow.cpp:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a href="mainwindow_8h.html">mainwindow.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

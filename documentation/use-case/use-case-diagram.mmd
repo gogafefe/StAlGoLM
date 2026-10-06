@@ -1,0 +1,64 @@
+flowchart LR
+    client["👤 Клиент системы"]
+    visitor["👤 Посетитель"]
+    user["👤 Авторизованный пользователь"]
+    moderator["👤 Модератор"]
+    admin["👤 Администратор"]
+
+    subgraph system["Система StAlGoLM"]
+        direction TB
+
+        connect(["Подключиться к серверу"])
+        help(["Получить справку по командам"])
+
+        register(["Зарегистрировать аккаунт"])
+        initStats(["Создать личную статистику"])
+        login(["Войти в систему"])
+        verify(["Проверить учётные данные"])
+
+        profile(["Посмотреть данные аккаунта"])
+        logout(["Выйти из аккаунта"])
+        deleteSelf(["Удалить свой аккаунт"])
+        solve(["Выполнить учебное задание"])
+        getTask(["Получить условие Task1–Task4"])
+        answer(["Отправить ответ"])
+        check(["Проверить ответ"])
+        updateStats(["Обновить личную статистику"])
+        personalStats(["Посмотреть личную статистику"])
+
+        users(["Посмотреть список пользователей"])
+        serverStats(["Посмотреть статистику сервера"])
+
+        deleteAny(["Удалить чужой аккаунт"])
+        changeRole(["Изменить роль пользователя"])
+    end
+
+    visitor -->|является клиентом| client
+    user -->|является клиентом| client
+    moderator -->|наследует возможности| user
+    admin -->|наследует возможности| moderator
+
+    client --- connect
+    client --- help
+
+    visitor --- register
+    visitor --- login
+
+    user --- profile
+    user --- logout
+    user --- deleteSelf
+    user --- solve
+    user --- personalStats
+
+    moderator --- users
+    moderator --- serverStats
+
+    admin --- deleteAny
+    admin --- changeRole
+
+    register -.->|«include»| initStats
+    login -.->|«include»| verify
+    solve -.->|«include»| getTask
+    solve -.->|«include»| answer
+    answer -.->|«include»| check
+    answer -.->|«include»| updateStats

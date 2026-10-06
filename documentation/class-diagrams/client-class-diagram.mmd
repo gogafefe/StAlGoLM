@@ -1,0 +1,58 @@
+classDiagram
+    direction LR
+
+    class QMainWindow
+    class QTcpSocket
+    class QLineEdit
+    class QSpinBox
+    class QPushButton
+    class QComboBox
+    class QButtonGroup
+    class QPlainTextEdit
+    class QLabel
+
+    class MainWindow {
+        -QTcpSocket socket
+        -QLineEdit editHost
+        -QSpinBox spinPort
+        -QLineEdit editLogin
+        -QLineEdit editPassword
+        -QLineEdit editEmail
+        -QComboBox comboTask
+        -QSpinBox spinTaskNum
+        -QButtonGroup optGroup
+        -QLineEdit editAnswer
+        -QPlainTextEdit logView
+        -QLabel lblUser
+        -bool loggedIn
+        -int activeTaskType
+        +MainWindow(parent)
+        -buildUi()
+        -sendCommand(command)
+        -log(who, text)
+        -setConnectionState(connected)
+        -setRadiosEnabled(on)
+        -resetTaskState()
+        -onConnectClicked()
+        -onConnected()
+        -onDisconnected()
+        -onReadyRead()
+        -onSocketErrorOccurred(error)
+        -onRegClicked()
+        -onAuthClicked()
+        -onLogoutClicked()
+        -onWhoamiClicked()
+        -onGetTaskClicked()
+        -onAnswerClicked()
+        -onMystatsClicked()
+    }
+
+    QMainWindow <|-- MainWindow : наследование
+    MainWindow *-- QTcpSocket : TCP-соединение
+    MainWindow *-- QLineEdit : поля ввода
+    MainWindow *-- QSpinBox : числовые поля
+    MainWindow *-- QPushButton : команды интерфейса
+    MainWindow *-- QComboBox : выбор задания
+    MainWindow *-- QButtonGroup : варианты ответа
+    MainWindow *-- QPlainTextEdit : журнал обмена
+    MainWindow *-- QLabel : состояние пользователя

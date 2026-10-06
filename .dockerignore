@@ -1,0 +1,17 @@
+.git
+.github
+.qtcreator
+build*
+debug
+release
+client
+tests
+wiki
+documentation
+таблицы
+*.o
+*.pro.user
+.qmake.stash
+server.db
+results.txt
+~$*

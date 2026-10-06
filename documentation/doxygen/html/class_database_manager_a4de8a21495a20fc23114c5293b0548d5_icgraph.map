@@ -1,0 +1,5 @@
+<map id="DatabaseManager::userExists" name="DatabaseManager::userExists">
+<area shape="rect" id="Node000001" title="Проверяет существование пользователя с заданным логином." alt="" coords="235,5,432,32"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14" title="Регистрирует пользователя; пароль сохраняется как SHA&#45;256." alt="" coords="5,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,19,187,21,187,16,222,19"/>
+</map>

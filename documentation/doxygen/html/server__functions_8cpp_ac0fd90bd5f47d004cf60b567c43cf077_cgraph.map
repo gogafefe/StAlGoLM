@@ -1,0 +1,19 @@
+<map id="cmd_answer" name="cmd_answer">
+<area shape="rect" id="Node000001" title="Проверяет ответ и обновляет статистику активного задания." alt="" coords="5,105,101,132"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="17,106,11,97,15,87,30,81,53,79,78,81,93,89,88,91,77,86,53,84,31,86,19,91,16,96,22,104"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f" title=" " alt="" coords="161,55,364,81"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="100,103,148,91,185,84,180,86,149,96,102,108"/>
+<area shape="rect" id="Node000007" href="$class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100" title="Возвращает 40 значений статистики указанного типа задания." alt="" coords="149,105,377,132"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="100,116,136,118,131,120,101,121"/>
+<area shape="rect" id="Node000008" href="$class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751" title="Изменяет результат конкретного шаблона задания на delta." alt="" coords="152,156,374,183"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="101,129,149,141,185,152,180,152,148,147,101,134"/>
+<area shape="rect" id="Node000003" href="$class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6" title=" " alt="" coords="425,47,616,89"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="365,65,412,68,407,68,365,71"/>
+<area shape="rect" id="Node000004" href="$class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159" title=" " alt="" coords="664,55,873,81"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="617,65,651,68,646,68,617,71"/>
+<area shape="rect" id="Node000005" href="$class_database_manager.html#a9156430e28c743f5578213041431f7ae" title=" " alt="" coords="921,5,1121,48"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="854,51,903,46,908,45,855,57"/>
+<area shape="rect" id="Node000006" href="$databasemanager_8cpp.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa" title="Возвращает строковое имя роли." alt="" coords="976,96,1066,123"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="854,79,963,100,958,100,854,85"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="978,95,971,87,976,77,993,71,1021,69,1051,72,1069,82,1063,81,1050,77,1021,75,994,77,980,82,976,87,983,97"/>
+</map>

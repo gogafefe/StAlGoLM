@@ -1,0 +1,40 @@
+<map id="cmd_task" name="cmd_task">
+<area shape="rect" id="Node000001" title="Генерирует задание выбранного типа и сохраняет ответ в сессии." alt="" coords="5,317,84,344"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="19,317,15,309,18,299,28,293,45,291,62,293,72,301,67,303,60,298,44,296,30,298,22,302,21,308,24,316"/>
+<area shape="rect" id="Node000002" href="$task1_8cpp.html#a26339be91fba8efa67f2132bdfd82850" title="Создаёт задачу сравнения методов трапеций и Симпсона." alt="" coords="132,117,242,144"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="53,316,166,154,168,159,58,318"/>
+<area shape="rect" id="Node000006" href="$task2_8cpp.html#aaefb1fd58d28524025385e49c98c9860" title="Создаёт задачу на вычисление первой итерации метода Ньютона." alt="" coords="132,280,242,307"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="82,318,120,309,117,313,86,323"/>
+<area shape="rect" id="Node000009" href="$task3_8cpp.html#a0c4e55df73910d5a9c0b28f607404c09" title="Создаёт задачу на метод половинного деления." alt="" coords="132,355,242,381"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="83,338,121,349,116,351,85,343"/>
+<area shape="rect" id="Node000013" href="$task4_8cpp.html#a9a32504368403c91cd60fbc8db19581c" title="Создаёт задачу на сложение двух чисел." alt="" coords="132,429,242,456"/>
+<area shape="poly" id="edge24_Node000001_Node000013" title=" " alt="" coords="64,342,159,418,154,421,62,347"/>
+<area shape="poly" id="edge10_Node000002_Node000002" title=" " alt="" coords="162,117,158,109,161,99,171,93,187,91,204,93,215,101,209,103,202,98,187,96,172,98,165,102,163,108,167,117"/>
+<area shape="rect" id="Node000003" href="$task1_8cpp.html#ae80db37bca078832862fccd042c7eabc" title=" " alt="" coords="290,29,418,56"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="211,115,289,72,314,62,310,65,291,77,214,119"/>
+<area shape="rect" id="Node000004" href="$task1_8cpp.html#a64e6e337e3162af495e7caf51d2aafc5" title=" " alt="" coords="466,117,601,144"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="241,121,290,116,354,114,418,116,453,120,448,122,418,121,354,119,290,121,244,125"/>
+<area shape="rect" id="Node000005" href="$task1_8cpp.html#adf186a1f0f796693713409fdca3a5f65" title=" " alt="" coords="295,155,413,181"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="242,140,282,150,278,153,243,146"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="325,29,320,21,324,11,335,5,354,3,374,5,386,14,381,15,373,10,354,8,337,10,328,15,326,20,330,29"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="502,116,497,109,501,99,513,93,534,91,555,93,568,102,563,102,553,98,533,96,515,98,505,103,503,108,508,117"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="413,153,454,147,449,149,415,158"/>
+<area shape="poly" id="edge9_Node000005_Node000005" title=" " alt="" coords="325,154,320,146,324,136,335,130,354,128,374,131,386,139,381,140,373,136,354,133,337,135,328,140,326,145,330,154"/>
+<area shape="poly" id="edge15_Node000006_Node000006" title=" " alt="" coords="162,279,158,271,161,262,171,256,187,253,204,256,215,264,209,265,202,261,187,259,172,261,165,265,163,271,167,280"/>
+<area shape="rect" id="Node000007" href="$task2_8cpp.html#aa52e367ebb0da21b5ea1227cfd1b3c69" title=" " alt="" coords="305,229,403,256"/>
+<area shape="poly" id="edge12_Node000006_Node000007" title=" " alt="" coords="232,277,295,260,291,263,235,282"/>
+<area shape="rect" id="Node000008" href="$task2_8cpp.html#adda1eda52f6f5e85f26c6a325e8268da" title=" " alt="" coords="330,280,378,307"/>
+<area shape="poly" id="edge14_Node000006_Node000008" title=" " alt="" coords="242,291,317,292,313,295,243,296"/>
+<area shape="poly" id="edge13_Node000007_Node000007" title=" " alt="" coords="325,228,320,221,324,211,335,205,354,203,374,205,386,214,381,214,373,210,354,208,337,210,328,215,326,220,330,229"/>
+<area shape="poly" id="edge23_Node000009_Node000009" title=" " alt="" coords="162,354,158,346,161,336,171,330,187,328,204,331,215,339,209,340,202,336,187,333,172,335,165,340,163,346,167,355"/>
+<area shape="rect" id="Node000010" href="$task3_8cpp.html#a3f006eac7946a1845fd343c26f007a57" title=" " alt="" coords="304,355,405,381"/>
+<area shape="poly" id="edge17_Node000009_Node000010" title=" " alt="" coords="242,365,290,367,285,369,243,371"/>
+<area shape="rect" id="Node000011" href="$task3_8cpp.html#a7927af22b21f4c489abe07fc5f50e0ad" title=" " alt="" coords="510,380,557,407"/>
+<area shape="poly" id="edge20_Node000009_Node000011" title=" " alt="" coords="234,379,290,391,401,396,497,396,492,397,401,402,290,396,234,385"/>
+<area shape="rect" id="Node000012" href="$task3_8cpp.html#afc0ea10d80330be9921ece45162ba2bf" title=" " alt="" coords="301,480,407,507"/>
+<area shape="poly" id="edge21_Node000009_Node000012" title=" " alt="" coords="222,379,244,391,269,412,292,435,329,470,323,469,288,439,265,416,240,396,221,384"/>
+<area shape="poly" id="edge18_Node000010_Node000010" title=" " alt="" coords="325,353,320,346,324,336,335,330,354,328,374,331,386,340,381,339,373,336,354,333,337,335,328,340,326,345,330,355"/>
+<area shape="poly" id="edge19_Node000010_Node000011" title=" " alt="" coords="405,372,497,388,492,388,405,378"/>
+<area shape="poly" id="edge22_Node000012_Node000012" title=" " alt="" coords="325,478,320,471,324,462,335,456,354,453,374,456,386,465,381,464,373,461,354,459,337,461,328,465,326,471,330,481"/>
+<area shape="poly" id="edge25_Node000013_Node000013" title=" " alt="" coords="162,428,158,421,161,411,171,405,187,403,204,405,215,414,209,414,202,410,187,408,172,410,165,414,163,420,167,430"/>
+</map>

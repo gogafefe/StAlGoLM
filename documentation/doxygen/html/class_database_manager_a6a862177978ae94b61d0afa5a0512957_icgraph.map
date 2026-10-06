@@ -1,0 +1,5 @@
+<map id="DatabaseManager::deleteStatisticRows" name="DatabaseManager::deleteStatisticRows">
+<area shape="rect" id="Node000001" title="Удаляет статистику пользователя из всех четырёх таблиц." alt="" coords="252,5,504,32"/>
+<area shape="rect" id="Node000002" href="$class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277" title="Удаляет пользователя и связанные строки статистики." alt="" coords="5,5,204,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,19,204,21,204,16,239,19"/>
+</map>

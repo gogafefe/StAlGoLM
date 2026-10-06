@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Исходный файл databasemanager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('databasemanager_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">databasemanager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="databasemanager_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DATABASEMANAGER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DATABASEMANAGER_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QSqlDatabase&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QSqlQuery&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QSqlError&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QCryptographicHash&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QVector&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">   13</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">   14</a></span>    <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a>,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">   15</a></span>    <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">ROLE_MODERATOR</a>,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">   16</a></span>    <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a>,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">   17</a></span>    <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">ROLE_ERR</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_function" href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a>(<span class="keyword">const</span> QString&amp; roleStr);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>QString <a class="code hl_function" href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a>(<a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> role);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_user_info.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_user_info.html">UserInfo</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_user_info.html#a02bea71cec7e7221c759fcdb69243411">   28</a></span>    QString <a class="code hl_variable" href="struct_user_info.html#a02bea71cec7e7221c759fcdb69243411">login</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_user_info.html#a2d37020b9b4e4e4d45c2364dc9b2ecb9">   29</a></span>    QString <a class="code hl_variable" href="struct_user_info.html#a2d37020b9b4e4e4d45c2364dc9b2ecb9">email</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_user_info.html#a416d63a89f0a434e41e8e3b81404a09d">   30</a></span>    <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_variable" href="struct_user_info.html#a416d63a89f0a434e41e8e3b81404a09d">role</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_user_info.html#a2af443a7900d5e01a4842923ea5e8eb8">   31</a></span>    QString <a class="code hl_variable" href="struct_user_info.html#a2af443a7900d5e01a4842923ea5e8eb8">registeredAt</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_user_info.html#a1c0494ad4207d1f82d33fb3db86af4fe">   32</a></span>    QString <a class="code hl_variable" href="struct_user_info.html#a1c0494ad4207d1f82d33fb3db86af4fe">lastAuth</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_user_stats.html">   36</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_user_stats.html">UserStats</a> {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_user_stats.html#a1786356ddfac9aceb346a11befe34532">   37</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_user_stats.html#a1786356ddfac9aceb346a11befe34532">totalUsers</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_user_stats.html#a02511e15d5731227a15d822664b84211">   38</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_user_stats.html#a02511e15d5731227a15d822664b84211">newUsersMonth</a>;      <span class="comment">// за последний месяц</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_user_stats.html#ad53a1099795f0aa6d39867bee187186c">   39</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_user_stats.html#ad53a1099795f0aa6d39867bee187186c">activeUsersMonth</a>;   <span class="comment">// активные за месяц</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_database_manager.html">   49</a></span><span class="keyword">class </span><a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> <a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a>* <a class="code hl_function" href="class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f">getInstance</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// === Пользователи ===</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14">regUser</a>(<span class="keyword">const</span> QString&amp; login, <span class="keyword">const</span> QString&amp; password, <span class="keyword">const</span> QString&amp; email, <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> role);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#ac479a8b94759eda7684b22f04674bcda">authUser</a>(<span class="keyword">const</span> QString&amp; login, <span class="keyword">const</span> QString&amp; password);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_function" href="class_database_manager.html#ac620ee7e0f3e7e4dfb36d88934d33500">authUserWithRole</a>(<span class="keyword">const</span> QString&amp; login, <span class="keyword">const</span> QString&amp; password);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_function" href="class_database_manager.html#ab38c297366f0b99ddef168168cceb118">getUserRole</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    QString <a class="code hl_function" href="class_database_manager.html#a5527f21f871e0a848b3f4082fbf1dac1">getUserEmail</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277">deleteUser</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#abfe9ed86c77432471b44c95faa9c3e5f">updateUserRole</a>(<span class="keyword">const</span> QString&amp; login, <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> newRole);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5">userExists</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// === Для админа/модератора ===</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    QVector&lt;UserInfo&gt; <a class="code hl_function" href="class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb">getAllUsers</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_struct" href="struct_user_stats.html">UserStats</a> <a class="code hl_function" href="class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f">getStats</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// Создать строки со значениями 0 во всех 4 таблицах статистики для нового пользователя</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a">createStatisticRows</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Обновить ячейку: taskNum (1-4), problemNum (1-40), delta (+1 или -1)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751">updateStatistic</a>(<span class="keyword">const</span> QString&amp; login, <span class="keywordtype">int</span> taskNum, <span class="keywordtype">int</span> problemNum, <span class="keywordtype">int</span> delta);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// Получить всю строку статистики (40 значений) для пользователя</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    QVector&lt;int&gt; <a class="code hl_function" href="class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100">getStatisticRow</a>(<span class="keyword">const</span> QString&amp; login, <span class="keywordtype">int</span> taskNum);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// Удалить строки статистики пользователя (при удалении аккаунта)</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#a6a862177978ae94b61d0afa5a0512957">deleteStatisticRows</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_database_manager.html#aefa3d6eae7782904f5d758462b573b1e">   93</a></span>    <a class="code hl_function" href="class_database_manager.html#aefa3d6eae7782904f5d758462b573b1e">DatabaseManager</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_database_manager.html#ab5a4c00314aae0887ac7a1495f6b803c">   94</a></span>    <a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a>&amp; <a class="code hl_function" href="class_database_manager.html#ab5a4c00314aae0887ac7a1495f6b803c">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">   96</a></span>    QSqlDatabase <a class="code hl_variable" href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">db</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159">initDatabase</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// Создание 4 таблиц статистики (StatisticTask1..4)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_database_manager.html#a9156430e28c743f5578213041431f7ae">initStatisticTables</a>();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">updateLastAuth</a>(<span class="keyword">const</span> QString&amp; login);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif </span><span class="comment">// DATABASEMANAGER_H</span></div>
+<div class="ttc" id="aclass_database_manager_html_a3be359d5fcbfe24c0b82a4f9d9da290a"><div class="ttname"><a href="class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a">DatabaseManager::createStatisticRows</a></div><div class="ttdeci">bool createStatisticRows(const QString &amp;login)</div><div class="ttdoc">Создаёт нулевые строки пользователя во всех таблицах заданий.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00251">databasemanager.cpp:251</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a40e408d6b0e58b853a7699128215927e"><div class="ttname"><a href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">DatabaseManager::updateLastAuth</a></div><div class="ttdeci">void updateLastAuth(const QString &amp;login)</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00146">databasemanager.cpp:146</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a48728975c70722593bb73736d7e76efb"><div class="ttname"><a href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">DatabaseManager::db</a></div><div class="ttdeci">QSqlDatabase db</div><div class="ttdef"><b>Определения</b> <a href="#l00096">databasemanager.h:96</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a4de8a21495a20fc23114c5293b0548d5"><div class="ttname"><a href="class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5">DatabaseManager::userExists</a></div><div class="ttdeci">bool userExists(const QString &amp;login)</div><div class="ttdoc">Проверяет существование пользователя с заданным логином.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00195">databasemanager.cpp:195</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a5229d59df08a16101b9b12ae1e4c9d3f"><div class="ttname"><a href="class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f">DatabaseManager::getStats</a></div><div class="ttdeci">UserStats getStats()</div><div class="ttdoc">Возвращает общую, месячную и активную статистику пользователей.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00223">databasemanager.cpp:223</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a5527f21f871e0a848b3f4082fbf1dac1"><div class="ttname"><a href="class_database_manager.html#a5527f21f871e0a848b3f4082fbf1dac1">DatabaseManager::getUserEmail</a></div><div class="ttdeci">QString getUserEmail(const QString &amp;login)</div><div class="ttdoc">Возвращает электронную почту пользователя.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00165">databasemanager.cpp:165</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a64012c6797de615da05a1ba7c4bdb100"><div class="ttname"><a href="class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100">DatabaseManager::getStatisticRow</a></div><div class="ttdeci">QVector&lt; int &gt; getStatisticRow(const QString &amp;login, int taskNum)</div><div class="ttdoc">Возвращает 40 значений статистики указанного типа задания.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00295">databasemanager.cpp:295</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a6a862177978ae94b61d0afa5a0512957"><div class="ttname"><a href="class_database_manager.html#a6a862177978ae94b61d0afa5a0512957">DatabaseManager::deleteStatisticRows</a></div><div class="ttdeci">bool deleteStatisticRows(const QString &amp;login)</div><div class="ttdoc">Удаляет статистику пользователя из всех четырёх таблиц.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00318">databasemanager.cpp:318</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a9156430e28c743f5578213041431f7ae"><div class="ttname"><a href="class_database_manager.html#a9156430e28c743f5578213041431f7ae">DatabaseManager::initStatisticTables</a></div><div class="ttdeci">void initStatisticTables()</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00074">databasemanager.cpp:74</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aa121692550f4bc3ed892b1b1dc12eaeb"><div class="ttname"><a href="class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb">DatabaseManager::getAllUsers</a></div><div class="ttdeci">QVector&lt; UserInfo &gt; getAllUsers()</div><div class="ttdoc">Возвращает список всех пользователей.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00203">databasemanager.cpp:203</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aa162d97472e6c31a4e873adda435dbb6"><div class="ttname"><a href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager::DatabaseManager</a></div><div class="ttdeci">DatabaseManager()</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00029">databasemanager.cpp:29</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aa28220a2e7240a6f7530ab0ca3f31751"><div class="ttname"><a href="class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751">DatabaseManager::updateStatistic</a></div><div class="ttdeci">bool updateStatistic(const QString &amp;login, int taskNum, int problemNum, int delta)</div><div class="ttdoc">Изменяет результат конкретного шаблона задания на delta.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00280">databasemanager.cpp:280</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ab38c297366f0b99ddef168168cceb118"><div class="ttname"><a href="class_database_manager.html#ab38c297366f0b99ddef168168cceb118">DatabaseManager::getUserRole</a></div><div class="ttdeci">UserRole getUserRole(const QString &amp;login)</div><div class="ttdoc">Возвращает роль пользователя по логину.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00154">databasemanager.cpp:154</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ab5a4c00314aae0887ac7a1495f6b803c"><div class="ttname"><a href="class_database_manager.html#ab5a4c00314aae0887ac7a1495f6b803c">DatabaseManager::operator=</a></div><div class="ttdeci">DatabaseManager &amp; operator=(const DatabaseManager &amp;)=delete</div></div>
+<div class="ttc" id="aclass_database_manager_html_abc9d122fdd166a7aa77e01506e85ec14"><div class="ttname"><a href="class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14">DatabaseManager::regUser</a></div><div class="ttdeci">bool regUser(const QString &amp;login, const QString &amp;password, const QString &amp;email, UserRole role)</div><div class="ttdoc">Регистрирует пользователя; пароль сохраняется как SHA-256.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00100">databasemanager.cpp:100</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_abfe9ed86c77432471b44c95faa9c3e5f"><div class="ttname"><a href="class_database_manager.html#abfe9ed86c77432471b44c95faa9c3e5f">DatabaseManager::updateUserRole</a></div><div class="ttdeci">bool updateUserRole(const QString &amp;login, UserRole newRole)</div><div class="ttdoc">Изменяет роль существующего пользователя.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00186">databasemanager.cpp:186</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ac479a8b94759eda7684b22f04674bcda"><div class="ttname"><a href="class_database_manager.html#ac479a8b94759eda7684b22f04674bcda">DatabaseManager::authUser</a></div><div class="ttdeci">bool authUser(const QString &amp;login, const QString &amp;password)</div><div class="ttdoc">Проверяет логин и пароль пользователя.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00116">databasemanager.cpp:116</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ac620ee7e0f3e7e4dfb36d88934d33500"><div class="ttname"><a href="class_database_manager.html#ac620ee7e0f3e7e4dfb36d88934d33500">DatabaseManager::authUserWithRole</a></div><div class="ttdeci">UserRole authUserWithRole(const QString &amp;login, const QString &amp;password)</div><div class="ttdoc">Проверяет учётные данные и возвращает роль пользователя.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00130">databasemanager.cpp:130</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ad3ebd7636ba25c4a1ba2f85712ad6277"><div class="ttname"><a href="class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277">DatabaseManager::deleteUser</a></div><div class="ttdeci">bool deleteUser(const QString &amp;login)</div><div class="ttdoc">Удаляет пользователя и связанные строки статистики.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00176">databasemanager.cpp:176</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_adc77584b498f23cb33c9fc2d0422a73f"><div class="ttname"><a href="class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f">DatabaseManager::getInstance</a></div><div class="ttdeci">static DatabaseManager * getInstance()</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00023">databasemanager.cpp:23</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aefa3d6eae7782904f5d758462b573b1e"><div class="ttname"><a href="class_database_manager.html#aefa3d6eae7782904f5d758462b573b1e">DatabaseManager::DatabaseManager</a></div><div class="ttdeci">DatabaseManager(const DatabaseManager &amp;)=delete</div></div>
+<div class="ttc" id="aclass_database_manager_html_af755b98e0f96d65d0ea2a07274f27159"><div class="ttname"><a href="class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159">DatabaseManager::initDatabase</a></div><div class="ttdeci">void initDatabase()</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00034">databasemanager.cpp:34</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a></div><div class="ttdeci">UserRole</div><div class="ttdoc">Роль пользователя и уровень доступа к серверным командам.</div><div class="ttdef"><b>Определения</b> <a href="#l00013">databasemanager.h:13</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">ROLE_ERR</a></div><div class="ttdeci">@ ROLE_ERR</div><div class="ttdef"><b>Определения</b> <a href="#l00017">databasemanager.h:17</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">ROLE_MODERATOR</a></div><div class="ttdeci">@ ROLE_MODERATOR</div><div class="ttdef"><b>Определения</b> <a href="#l00015">databasemanager.h:15</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a></div><div class="ttdeci">@ ROLE_ADMIN</div><div class="ttdef"><b>Определения</b> <a href="#l00016">databasemanager.h:16</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a></div><div class="ttdeci">@ ROLE_USER</div><div class="ttdef"><b>Определения</b> <a href="#l00014">databasemanager.h:14</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a272e7e4a9d59f5cce7c678533de77e73"><div class="ttname"><a href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a></div><div class="ttdeci">UserRole stringToRole(const QString &amp;roleStr)</div><div class="ttdoc">Преобразует строковое имя роли в UserRole.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00004">databasemanager.cpp:4</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a8ff4b8e34d22c2ca10aa6fe31da7cefa"><div class="ttname"><a href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a></div><div class="ttdeci">QString roleToString(UserRole role)</div><div class="ttdoc">Возвращает строковое имя роли.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8cpp_source.html#l00013">databasemanager.cpp:13</a></div></div>
+<div class="ttc" id="astruct_user_info_html"><div class="ttname"><a href="struct_user_info.html">UserInfo</a></div><div class="ttdoc">Краткая информация о пользователе для административного списка.</div><div class="ttdef"><b>Определения</b> <a href="#l00027">databasemanager.h:27</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a02bea71cec7e7221c759fcdb69243411"><div class="ttname"><a href="struct_user_info.html#a02bea71cec7e7221c759fcdb69243411">UserInfo::login</a></div><div class="ttdeci">QString login</div><div class="ttdef"><b>Определения</b> <a href="#l00028">databasemanager.h:28</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a1c0494ad4207d1f82d33fb3db86af4fe"><div class="ttname"><a href="struct_user_info.html#a1c0494ad4207d1f82d33fb3db86af4fe">UserInfo::lastAuth</a></div><div class="ttdeci">QString lastAuth</div><div class="ttdef"><b>Определения</b> <a href="#l00032">databasemanager.h:32</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a2af443a7900d5e01a4842923ea5e8eb8"><div class="ttname"><a href="struct_user_info.html#a2af443a7900d5e01a4842923ea5e8eb8">UserInfo::registeredAt</a></div><div class="ttdeci">QString registeredAt</div><div class="ttdef"><b>Определения</b> <a href="#l00031">databasemanager.h:31</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a2d37020b9b4e4e4d45c2364dc9b2ecb9"><div class="ttname"><a href="struct_user_info.html#a2d37020b9b4e4e4d45c2364dc9b2ecb9">UserInfo::email</a></div><div class="ttdeci">QString email</div><div class="ttdef"><b>Определения</b> <a href="#l00029">databasemanager.h:29</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a416d63a89f0a434e41e8e3b81404a09d"><div class="ttname"><a href="struct_user_info.html#a416d63a89f0a434e41e8e3b81404a09d">UserInfo::role</a></div><div class="ttdeci">UserRole role</div><div class="ttdef"><b>Определения</b> <a href="#l00030">databasemanager.h:30</a></div></div>
+<div class="ttc" id="astruct_user_stats_html"><div class="ttname"><a href="struct_user_stats.html">UserStats</a></div><div class="ttdoc">Агрегированная статистика пользователей сервера.</div><div class="ttdef"><b>Определения</b> <a href="#l00036">databasemanager.h:36</a></div></div>
+<div class="ttc" id="astruct_user_stats_html_a02511e15d5731227a15d822664b84211"><div class="ttname"><a href="struct_user_stats.html#a02511e15d5731227a15d822664b84211">UserStats::newUsersMonth</a></div><div class="ttdeci">int newUsersMonth</div><div class="ttdef"><b>Определения</b> <a href="#l00038">databasemanager.h:38</a></div></div>
+<div class="ttc" id="astruct_user_stats_html_a1786356ddfac9aceb346a11befe34532"><div class="ttname"><a href="struct_user_stats.html#a1786356ddfac9aceb346a11befe34532">UserStats::totalUsers</a></div><div class="ttdeci">int totalUsers</div><div class="ttdef"><b>Определения</b> <a href="#l00037">databasemanager.h:37</a></div></div>
+<div class="ttc" id="astruct_user_stats_html_ad53a1099795f0aa6d39867bee187186c"><div class="ttname"><a href="struct_user_stats.html#ad53a1099795f0aa6d39867bee187186c">UserStats::activeUsersMonth</a></div><div class="ttdeci">int activeUsersMonth</div><div class="ttdef"><b>Определения</b> <a href="#l00039">databasemanager.h:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="databasemanager_8h.html">databasemanager.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

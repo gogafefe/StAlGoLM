@@ -1,0 +1,7 @@
+<map id="MainWindow::onConnected" name="MainWindow::onConnected">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,187,61"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a0e5d89893a8ae7f1358603a438aae264" title="Добавляет сообщение в журнал обмена." alt="" coords="268,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,34,255,27,250,29,187,39"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a22c7b70ffea9a6689abe1299af98436a" title="Обновляет элементы интерфейса при подключении или отключении." alt="" coords="235,56,423,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,57,222,63,217,64,187,62"/>
+</map>

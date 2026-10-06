@@ -49,10 +49,10 @@ QString processCommand(const QString& command, UserSession& session)
         return cmd_task(2, num, session);
     }
     if (action == "task3") {
-        if (parts.size() < 2) return "error: usage: task3 <1-40>\r\n";
+        if (parts.size() < 2) return "error: usage: task3 <1-10>\r\n";
         bool ok;
         int num = parts[1].toInt(&ok);
-        if (!ok || num < 1 || num > 40) return "error: task number must be 1-40\r\n";
+        if (!ok || num < 1 || num > 10) return "error: task number must be 1-10\r\n";
         return cmd_task(3, num, session);
     }
     if (action == "task4") {
@@ -273,14 +273,15 @@ QString cmd_help()
            "--- Tasks (require login) ---\r\n"
            "  task1 <1-40> - integral comparison (trapezoid vs Simpson)\r\n"
            "  task2 <1-10> - Newton's method: pick the correct x1 of 4 options\r\n"
-           "  task3 <1-40> - sum of two numbers (medium)\r\n"
+           "  task3 <1-10> - bisection method: pick the root with accuracy epsilon\r\n"
            "  task4 <1-40> - sum of two numbers (large)\r\n"
            "  mystats [1-4] - view your task statistics\r\n"
            "--- Answering ---\r\n"
            "  After taskX N, enter the answer as a number.\r\n"
            "  For task1: 1 (trapezoid) or 2 (Simpson).\r\n"
            "  For task2: the number (1-4) of the correct x1 value (Newton's method).\r\n"
-           "  For task3-4: the computed sum.\r\n"
+           "  For task3: the number (1-4) of the root found by bisection.\r\n"
+           "  For task4: the computed sum.\r\n"
            "  +1 for correct, -1 for wrong.\r\n"
            "Roles: user, moderator, admin\r\n";
 }
@@ -342,7 +343,7 @@ QString cmd_answer(int userAnswer, UserSession& session)
 {
     // Проверяем, есть ли активное задание
     if (session.currentTaskType == 0) {
-        return "error: no active task. Use task1/3/4 <1-40> or task2 <1-10> first.\r\n";
+        return "error: no active task. Use task1/4 <1-40> or task2/3 <1-10> first.\r\n";
     }
 
     int taskType = session.currentTaskType;
@@ -409,8 +410,8 @@ QString cmd_mystats(const QStringList& parts, const UserSession& session)
 
         QVector<int> row = DatabaseManager::getInstance()->getStatisticRow(session.login, taskType);
 
-        // У task2 шаблонов 10, у остальных — 40; выводим по 10 в строке
-        int cells = (taskType == 2) ? 10 : 40;
+        // У task2 и task3 по 10 шаблонов, у task1 и task4 — по 40.
+        int cells = (taskType == 2 || taskType == 3) ? 10 : 40;
 
         // Выводим значения по 10 в строке для компактности
         for (int line = 0; line < cells / 10; line++) {

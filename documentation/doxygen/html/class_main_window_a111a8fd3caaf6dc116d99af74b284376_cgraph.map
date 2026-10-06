@@ -1,0 +1,7 @@
+<map id="MainWindow::onGetTaskClicked" name="MainWindow::onGetTaskClicked">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,217,32"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a0059744c7bd6262a54e52c8df4a22877" title="Отправляет текстовую команду с разделителем 0x01." alt="" coords="265,5,457,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,16,252,19,247,19,217,21"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a0e5d89893a8ae7f1358603a438aae264" title="Добавляет сообщение в журнал обмена." alt="" coords="505,5,626,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,16,492,19,487,19,457,21"/>
+</map>

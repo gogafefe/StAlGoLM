@@ -16,7 +16,7 @@
     server_functions.*    — диспетчер команд (reg/auth/taskN/...)
     databasemanager.*     — SQLite: пользователи, роли, статистика
     task1..task4.*        — генераторы заданий
-    tests/                — модульные тесты (QtTest)
+    tests/                — модульные тесты Task2 и Task3 (QtTest)
     wiki/                 — страницы Wiki проекта
 
 Подробнее — в wiki проекта и в `wiki/Архитектура.md`.

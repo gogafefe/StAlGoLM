@@ -1,0 +1,6 @@
+<map id="buildTemplate" name="buildTemplate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,107,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="34,29,30,20,33,11,42,5,56,3,71,5,80,14,75,14,69,10,56,8,44,10,37,14,36,20,39,29"/>
+<area shape="rect" id="Node000002" href="$task3_8cpp.html#a7927af22b21f4c489abe07fc5f50e0ad" title=" " alt="" coords="155,29,202,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="107,40,142,42,137,43,107,45"/>
+</map>

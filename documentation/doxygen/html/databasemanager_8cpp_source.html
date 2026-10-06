@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StAlGoLM: Исходный файл databasemanager.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">StAlGoLM<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Клиент-серверная система учебных заданий на C++ и Qt</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('databasemanager_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">databasemanager.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="databasemanager_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="databasemanager_8h.html">databasemanager.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QDateTime&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">    4</a></span><a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_function" href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a>(<span class="keyword">const</span> QString&amp; roleStr)</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    QString lower = roleStr.toLower();</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">if</span> (lower == <span class="stringliteral">&quot;user&quot;</span>) <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">if</span> (lower == <span class="stringliteral">&quot;moderator&quot;</span>) <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">ROLE_MODERATOR</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">if</span> (lower == <span class="stringliteral">&quot;admin&quot;</span>) <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">   13</a></span>QString <a class="code hl_function" href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a>(<a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> role)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">switch</span> (role) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;user&quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">ROLE_MODERATOR</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;moderator&quot;</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;admin&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">default</span>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;user&quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f">   23</a></span><a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a>* <a class="code hl_function" href="class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f">DatabaseManager::getInstance</a>()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> <a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager</a> instance;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> &amp;instance;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">   29</a></span><a class="code hl_function" href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager::DatabaseManager</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159">initDatabase</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159">DatabaseManager::initDatabase</a>()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_variable" href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">db</a> = QSqlDatabase::addDatabase(<span class="stringliteral">&quot;QSQLITE&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_variable" href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">db</a>.setDatabaseName(<span class="stringliteral">&quot;server.db&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">db</a>.open())</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        qDebug() &lt;&lt; <a class="code hl_variable" href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">db</a>.lastError().text();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    Таблица User</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    Поля: login, password, email, registered_at, last_auth, role</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    query.exec(<span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS User(&quot;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>               <span class="stringliteral">&quot;login VARCHAR(20) NOT NULL, &quot;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>               <span class="stringliteral">&quot;password VARCHAR(128) NOT NULL, &quot;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>               <span class="stringliteral">&quot;email VARCHAR(50), &quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>               <span class="stringliteral">&quot;registered_at DATETIME DEFAULT CURRENT_TIMESTAMP, &quot;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>               <span class="stringliteral">&quot;last_auth DATETIME, &quot;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>               <span class="stringliteral">&quot;role VARCHAR(20) NOT NULL DEFAULT &#39;user&#39;, &quot;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>               <span class="stringliteral">&quot;PRIMARY KEY(login))&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Создаём администратора по умолчанию</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    query.exec(<span class="stringliteral">&quot;SELECT login FROM User WHERE login=&#39;admin&#39;&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (!query.next()) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        QByteArray hash = QCryptographicHash::hash(<span class="stringliteral">&quot;admin123&quot;</span>, QCryptographicHash::Sha256);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        query.prepare(<span class="stringliteral">&quot;INSERT INTO User(login, password, email, role) VALUES (:login, :password, :email, :role)&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, <span class="stringliteral">&quot;admin&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, hash.toHex());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        query.bindValue(<span class="stringliteral">&quot;:email&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        query.bindValue(<span class="stringliteral">&quot;:role&quot;</span>, <a class="code hl_function" href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a>(<a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a>));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        query.exec();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Created default admin&quot;</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_function" href="class_database_manager.html#a9156430e28c743f5578213041431f7ae">initStatisticTables</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">// Каждая таблица содержит login (PRIMARY KEY, ссылается на User) и 40 столбцов p1..p40 по умолчанию с 0.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// При правильном ответе значение +1, при неправильном -1.</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_database_manager.html#a9156430e28c743f5578213041431f7ae">   74</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_database_manager.html#a9156430e28c743f5578213041431f7ae">DatabaseManager::initStatisticTables</a>()</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// Генерируем строку с 40 столбцами p1..p40</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    QString columns;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= 40; i++) {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> (i &gt; 1) columns += <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        columns += QString(<span class="stringliteral">&quot;p%1 INTEGER DEFAULT 0&quot;</span>).arg(i);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// Создаём 4 таблицы статистики для Task1..Task4</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> taskNum = 1; taskNum &lt;= 4; taskNum++) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        QString tableName = QString(<span class="stringliteral">&quot;StatisticTask%1&quot;</span>).arg(taskNum);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        QString sql = QString(<span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS %1(&quot;</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                              <span class="stringliteral">&quot;login VARCHAR(20) NOT NULL PRIMARY KEY, &quot;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                              <span class="stringliteral">&quot;%2, &quot;</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                              <span class="stringliteral">&quot;FOREIGN KEY(login) REFERENCES User(login))&quot;</span>)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                      .arg(tableName).arg(columns);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">if</span> (!query.exec(sql)) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Failed to create table&quot;</span> &lt;&lt; tableName &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Statistic tables created (StatisticTask1..4)&quot;</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14">  100</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14">DatabaseManager::regUser</a>(<span class="keyword">const</span> QString&amp; login, <span class="keyword">const</span> QString&amp; password, <span class="keyword">const</span> QString&amp; email, <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> role)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5">userExists</a>(login)) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    QByteArray hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    query.prepare(<span class="stringliteral">&quot;INSERT INTO User(login, password, email, role) VALUES (:login, :password, :email, :role)&quot;</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, hash.toHex());</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    query.bindValue(<span class="stringliteral">&quot;:email&quot;</span>, email);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    query.bindValue(<span class="stringliteral">&quot;:role&quot;</span>, <a class="code hl_function" href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a>(role));</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_database_manager.html#ac479a8b94759eda7684b22f04674bcda">  116</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#ac479a8b94759eda7684b22f04674bcda">DatabaseManager::authUser</a>(<span class="keyword">const</span> QString&amp; login, <span class="keyword">const</span> QString&amp; password)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    QByteArray hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    query.prepare(<span class="stringliteral">&quot;SELECT login FROM User WHERE login=:login AND password=:password&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, hash.toHex());</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">bool</span> success = query.exec() &amp;&amp; query.next();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">if</span> (success) {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <a class="code hl_function" href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">updateLastAuth</a>(login);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> success;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_database_manager.html#ac620ee7e0f3e7e4dfb36d88934d33500">  130</a></span><a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_function" href="class_database_manager.html#ac620ee7e0f3e7e4dfb36d88934d33500">DatabaseManager::authUserWithRole</a>(<span class="keyword">const</span> QString&amp; login, <span class="keyword">const</span> QString&amp; password)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    QByteArray hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    query.prepare(<span class="stringliteral">&quot;SELECT role FROM User WHERE login=:login AND password=:password&quot;</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    query.bindValue(<span class="stringliteral">&quot;:password&quot;</span>, hash.toHex());</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        qDebug() &lt;&lt; query.size();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next()) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        qDebug() &lt;&lt; hash.toHex();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <a class="code hl_function" href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">updateLastAuth</a>(login);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a>(query.value(0).toString());</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">ROLE_ERR</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">  146</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">DatabaseManager::updateLastAuth</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    query.prepare(<span class="stringliteral">&quot;UPDATE User SET last_auth = CURRENT_TIMESTAMP WHERE login=:login&quot;</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    query.exec();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="class_database_manager.html#ab38c297366f0b99ddef168168cceb118">  154</a></span><a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> <a class="code hl_function" href="class_database_manager.html#ab38c297366f0b99ddef168168cceb118">DatabaseManager::getUserRole</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    query.prepare(<span class="stringliteral">&quot;SELECT role FROM User WHERE login=:login&quot;</span>);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next()) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a>(query.value(0).toString());</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">ROLE_ERR</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="foldopen" id="foldopen00165" data-start="{" data-end="}">
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="class_database_manager.html#a5527f21f871e0a848b3f4082fbf1dac1">  165</a></span>QString <a class="code hl_function" href="class_database_manager.html#a5527f21f871e0a848b3f4082fbf1dac1">DatabaseManager::getUserEmail</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>{</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    query.prepare(<span class="stringliteral">&quot;SELECT email FROM User WHERE login=:login&quot;</span>);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next()) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> query.value(0).toString();</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}</div>
+</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277">  176</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277">DatabaseManager::deleteUser</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>{</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <a class="code hl_function" href="class_database_manager.html#a6a862177978ae94b61d0afa5a0512957">deleteStatisticRows</a>(login);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    query.prepare(<span class="stringliteral">&quot;DELETE FROM User WHERE login=:login&quot;</span>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="class_database_manager.html#abfe9ed86c77432471b44c95faa9c3e5f">  186</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#abfe9ed86c77432471b44c95faa9c3e5f">DatabaseManager::updateUserRole</a>(<span class="keyword">const</span> QString&amp; login, <a class="code hl_enumeration" href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a> newRole)</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>{</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    query.prepare(<span class="stringliteral">&quot;UPDATE User SET role=:role WHERE login=:login&quot;</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    query.bindValue(<span class="stringliteral">&quot;:role&quot;</span>, <a class="code hl_function" href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a>(newRole));</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
+</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5">  195</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5">DatabaseManager::userExists</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>{</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    query.prepare(<span class="stringliteral">&quot;SELECT login FROM User WHERE login=:login&quot;</span>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">return</span> query.exec() &amp;&amp; query.next();</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}</div>
+</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb">  203</a></span>QVector&lt;UserInfo&gt; <a class="code hl_function" href="class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb">DatabaseManager::getAllUsers</a>()</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>{</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    QVector&lt;UserInfo&gt; users;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    query.prepare(<span class="stringliteral">&quot;SELECT login, email, role, registered_at, last_auth FROM User ORDER BY login&quot;</span>);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">if</span> (query.exec()) {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">while</span> (query.next()) {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <a class="code hl_struct" href="struct_user_info.html">UserInfo</a> user;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            user.<a class="code hl_variable" href="struct_user_info.html#a02bea71cec7e7221c759fcdb69243411">login</a> = query.value(0).toString();</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            user.<a class="code hl_variable" href="struct_user_info.html#a2d37020b9b4e4e4d45c2364dc9b2ecb9">email</a> = query.value(1).toString();</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            user.<a class="code hl_variable" href="struct_user_info.html#a416d63a89f0a434e41e8e3b81404a09d">role</a> = <a class="code hl_function" href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a>(query.value(2).toString());</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            user.<a class="code hl_variable" href="struct_user_info.html#a2af443a7900d5e01a4842923ea5e8eb8">registeredAt</a> = query.value(3).toString();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            user.<a class="code hl_variable" href="struct_user_info.html#a1c0494ad4207d1f82d33fb3db86af4fe">lastAuth</a> = query.value(4).toString();</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            users.append(user);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">return</span> users;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
+</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="foldopen" id="foldopen00223" data-start="{" data-end="}">
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f">  223</a></span><a class="code hl_struct" href="struct_user_stats.html">UserStats</a> <a class="code hl_function" href="class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f">DatabaseManager::getStats</a>()</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_struct" href="struct_user_stats.html">UserStats</a> stats = {0, 0, 0};</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">// Общее число пользователей</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    query.exec(<span class="stringliteral">&quot;SELECT COUNT(*) FROM User&quot;</span>);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">if</span> (query.next()) {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        stats.<a class="code hl_variable" href="struct_user_stats.html#a1786356ddfac9aceb346a11befe34532">totalUsers</a> = query.value(0).toInt();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="comment">// Новые за последний месяц</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    query.exec(<span class="stringliteral">&quot;SELECT COUNT(*) FROM User WHERE registered_at &gt;= datetime(&#39;now&#39;, &#39;-1 month&#39;)&quot;</span>);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">if</span> (query.next()) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        stats.<a class="code hl_variable" href="struct_user_stats.html#a02511e15d5731227a15d822664b84211">newUsersMonth</a> = query.value(0).toInt();</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="comment">// Активные за последний месяц</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    query.exec(<span class="stringliteral">&quot;SELECT COUNT(*) FROM User WHERE last_auth &gt;= datetime(&#39;now&#39;, &#39;-1 month&#39;)&quot;</span>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordflow">if</span> (query.next()) {</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        stats.<a class="code hl_variable" href="struct_user_stats.html#ad53a1099795f0aa6d39867bee187186c">activeUsersMonth</a> = query.value(0).toInt();</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">return</span> stats;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>}</div>
+</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">// Создание строк со значениями 0 во всех 4 таблицах статистики для нового пользователя.</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">// Вызывается после успешной регистрации.</span></div>
+<div class="foldopen" id="foldopen00251" data-start="{" data-end="}">
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a">  251</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a">DatabaseManager::createStatisticRows</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>{</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordtype">bool</span> ok = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> taskNum = 1; taskNum &lt;= 4; taskNum++) {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        QString tableName = QString(<span class="stringliteral">&quot;StatisticTask%1&quot;</span>).arg(taskNum);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="comment">// Формируем список из 40 нулей для вставки</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        QString values = <span class="stringliteral">&quot;&#39;&quot;</span> + login + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= 40; i++) {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            values += <span class="stringliteral">&quot;, 0&quot;</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        QString sql = QString(<span class="stringliteral">&quot;INSERT INTO %1 (login, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, &quot;</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                             <span class="stringliteral">&quot;p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, &quot;</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                             <span class="stringliteral">&quot;p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, &quot;</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                             <span class="stringliteral">&quot;p31, p32, p33, p34, p35, p36, p37, p38, p39, p40) &quot;</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                             <span class="stringliteral">&quot;VALUES (%2)&quot;</span>)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                      .arg(tableName).arg(values);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">if</span> (!query.exec(sql)) {</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            qDebug() &lt;&lt; <span class="stringliteral">&quot;Failed to create stat row for&quot;</span> &lt;&lt; login &lt;&lt; <span class="stringliteral">&quot;in&quot;</span> &lt;&lt; tableName</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                     &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; query.lastError().text();</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            ok = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordflow">return</span> ok;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}</div>
+</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">// Обновление ячейки в таблице статистики.</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">// taskNum: 1-4 (какой Task), problemNum: 1-40 (номер задания), delta: +1 или -1.</span></div>
+<div class="foldopen" id="foldopen00280" data-start="{" data-end="}">
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751">  280</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751">DatabaseManager::updateStatistic</a>(<span class="keyword">const</span> QString&amp; login, <span class="keywordtype">int</span> taskNum, <span class="keywordtype">int</span> problemNum, <span class="keywordtype">int</span> delta)</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>{</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    QString tableName = QString(<span class="stringliteral">&quot;StatisticTask%1&quot;</span>).arg(taskNum);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    QString column = QString(<span class="stringliteral">&quot;p%1&quot;</span>).arg(problemNum);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    QString sql = QString(<span class="stringliteral">&quot;UPDATE %1 SET %2 = %2 + :delta WHERE login = :login&quot;</span>)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                  .arg(tableName).arg(column);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    query.prepare(sql);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    query.bindValue(<span class="stringliteral">&quot;:delta&quot;</span>, delta);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> query.exec();</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">// Получение всей строки статистики (40 значений) для пользователя из указанной таблицы.</span></div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100">  295</a></span>QVector&lt;int&gt; <a class="code hl_function" href="class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100">DatabaseManager::getStatisticRow</a>(<span class="keyword">const</span> QString&amp; login, <span class="keywordtype">int</span> taskNum)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>{</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    QVector&lt;int&gt; result(40, 0);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordflow">if</span> (taskNum &lt; 1 || taskNum &gt; 4) <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    QString tableName = QString(<span class="stringliteral">&quot;StatisticTask%1&quot;</span>).arg(taskNum);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    query.prepare(QString(<span class="stringliteral">&quot;SELECT p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,&quot;</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                         <span class="stringliteral">&quot;p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,&quot;</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                         <span class="stringliteral">&quot;p21,p22,p23,p24,p25,p26,p27,p28,p29,p30,&quot;</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                         <span class="stringliteral">&quot;p31,p32,p33,p34,p35,p36,p37,p38,p39,p40 &quot;</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                         <span class="stringliteral">&quot;FROM %1 WHERE login = :login&quot;</span>).arg(tableName));</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">if</span> (query.exec() &amp;&amp; query.next()) {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 40; i++) {</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            result[i] = query.value(i).toInt();</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        }</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    }</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>}</div>
+</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">// Удаление строк статистики пользователя из всех 4 таблиц (при удалении аккаунта).</span></div>
+<div class="foldopen" id="foldopen00318" data-start="{" data-end="}">
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="class_database_manager.html#a6a862177978ae94b61d0afa5a0512957">  318</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_database_manager.html#a6a862177978ae94b61d0afa5a0512957">DatabaseManager::deleteStatisticRows</a>(<span class="keyword">const</span> QString&amp; login)</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    QSqlQuery query;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordtype">bool</span> ok = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> taskNum = 1; taskNum &lt;= 4; taskNum++) {</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        QString tableName = QString(<span class="stringliteral">&quot;StatisticTask%1&quot;</span>).arg(taskNum);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        query.prepare(QString(<span class="stringliteral">&quot;DELETE FROM %1 WHERE login = :login&quot;</span>).arg(tableName));</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        query.bindValue(<span class="stringliteral">&quot;:login&quot;</span>, login);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="keywordflow">if</span> (!query.exec()) ok = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordflow">return</span> ok;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>}</div>
+</div>
+<div class="ttc" id="aclass_database_manager_html_a3be359d5fcbfe24c0b82a4f9d9da290a"><div class="ttname"><a href="class_database_manager.html#a3be359d5fcbfe24c0b82a4f9d9da290a">DatabaseManager::createStatisticRows</a></div><div class="ttdeci">bool createStatisticRows(const QString &amp;login)</div><div class="ttdoc">Создаёт нулевые строки пользователя во всех таблицах заданий.</div><div class="ttdef"><b>Определения</b> <a href="#l00251">databasemanager.cpp:251</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a40e408d6b0e58b853a7699128215927e"><div class="ttname"><a href="class_database_manager.html#a40e408d6b0e58b853a7699128215927e">DatabaseManager::updateLastAuth</a></div><div class="ttdeci">void updateLastAuth(const QString &amp;login)</div><div class="ttdef"><b>Определения</b> <a href="#l00146">databasemanager.cpp:146</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a48728975c70722593bb73736d7e76efb"><div class="ttname"><a href="class_database_manager.html#a48728975c70722593bb73736d7e76efb">DatabaseManager::db</a></div><div class="ttdeci">QSqlDatabase db</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00096">databasemanager.h:96</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a4de8a21495a20fc23114c5293b0548d5"><div class="ttname"><a href="class_database_manager.html#a4de8a21495a20fc23114c5293b0548d5">DatabaseManager::userExists</a></div><div class="ttdeci">bool userExists(const QString &amp;login)</div><div class="ttdoc">Проверяет существование пользователя с заданным логином.</div><div class="ttdef"><b>Определения</b> <a href="#l00195">databasemanager.cpp:195</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a5229d59df08a16101b9b12ae1e4c9d3f"><div class="ttname"><a href="class_database_manager.html#a5229d59df08a16101b9b12ae1e4c9d3f">DatabaseManager::getStats</a></div><div class="ttdeci">UserStats getStats()</div><div class="ttdoc">Возвращает общую, месячную и активную статистику пользователей.</div><div class="ttdef"><b>Определения</b> <a href="#l00223">databasemanager.cpp:223</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a5527f21f871e0a848b3f4082fbf1dac1"><div class="ttname"><a href="class_database_manager.html#a5527f21f871e0a848b3f4082fbf1dac1">DatabaseManager::getUserEmail</a></div><div class="ttdeci">QString getUserEmail(const QString &amp;login)</div><div class="ttdoc">Возвращает электронную почту пользователя.</div><div class="ttdef"><b>Определения</b> <a href="#l00165">databasemanager.cpp:165</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a64012c6797de615da05a1ba7c4bdb100"><div class="ttname"><a href="class_database_manager.html#a64012c6797de615da05a1ba7c4bdb100">DatabaseManager::getStatisticRow</a></div><div class="ttdeci">QVector&lt; int &gt; getStatisticRow(const QString &amp;login, int taskNum)</div><div class="ttdoc">Возвращает 40 значений статистики указанного типа задания.</div><div class="ttdef"><b>Определения</b> <a href="#l00295">databasemanager.cpp:295</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a6a862177978ae94b61d0afa5a0512957"><div class="ttname"><a href="class_database_manager.html#a6a862177978ae94b61d0afa5a0512957">DatabaseManager::deleteStatisticRows</a></div><div class="ttdeci">bool deleteStatisticRows(const QString &amp;login)</div><div class="ttdoc">Удаляет статистику пользователя из всех четырёх таблиц.</div><div class="ttdef"><b>Определения</b> <a href="#l00318">databasemanager.cpp:318</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_a9156430e28c743f5578213041431f7ae"><div class="ttname"><a href="class_database_manager.html#a9156430e28c743f5578213041431f7ae">DatabaseManager::initStatisticTables</a></div><div class="ttdeci">void initStatisticTables()</div><div class="ttdef"><b>Определения</b> <a href="#l00074">databasemanager.cpp:74</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aa121692550f4bc3ed892b1b1dc12eaeb"><div class="ttname"><a href="class_database_manager.html#aa121692550f4bc3ed892b1b1dc12eaeb">DatabaseManager::getAllUsers</a></div><div class="ttdeci">QVector&lt; UserInfo &gt; getAllUsers()</div><div class="ttdoc">Возвращает список всех пользователей.</div><div class="ttdef"><b>Определения</b> <a href="#l00203">databasemanager.cpp:203</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aa162d97472e6c31a4e873adda435dbb6"><div class="ttname"><a href="class_database_manager.html#aa162d97472e6c31a4e873adda435dbb6">DatabaseManager::DatabaseManager</a></div><div class="ttdeci">DatabaseManager()</div><div class="ttdef"><b>Определения</b> <a href="#l00029">databasemanager.cpp:29</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_aa28220a2e7240a6f7530ab0ca3f31751"><div class="ttname"><a href="class_database_manager.html#aa28220a2e7240a6f7530ab0ca3f31751">DatabaseManager::updateStatistic</a></div><div class="ttdeci">bool updateStatistic(const QString &amp;login, int taskNum, int problemNum, int delta)</div><div class="ttdoc">Изменяет результат конкретного шаблона задания на delta.</div><div class="ttdef"><b>Определения</b> <a href="#l00280">databasemanager.cpp:280</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ab38c297366f0b99ddef168168cceb118"><div class="ttname"><a href="class_database_manager.html#ab38c297366f0b99ddef168168cceb118">DatabaseManager::getUserRole</a></div><div class="ttdeci">UserRole getUserRole(const QString &amp;login)</div><div class="ttdoc">Возвращает роль пользователя по логину.</div><div class="ttdef"><b>Определения</b> <a href="#l00154">databasemanager.cpp:154</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_abc9d122fdd166a7aa77e01506e85ec14"><div class="ttname"><a href="class_database_manager.html#abc9d122fdd166a7aa77e01506e85ec14">DatabaseManager::regUser</a></div><div class="ttdeci">bool regUser(const QString &amp;login, const QString &amp;password, const QString &amp;email, UserRole role)</div><div class="ttdoc">Регистрирует пользователя; пароль сохраняется как SHA-256.</div><div class="ttdef"><b>Определения</b> <a href="#l00100">databasemanager.cpp:100</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_abfe9ed86c77432471b44c95faa9c3e5f"><div class="ttname"><a href="class_database_manager.html#abfe9ed86c77432471b44c95faa9c3e5f">DatabaseManager::updateUserRole</a></div><div class="ttdeci">bool updateUserRole(const QString &amp;login, UserRole newRole)</div><div class="ttdoc">Изменяет роль существующего пользователя.</div><div class="ttdef"><b>Определения</b> <a href="#l00186">databasemanager.cpp:186</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ac479a8b94759eda7684b22f04674bcda"><div class="ttname"><a href="class_database_manager.html#ac479a8b94759eda7684b22f04674bcda">DatabaseManager::authUser</a></div><div class="ttdeci">bool authUser(const QString &amp;login, const QString &amp;password)</div><div class="ttdoc">Проверяет логин и пароль пользователя.</div><div class="ttdef"><b>Определения</b> <a href="#l00116">databasemanager.cpp:116</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ac620ee7e0f3e7e4dfb36d88934d33500"><div class="ttname"><a href="class_database_manager.html#ac620ee7e0f3e7e4dfb36d88934d33500">DatabaseManager::authUserWithRole</a></div><div class="ttdeci">UserRole authUserWithRole(const QString &amp;login, const QString &amp;password)</div><div class="ttdoc">Проверяет учётные данные и возвращает роль пользователя.</div><div class="ttdef"><b>Определения</b> <a href="#l00130">databasemanager.cpp:130</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_ad3ebd7636ba25c4a1ba2f85712ad6277"><div class="ttname"><a href="class_database_manager.html#ad3ebd7636ba25c4a1ba2f85712ad6277">DatabaseManager::deleteUser</a></div><div class="ttdeci">bool deleteUser(const QString &amp;login)</div><div class="ttdoc">Удаляет пользователя и связанные строки статистики.</div><div class="ttdef"><b>Определения</b> <a href="#l00176">databasemanager.cpp:176</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_adc77584b498f23cb33c9fc2d0422a73f"><div class="ttname"><a href="class_database_manager.html#adc77584b498f23cb33c9fc2d0422a73f">DatabaseManager::getInstance</a></div><div class="ttdeci">static DatabaseManager * getInstance()</div><div class="ttdef"><b>Определения</b> <a href="#l00023">databasemanager.cpp:23</a></div></div>
+<div class="ttc" id="aclass_database_manager_html_af755b98e0f96d65d0ea2a07274f27159"><div class="ttname"><a href="class_database_manager.html#af755b98e0f96d65d0ea2a07274f27159">DatabaseManager::initDatabase</a></div><div class="ttdeci">void initDatabase()</div><div class="ttdef"><b>Определения</b> <a href="#l00034">databasemanager.cpp:34</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html"><div class="ttname"><a href="databasemanager_8h.html">databasemanager.h</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775">UserRole</a></div><div class="ttdeci">UserRole</div><div class="ttdoc">Роль пользователя и уровень доступа к серверным командам.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00013">databasemanager.h:13</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775a0c0ecee09517766caaf1002b2888c5d2">ROLE_ERR</a></div><div class="ttdeci">@ ROLE_ERR</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00017">databasemanager.h:17</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775aa7f4df7bbe9b437c7867b2dbf627db51">ROLE_MODERATOR</a></div><div class="ttdeci">@ ROLE_MODERATOR</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00015">databasemanager.h:15</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775ae4a86fdf0e228f87fc50f2f846c7ac41">ROLE_ADMIN</a></div><div class="ttdeci">@ ROLE_ADMIN</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00016">databasemanager.h:16</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31"><div class="ttname"><a href="databasemanager_8h.html#a00dd1c1a522bd6fb15ecc021ffefb775af57ff4f6ebc6fa3cff303a3fd3e83b31">ROLE_USER</a></div><div class="ttdeci">@ ROLE_USER</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00014">databasemanager.h:14</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a272e7e4a9d59f5cce7c678533de77e73"><div class="ttname"><a href="databasemanager_8h.html#a272e7e4a9d59f5cce7c678533de77e73">stringToRole</a></div><div class="ttdeci">UserRole stringToRole(const QString &amp;roleStr)</div><div class="ttdoc">Преобразует строковое имя роли в UserRole.</div><div class="ttdef"><b>Определения</b> <a href="#l00004">databasemanager.cpp:4</a></div></div>
+<div class="ttc" id="adatabasemanager_8h_html_a8ff4b8e34d22c2ca10aa6fe31da7cefa"><div class="ttname"><a href="databasemanager_8h.html#a8ff4b8e34d22c2ca10aa6fe31da7cefa">roleToString</a></div><div class="ttdeci">QString roleToString(UserRole role)</div><div class="ttdoc">Возвращает строковое имя роли.</div><div class="ttdef"><b>Определения</b> <a href="#l00013">databasemanager.cpp:13</a></div></div>
+<div class="ttc" id="astruct_user_info_html"><div class="ttname"><a href="struct_user_info.html">UserInfo</a></div><div class="ttdoc">Краткая информация о пользователе для административного списка.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00027">databasemanager.h:27</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a02bea71cec7e7221c759fcdb69243411"><div class="ttname"><a href="struct_user_info.html#a02bea71cec7e7221c759fcdb69243411">UserInfo::login</a></div><div class="ttdeci">QString login</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00028">databasemanager.h:28</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a1c0494ad4207d1f82d33fb3db86af4fe"><div class="ttname"><a href="struct_user_info.html#a1c0494ad4207d1f82d33fb3db86af4fe">UserInfo::lastAuth</a></div><div class="ttdeci">QString lastAuth</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00032">databasemanager.h:32</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a2af443a7900d5e01a4842923ea5e8eb8"><div class="ttname"><a href="struct_user_info.html#a2af443a7900d5e01a4842923ea5e8eb8">UserInfo::registeredAt</a></div><div class="ttdeci">QString registeredAt</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00031">databasemanager.h:31</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a2d37020b9b4e4e4d45c2364dc9b2ecb9"><div class="ttname"><a href="struct_user_info.html#a2d37020b9b4e4e4d45c2364dc9b2ecb9">UserInfo::email</a></div><div class="ttdeci">QString email</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00029">databasemanager.h:29</a></div></div>
+<div class="ttc" id="astruct_user_info_html_a416d63a89f0a434e41e8e3b81404a09d"><div class="ttname"><a href="struct_user_info.html#a416d63a89f0a434e41e8e3b81404a09d">UserInfo::role</a></div><div class="ttdeci">UserRole role</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00030">databasemanager.h:30</a></div></div>
+<div class="ttc" id="astruct_user_stats_html"><div class="ttname"><a href="struct_user_stats.html">UserStats</a></div><div class="ttdoc">Агрегированная статистика пользователей сервера.</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00036">databasemanager.h:36</a></div></div>
+<div class="ttc" id="astruct_user_stats_html_a02511e15d5731227a15d822664b84211"><div class="ttname"><a href="struct_user_stats.html#a02511e15d5731227a15d822664b84211">UserStats::newUsersMonth</a></div><div class="ttdeci">int newUsersMonth</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00038">databasemanager.h:38</a></div></div>
+<div class="ttc" id="astruct_user_stats_html_a1786356ddfac9aceb346a11befe34532"><div class="ttname"><a href="struct_user_stats.html#a1786356ddfac9aceb346a11befe34532">UserStats::totalUsers</a></div><div class="ttdeci">int totalUsers</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00037">databasemanager.h:37</a></div></div>
+<div class="ttc" id="astruct_user_stats_html_ad53a1099795f0aa6d39867bee187186c"><div class="ttname"><a href="struct_user_stats.html#ad53a1099795f0aa6d39867bee187186c">UserStats::activeUsersMonth</a></div><div class="ttdeci">int activeUsersMonth</div><div class="ttdef"><b>Определения</b> <a href="databasemanager_8h_source.html#l00039">databasemanager.h:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="databasemanager_8cpp.html">databasemanager.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>
